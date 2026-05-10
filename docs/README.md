@@ -1,6 +1,6 @@
 # CAT Quant
 
-A static practice site for the RODHA CAT 2025 quant test bank — 95 timed tests, 966 questions, 7 topics. Designed for two users (you + your friend) on a free GitHub Pages + Supabase stack.
+A static practice site for the  CAT 2025 quant test bank — 95 timed tests, 966 questions, 7 topics. Designed for two users (you + your friend) on a free GitHub Pages + Supabase stack.
 
 ## Run locally
 
