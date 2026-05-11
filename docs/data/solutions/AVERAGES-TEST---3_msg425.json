@@ -1,0 +1,42 @@
+{
+  "1": {
+    "answer": "1",
+    "solution": "C(4,3)=4 sets of 3. Sum of averages = [(A+B+C)+(A+B+D)+(A+C+D)+(B+C+D)]/3 = (3A+3B+3C+3D)/3 = A+B+C+D.\n→ P = (A+B+C+D)/4 = Q. So P = kQ gives k = 1.\nAnswer: 1."
+  },
+  "2": {
+    "answer": "C",
+    "solution": "Let p,q,r be class sizes. Sum_total = [79(p+q)+73(q+r)+67(p+r)]/2 = (146p+152q+140r)/2 = 73p+76q+70r.\n→ K = (73p+76q+70r)/(p+q+r), a weighted avg of 70, 73, 76.\n→ Min = 70 (r only), Max = 76 (q only) → 70 < K < 76.\nAnswer: C."
+  },
+  "3": {
+    "answer": "24",
+    "solution": "Avg after 24 join: (48N+24×36)/(N+24) = (48N+864)/(N+24).\nAvg after 12 leave: (48N−12×54)/(N−12) = (48N−648)/(N−12).\n→ Cross-multiply: (48N+864)(N−12) = (48N−648)(N+24).\n→ 288N−10368 = 504N−15552 → 216N = 5184 → N = 24.\nAnswer: 24."
+  },
+  "4": {
+    "answer": "D",
+    "solution": "6 lightest sum = 288 = S−H; 6 heaviest sum = 324 = S−L. So H−L=36 and S = 324+L.\n→ 5 middle students (distinct integers strictly between L and L+36): valid range L∈[21,45].\n→ Avg = (324+L)/7. Min (L=21) = 345/7 ≈ 49.29; Max (L=45) = 369/7 ≈ 52.71.\n→ Difference = 24/7 ≈ 3.43.\nAnswer: D (3.43)."
+  },
+  "5": {
+    "answer": "50",
+    "solution": "Rohan gets (1/8)T. Remaining N−1 students share (7/8)T, avg = (7T/8)/(N−1).\n→ (1/8)T = 7×(7T/8)/(N−1) → 1/8 = 49/[8(N−1)] → N−1 = 49 → N = 50.\nAnswer: 50."
+  },
+  "6": {
+    "answer": "22",
+    "solution": "Rohit: (48x+4)/(x+1)=44 → 48x+4=44x+44 → 4x=40 → x=10.\nKohli: (44y+96)/(y+1)=48 → 44y+96=48y+48 → 4y=48 → y=12.\n→ x+y = 22.\nAnswer: 22."
+  },
+  "7": {
+    "answer": "C",
+    "solution": "1.375B+0.375G=320 and B+G=320 → 0.375B=0.625G → B=(5/3)G → G=120, B=200.\n→ New avg: 1.375×200×b + 0.375×120×g = 5760 → 275b+45g=5760.\n→ Original: 200b+120g=5120. Solving: 200b = 3840 → b = 19.2.\nAnswer: C (19.2)."
+  },
+  "8": {
+    "answer": "6",
+    "solution": "Marks in ratio 5:6:7:11:13, k must be integer (for all marks to be integers). Max k with avg<60: k=7 → marks 35,42,49,77,91. Total=294, avg=58.8<60.\n→ Target total for avg=60: 5×60=300. Additional marks needed = 300−294 = 6.\nAnswer: 6."
+  },
+  "9": {
+    "answer": "B",
+    "solution": "12 yr ago: 8 persons, sum=240. After 4 yr: sum=272, remove age-72 member, add newborn → 272−72+0=200.\nAfter 4 more yr: sum=200+32=232, remove age-84 member, add newborn → 232−84+0=148.\nPresent (4 yr later): sum=148+32=180. Avg=180/8=22.5.\nAnswer: B (22.5 years)."
+  },
+  "10": {
+    "answer": "D",
+    "solution": "Let fraction passed = p. Avg = 60p+24(1−p) = 36p+24.\n→ 44 < 36p+24 < 48 → 20 < 36p < 24 → 5/9 < p < 2/3.\n→ A=5/8=0.625 ✓; B=3/5=0.6 ✓; C=4/7≈0.571 ✓; D=2/3 equals upper bound (not strictly inside) ✗.\nAnswer: D (2/3 can never be the fraction)."
+  }
+}

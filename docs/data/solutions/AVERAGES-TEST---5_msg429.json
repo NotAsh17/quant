@@ -1,0 +1,42 @@
+{
+  "1": {
+    "answer": "15",
+    "solution": "Skip first 5 (avg 32): (NA−160)/(N−5)=A+2 → 2N−5A=−150. Skip last 5 (avg 40): (NA−200)/(N−5)=A−2 → 5A+2N=210.\n→ Add equations: 4N=60 → N=15.\nAnswer: 15."
+  },
+  "2": {
+    "answer": "D",
+    "solution": "Total=410. After 4 marks sum divisible by 4: (410−m5) mod 4=0 → m5 mod 4=2 → m5∈{78,82}. Testing m5=82: need m4 with m4 mod 3=1 → only 73 works from {73,78,84,93}.\n→ 4th+5th entered = m4+m5 = 73+82 = 155.\nAnswer: D (155)."
+  },
+  "3": {
+    "answer": "76",
+    "solution": "Before Field Theory: k tests, avg M. (kM+85)/(k+1)=M+3.75 → 85−M=3.75(k+1). With k=3: M=70.\n→ After Field Theory: 4 tests, avg=73.75, total=295. Network analysis score S=78.75. Total after 5 tests=373.75.\n→ After Fluid Mechanics (80): avg=(373.75+80)/6=75.6≈76.\nAnswer: 76."
+  },
+  "4": {
+    "answer": "C",
+    "solution": "X+Y avg=81: 85nX+78nY=81(nX+nY) → 4nX=3nY → nX:nY=3:4=3k:4k.\nY+Z avg=83: 78×4k+87nZ=83(4k+nZ) → 4nZ=20k → nZ=5k.\n→ Total avg=(85×3+78×4+87×5)/(3+4+5)=1002/12=83.5.\nAnswer: C (83.5)."
+  },
+  "5": {
+    "answer": "34",
+    "solution": "Avg=(179+X)/5. Constraint: 55<(179+X)/5<62 → 275<179+X<310 → 96<X<131.\nAlso X>avg → X>(179+X)/5 → 4X>179 → X>44.75 (satisfied for X≥97).\n→ X∈{97,98,…,130} → 34 values.\nAnswer: 34."
+  },
+  "6": {
+    "answer": "229",
+    "solution": "Let N be total donors. 30% give 800 each = 60% of total T: 0.3N×800=0.6T → T=400N.\n→ Remaining 70% must cover 40% of T=160N.\n→ Their avg = 160N/(0.7N) = 160/0.7 ≈ 228.57 ≈ 229.\nAnswer: 229."
+  },
+  "7": {
+    "answer": "A",
+    "solution": "5 numbers, mean=6 (total=30), median=6 (3rd value=6), only mode=9 (appears twice).\n→ Sorted: a≤b≤6≤9≤9. Sum: a+b=30−6−9−9=6. No repeats among a,b: (2,4) works.\n→ Highest=9, lowest=2. Sum=11 (thousands)=₹11000.\nAnswer: A (₹11000)."
+  },
+  "8": {
+    "answer": "26",
+    "solution": "10yr ago: 8 members, total=261. After 3yr: total=261+24=285; remove age-65, add newborn → 220.\nAfter 3 more yr: 220+24=244; remove age-65, add newborn → 179.\nPresent (4yr later): 179+32=211. Avg=211/8≈26.\nAnswer: 26."
+  },
+  "9": {
+    "answer": "C",
+    "solution": "Total funds=2PQ+72. People=P+Q+1. Avg=P+Q: (2PQ+72)/(P+Q+1)=P+Q → 2PQ=S(S+1)−72 where S=P+Q.\n→ S=11: 2PQ=132−72=60 → PQ=30. P+Q=11,PQ=30 → P=5,Q=6 ✓.\n→ Check: (30+30+72)/12=132/12=11=P+Q ✓.\nAnswer: C (11)."
+  },
+  "10": {
+    "answer": "A",
+    "solution": "Avg after erasing k: (n(n+1)/2−k)/(n−1)=445/17. Need 17|(n−1). Try n=52: sum=1378. k=1378−445×3=1378−1335=43. Check: 1≤43≤52 ✓. Verify: 1335/51=445/17 ✓.\nAnswer: A (43)."
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "1": {
+    "answer": "21",
+    "solution": "M=W+12, S=W−18. avg(M,S)=(W+12+W−18)/2=W−3. avg(W,S)=(W+W−18)/2=W−9.\n→ W−3 = 1.2(W−9) → W−3 = 1.2W−10.8 → 0.2W = 7.8 → W = 39.\n→ S = 39−18 = 21.\nAnswer: 21."
+  },
+  "2": {
+    "answer": "D",
+    "solution": "4A=B+C+D+E and 4B=A+C+D+E. Subtract: 4A−4B=B−A → 5A=5B → A=B. Similarly A=C.\n→ From 4A=A+A+D+E: 2A=D+E → A=(D+E)/2=37.\n→ Avg of A,B,C = A = 37.\nAnswer: D (37)."
+  },
+  "3": {
+    "answer": "43",
+    "solution": "Sum of first N odd numbers = N². Each student drops one odd number (2i−1), computing avg = (N²−(2i−1))/(N−1).\n→ Sum of all N averages = Σ(N²−(2i−1))/(N−1) = [N³−N²]/(N−1) = N².\n→ Avg of averages = N²/N = N = 43.\nAnswer: 43."
+  },
+  "4": {
+    "answer": "A",
+    "solution": "Let total = T. When youngest leaves: (T−youngest)/16=23 → T−youngest=368.\nWhen oldest leaves: (T−oldest)/16=21 → T−oldest=336.\n→ oldest−youngest=32. Also oldest+youngest=44 (avg=22) → oldest=38, youngest=6.\n→ T = 368+6 = 374. Avg = 374/17 = 22.\nAnswer: A (22)."
+  },
+  "5": {
+    "answer": "7",
+    "solution": "P=10a+b, reverse=10b+a. Q=10c+d, reverse=10d+c.\n→ Sum change = (Q+revQ)−(P+revP) = 11(c+d)−11(a+b) = 11[(c+d)−(a+b)].\n→ Avg change = 11[(c+d)−(a+b)]/22 = 3.5 → (c+d)−(a+b) = 7.\nAnswer: 7."
+  },
+  "6": {
+    "answer": "18",
+    "solution": "Let R+W=52 (avg 26). At birth of 1st child (year t1): 52+2t1=66 → t1=7.\nAt birth of 2nd (year t2): 52+3t2−7=81 → t2=12.\nAt birth of 3rd (year t3): 52+4t3−(7+12)=105 → 4t3=72 → t3=18.\nAnswer: 18 years after marriage."
+  },
+  "7": {
+    "answer": "D",
+    "solution": "Wed=36=Thu+3→Thu=33; Thu=Fri+3→Fri=30; Fri=Sat+3→Sat=27; Sat=Sun+3→Sun=24.\n→ Avg(Mon–Thu)=(32+34+36+33)/4=33.75. Avg(Fri–Sun)=(30+27+24)/3=27.\n→ Difference=33.75−27=6.75°C.\nAnswer: D (6.75°C)."
+  },
+  "8": {
+    "answer": "5",
+    "solution": "New avg increase = (24N+88)/(N+3)−24 = 16/(N+3). Must be prime.\n→ 16/(N+3) prime → N+3 must divide 16. Only prime divisor of 16 is 2 → N+3=8 → N=5.\nAnswer: 5."
+  },
+  "9": {
+    "answer": "C",
+    "solution": "First 13 multiples of k: avg=7k. Remove mth multiple (mk):\n→ Max new avg (m=1): 90k/12=7.5k. Min (m=13): 78k/12=6.5k.\n→ Total range = (7.5k−6.5k)/7k = 1/7 ≈ 14.28%.\nAnswer: C (14.28%)."
+  },
+  "10": {
+    "answer": "B",
+    "solution": "Sum=282. After halving one number: new sum=249. Halved number=2×(282−249)=66.\n→ Other 3 sum=216; ÷8 gives AP with cd=3: a−3,a,a+3 → 3a=27 → a=9 → 6,9,12.\n→ Numbers: 48,72,96. Smallest=48, Largest=96. (96−48)/96=50%.\nAnswer: B (50%)."
+  }
+}

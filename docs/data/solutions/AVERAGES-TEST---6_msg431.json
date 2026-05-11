@@ -1,0 +1,42 @@
+{
+  "1": {
+    "answer": "48",
+    "solution": "Junior=n+8, Senior=n. Combined avg=(49n+164)/(n+4). For integer: (n+4)|32.\n→ Divisors of 32 ≥ 5: {8,16,32} → n∈{4,12,28} → totals {16,32,64}.\n→ Max−Min = 64−16 = 48.\nAnswer: 48."
+  },
+  "2": {
+    "answer": "D",
+    "solution": "11 numbers. x is median (6th in sorted). Sorted without x: 2,4,5,7,9,12,14,18,19,28 (sum=118). For x to be 6th: x ∈ [9,12].\n→ x=9: avg=127/11=11.54 ✓ (option A). x=10: avg=128/11=11.63 ✓ (option B). Both are possible.\nAnswer: D (More than one)."
+  },
+  "3": {
+    "answer": "21.3",
+    "solution": "Students with 0 wrong = 100−K₁ = 100−58 = 42 (score 30 each). Students with exactly n wrong = K_n−K_{n+1}=2 for n=1..29.\n→ Total marks = 42×30 + 2×Σ_{n=1}^{29}(30−n) = 1260 + 2×435 = 2130.\n→ Avg = 2130/100 = 21.3.\nAnswer: 21.3."
+  },
+  "4": {
+    "answer": "A",
+    "solution": "Trace each odd N<8: N=1→{1}; N=3→{3,6,9}; N=5→{5,10,15,20,25}; N=7→{7,14,21,28,35,42,49}.\n→ All unique numbers: sum=1+18+75+196=290, count=16.\n→ Average = 290/16 = 18.125.\nAnswer: A (18.125)."
+  },
+  "5": {
+    "answer": "65",
+    "solution": "6 students, avg A. Heaviest H: (6A−H)/5=A−5 → H=A+25. Lightest L: (6A−L)/5=A+5 → L=A−25.\n→ 6A−H−L=160 → 6A−2A=160 → A=40 → H=65.\nAnswer: 65 kg."
+  },
+  "6": {
+    "answer": "27",
+    "solution": "Add 75 kg: nA+75=(n+1)(A+4) → 71=A+4n. Add 70 kg: nA+145=(n+2)(A+7) → 131=2A+7n.\n→ A=71−4n → 131=142−8n+7n → n=11 → A=71−44=27.\nAnswer: 27 kg."
+  },
+  "7": {
+    "answer": "B",
+    "solution": "40% passed (avg ∈ [42,95]), 60% failed (avg ∈ [14,36]).\n→ Min avg = 0.4×42+0.6×14 = 25.2 → nearest integer ceiling = 26.\n→ Max avg = 0.4×95+0.6×36 = 59.6 → nearest integer floor = 59.\nAnswer: B [26, 59]."
+  },
+  "8": {
+    "answer": "35",
+    "solution": "Reversing number increases sum by 5×3.6=18. Reversal of 10a+b gives change=9(b−a)=18 → b−a=2.\n→ Multiple of 5 with b−a=2: b=5, a=3 → number is 35. Reversed: 53. Increase=18 ✓.\nAnswer: 35."
+  },
+  "9": {
+    "answer": "A",
+    "solution": "Avg cost of rice = (6×12+11×15)/17=237/17 per kg. Let rice=17x kg, add 24 kg adulterant.\n→ Cost=237x. Revenue=(237/17)(17x+24)=1.4×237x → 17x+24=23.8x → x=60/17.\n→ Revenue=(237/17)×(60+24)=237×84/17=19908/17≈1171.\nAnswer: A (₹1171)."
+  },
+  "10": {
+    "answer": "A",
+    "solution": "Min sum of k distinct whole numbers = k(k−1)/2. Need k(k−1)/2 ≤ 192 → k≤20.\n→ k=20: use {0,1,...,18,21} (sum=192), plus 10 zeros (repeats). 20 distinct values ✓.\n→ k=21 impossible: min sum=210>192.\nAnswer: A (20)."
+  }
+}

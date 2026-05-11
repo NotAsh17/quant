@@ -1,0 +1,42 @@
+{
+  "1": {
+    "answer": "40",
+    "solution": "Total of 28 students = 28×70 = 1960. Total of first 26 = 26×70 = 1820.\n→ 27th + 28th must = 140. Max score = 100, so 28th at most 100.\n→ Minimum 27th = 140 − 100 = 40.\nAnswer: 40."
+  },
+  "2": {
+    "answer": "B",
+    "solution": "Let first integer = n. Avg of first 5 = n+2 = P → n = P−2.\n→ Avg of all 9 consecutive integers = n+4 = P−2+4 = P+2.\nAnswer: B (P+2)."
+  },
+  "3": {
+    "answer": "80",
+    "solution": "Total weight = 20×45 + (X+1)×60 + (X−9)×36 = 900 + 60X+60 + 36X−324 = 636+96X.\n→ Total students = 20+(X+1)+(X−9) = 2X+12.\n→ Avg = (636+96X)/(2X+12) = 48.75 → 636+96X = 97.5X+585 → 1.5X=51 → X=34.\n→ Total students = 2(34)+12 = 80.\nAnswer: 80."
+  },
+  "4": {
+    "answer": "D",
+    "solution": "No individual group averages are given for P, Q, R.\n→ Without knowing the average weight of P or R separately, we cannot compute S's average.\nAnswer: D (Cannot be determined)."
+  },
+  "5": {
+    "answer": "68",
+    "solution": "Sems I+II total = 2×70 = 140%. Sems III+IV total = 2×62 = 124%. After 4 sems: 264%.\n→ Outstanding needs ≥ 75×8 = 600% total. Max possible from sems VII+VIII = 200%.\n→ For it to remain possible: 264 + 2×avg₅₆ + 200 ≥ 600 → 2×avg₅₆ ≥ 136 → avg₅₆ ≥ 68%.\nAnswer: 68%."
+  },
+  "6": {
+    "answer": "0",
+    "solution": "Removing item G from B items (total BK): (BK−G)/(B−1) = K → BK−G = BK−K → G = K.\n→ Similarly removing R: R = K.\n→ 5G + 7R − 12K = 5K + 7K − 12K = 0.\nAnswer: 0."
+  },
+  "7": {
+    "answer": "B",
+    "solution": "Let a,b,c be class sizes. Sum_total = (45a+66b+57c)/2.\n→ Overall avg = (45a+66b+57c)/[2(a+b+c)], a weighted avg of 22.5, 33, 28.5.\n→ Range = [22.5, 33]. Options: 34>33 (impossible), 22<22.5 (impossible), 28 ∈ [22.5,33] (achievable with a=10/21, b=11/21, c=0).\nAnswer: B (28)."
+  },
+  "8": {
+    "answer": "65",
+    "solution": "Mon–Wed total = 3×70 = 210. Thu–Fri total = 2×40 = 80.\n→ Full week (7 days) total = 7×60 = 420.\n→ Weekend (Sat+Sun) total = 420−210−80 = 130. Avg = 130/2 = 65.\nAnswer: 65."
+  },
+  "9": {
+    "answer": "A",
+    "solution": "84420 = 2²×3²×5×7×67. Need n×fee = 84420 with 50 < n < 100.\n→ n=67 is prime, 67×1260 = 84420 ✓. 67 is between 50 and 100.\n→ Other options: 960→n=87.9 (not integer), 1152→n=73.3 (not integer), 680→n=124.1 (out of range).\nAnswer: A (₹1260)."
+  },
+  "10": {
+    "answer": "A",
+    "solution": "60 students, 25% girls = 15 girls, 45 boys. Total score = 60×136 = 8160.\n→ Let avg boys = 6k, avg girls = 7k. 45×6k + 15×7k = 8160 → 375k = 8160 → k = 21.76.\n→ Avg boys = 6k = 130.56.\nAnswer: A (130.56)."
+  }
+}

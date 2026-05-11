@@ -3,6 +3,14 @@
     "answer": "1",
     "solution": "S = {2, 3, 4, …, n+1}, n is even and n > 2007.\n→ Even integers in S: 2, 4, 6, …, n. There are n/2 of them; their average is (2 + n)/2 = (n+2)/2.\n→ Odd integers in S: 3, 5, 7, …, n+1. There are n/2 of them; their average is (3 + n+1)/2 = (n+4)/2.\n→ X − Y = (n+4)/2 − (n+2)/2 = 1.\nAnswer: 1."
   },
+  "2": {
+    "answer": "D",
+    "solution": "Avg speed = (3v·t + 5v·t1)/(t + t1) = 7v/2.\n→ Cross-multiply: 2(3vt + 5vt1) = 7v(t + t1).\n→ 6t + 10t1 = 7t + 7t1 → 3t1 = t → t1 = t/3.\nAnswer: D (T1 = t/3)."
+  },
+  "3": {
+    "answer": "116",
+    "solution": "AM(a,b,c)=90 → a+b+c=270. AM(a,b,c,d,e)=85 → a+b+c+d+e=425.\n→ d+e=155. d=(a+b)/2, e=(b+c)/2 → d+e=(a+2b+c)/2=155 → a+2b+c=310.\n→ (a+b+c)+b=310 → 270+b=310 → b=40.\n→ a+c=230. Since a>c (integers), minimum a=116 (c=114).\nAnswer: 116."
+  },
   "4": {
     "answer": "B",
     "solution": "Initial sum = 8 × 60 = 480.\n→ After removing students with marks 50, 60, 70 (sum = 180) and adding a student with 100: new sum = 480 − 180 + 100 = 400.\n→ New count = 8 − 3 + 1 = 6. New average = 400 / 6 ≈ 66.67.\n→ Increase = (66.67 − 60) / 60 × 100 ≈ 11.11%.\nAnswer: B (11.11%)."
@@ -11,8 +19,24 @@
     "answer": "30",
     "solution": "Let avg cost of 1 copy = c, avg cost of 1 book = b.\n→ Avg of 20 copies = avg of 20 books → c = b.\n→ Avg of (1 book + 1 copy) = 30 → (b + c)/2 = 30 → 2b = 60 → b = 30.\n→ Avg cost of 3000 books is the same as avg cost of 1 book = 30.\nAnswer: ₹30."
   },
+  "6": {
+    "answer": "38.67",
+    "solution": "Let original avg = A. Remove 2 items → new count=22, new avg=A+2.\n→ New total = 22(A+2) = 22A+44. Removed total = 24A−(22A+44) = 2A−44.\n→ Avg of removed = (2A−44)/2 = A−22. Given A−22 = (2/5)A → 3A=110 → A=110/3.\n→ New avg = 110/3 + 2 = 116/3 ≈ 38.67.\nAnswer: 38.67 kg."
+  },
   "7": {
     "answer": "B",
     "solution": "Recorded grade = 35 = actual × (1 − 0.1666) = actual × 5/6.\n→ Actual grade = 35 × 6/5 = 42. Difference = 42 − 35 = 7.\n→ Original sum = 50 × 45 = 2250. Corrected sum = 2250 + 7 = 2257.\n→ Actual average = 2257 / 45 ≈ 50.16.\nAnswer: B (50.16)."
+  },
+  "8": {
+    "answer": "530",
+    "solution": "Winner W, 2nd S, 3rd T. W=S+60, W=T+100, (W+S)/2=200 → W+S=400.\n→ W+(W−60)=400 → 2W=460 → W=230. S=170, T=130.\n→ Total = 230+170+130 = 530.\nAnswer: 530."
+  },
+  "9": {
+    "answer": "C",
+    "solution": "10A = sum of all 10 = 4Q + 6N.\n→ Divide by 2: 5A = 2Q + 3N.\nAnswer: C (5A = 3N + 2Q)."
+  },
+  "10": {
+    "answer": "B",
+    "solution": "Let E, C, S = engineers, CEOs, secretaries. E+C+S=29. Sum of ages=696.\n→ Adding 1 per E, 6 per C, 3 per S raises avg by 3: E+6C+3S=87.\n→ Subtract: 5C+2S=58. Two-digit perfect cube with integer √: √64=8, so C=8.\n→ 40+2S=58 → S=9. E=29−8−9=12.\nAnswer: B (9)."
   }
 }
