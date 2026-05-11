@@ -69,7 +69,30 @@ Per test:
 - For MCQ, `answer` is the letter A/B/C/D; for TITA, the exact value
 - Solver script (`docs/tools/generate_solutions.py`) is ready to fill in the rest
 
-## How to generate solutions
+
+## Two ways to solve (pick one — they produce the same files)
+
+### A. In-chat solving (no API key needed)
+You're a Claude chat agent on Pro/Code subscription. You solve each question
+yourself, no Anthropic API call. **Read `docs/SOLVE_IN_CHAT.md`** for the protocol.
+Quick start:
+```bash
+git pull
+cd docs
+py -3.11 tools/status.py            # see what's done
+py -3.11 tools/next_questions.py    # get next batch — solve, then write the file
+# loop. Commit + push at end of session.
+```
+
+### B. API solving (needs `ANTHROPIC_API_KEY`, ~$10-15 for all 1112)
+Bulk-fills the whole bank programmatically. See "How to generate solutions" below.
+
+Both write to the same `docs/data/solutions/<test_id>.json` files. You can mix —
+do some topics by chat, some by API. `status.py` reads the union.
+
+---
+
+## How to generate solutions (API path)
 
 ```bash
 cd docs
