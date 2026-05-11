@@ -1,0 +1,42 @@
+{
+  "1": {
+    "answer": "49500",
+    "solution": "3a=162000 → a=54000. PV equation: (54000-d)/1.1+54000/1.21+(54000+d)/1.331=135000.\n→ Simplify: 54000×3310-210d = 135000×1331 → d=-4500.\n→ Last installment = a+d = 54000-4500 = 49500.\nAnswer: ₹49500."
+  },
+  "2": {
+    "answer": "D",
+    "solution": "CI_year4/CI_year3 = (1+r) = 7300.2/6348 = 1.15 → r = 15%.\n→ CI_year3 = k×0.15×(1.15)² = k×0.198375 = 6348 → k = 32000.\nAnswer: D (₹32000)."
+  },
+  "3": {
+    "answer": "54080",
+    "solution": "Sonu amount = 56000×(26/25)^14. Monu amount = k×(26/25)^12×(28/25).\nEqual: k = 56000×(26/25)²/(28/25) = 56000×(676/625)×(25/28) = 56000×169/175 = 54080.\nAnswer: 54080."
+  },
+  "4": {
+    "answer": "A",
+    "solution": "Remaining capital = 48000−18000−16000 = 14000. Total interest = 48000×8.375% = 4020.\n18000×7.8% + 16000×8.3% + 14000×x% = 4020 → 2732+140x = 4020 → x = 9.2%.\n→ 48000×9.2% = 4416.\nAnswer: A (₹4416)."
+  },
+  "5": {
+    "answer": "247192",
+    "solution": "6% per half-year. After yr1: 240000×1.06²=269664; pay 19664; balance=250000.\nAfter yr2: 250000×1.1236=280900; pay 60900; balance=220000.\nAfter yr3: k=220000×1.1236=247192.\nAnswer: ₹247192."
+  },
+  "6": {
+    "answer": "72000",
+    "solution": "Trace four payments. After year 4 balance = 0.\n(5/4)^4 × k − 20000×(5/4)^3 − 22500×(5/4)^2 − 41250×(5/4) − 50000 = 0.\n→ 625k/256 = 20000×125/64 + 22500×25/16 + 41250×5/4 + 50000 → k = 72000.\nAnswer: ₹72000."
+  },
+  "7": {
+    "answer": "C",
+    "solution": "k(1+R)^25=32k → (1+R)=2^(1/5)≈1.1487. R≈14.87%.\nSI amount = k(1+25×0.1487) = k×4.717.\n→ 4.5k < 4.717k < 4.75k.\nAnswer: C (Between 4.5k and 4.75k)."
+  },
+  "8": {
+    "answer": "11197440",
+    "solution": "Phase1: 15360×(3/2)^12 = 15×3^12/4 (rate 50%/quarter for 12 quarters).\nPhase2: × (4/3)^6 (rate 1/3 per half-year for 6 periods).\n→ Total = 15×3^12/4 × 4^6/3^6 = 15×3^6×2^10 = 15×729×1024 = 11197440.\nAnswer: ₹11197440."
+  },
+  "9": {
+    "answer": "A",
+    "solution": "CI_year2 − CI_year1 = Pr² = 1800. If rate → 4r: P(4r)² = 16Pr² = 16×1800 = 28800.\nAnswer: A (₹28800)."
+  },
+  "10": {
+    "answer": "D",
+    "solution": "Blended SI rate = 0.375×8 + 0.1875×12 + 0.3125×6 + 0.125×9 = 3+2.25+1.875+1.125 = 8.25% p.a.\n→ 8.25n ≥ 200 → n ≥ 24.24 → minimum n = 25.\nAnswer: D (25)."
+  }
+}

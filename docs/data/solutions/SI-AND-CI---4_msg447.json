@@ -1,0 +1,46 @@
+{
+  "1": {
+    "answer": "15000",
+    "solution": "Pr²=300 (CI-SI over 2yr). Pr²(3+r)=918 → 3×300+Pr³=918 → Pr³=18 → r=0.06=6%.\n→ Pr=300/0.06=5000. SI for 3yr = 3Pr = 15000.\nAnswer: ₹15000."
+  },
+  "2": {
+    "answer": "1200",
+    "solution": "CI = P[(1.12)²−1] = P×0.2544 = 1272 → P = 5000.\n→ SI for 2yr = 5000×2×0.12 = 1200.\nAnswer: ₹1200."
+  },
+  "3": {
+    "answer": "A",
+    "solution": "Total deposit 2S. After 4yr: 9×2S=18S → S(2+4r₁+4r₂)=18S → r₁+r₂=4.\nB after T yr: S(2+T×4)=24S → T=22/4=5.5 years.\nAnswer: A (5.5 years)."
+  },
+  "4": {
+    "answer": "400000",
+    "solution": "Q triples in 5yr SI: 5r=2 → r=0.4. P's 5yr amount: P(1.2)⁴×(1+3×0.4)=P×2.0736×2.2=4.56192P.\nQ's 5yr amount: 3P. Difference: (4.56192−3)P=1.56192P=312384 → P=200000.\n→ Total (P+Q) = 400000.\nAnswer: ₹400000."
+  },
+  "5": {
+    "answer": "A",
+    "solution": "After 2yr at 16%: 100000×1.3456=134560. For next yr at 10%: interest limit=7500.\n→ (134560−x)×0.1≤7500 → 134560−x≤75000 → x≥59560.\nAnswer: A (₹59560)."
+  },
+  "6": {
+    "answer": "16968",
+    "solution": "6.25% = (1/2)⁴ → uranium halves 4 times. Each half-life = 4242 yr.\n→ Age = 4×4242 = 16968 years.\nAnswer: 16968."
+  },
+  "7": {
+    "answer": "47500",
+    "solution": "Year 1 CI = 50000×30% = 15000. Amount after yr1 = 65000.\nYear 2 CI = 65000×50% = 32500. Total CI = 15000+32500 = 47500.\nAnswer: ₹47500."
+  },
+  "8": {
+    "answer": "A",
+    "solution": "Let equal SI = k. a=10k, b=25k/7, c=50k/27. Total=k×2915/189=116600 → k=7560.\n→ a=75600, b=27000, c=14000. Least = 14000.\nAnswer: A (₹14000)."
+  },
+  "9": {
+    "answer": "1998",
+    "solution": "(1+r)^11 = 10989/999 = 11. P(1+r)^22 = 999 → P×11² = 999 → P = 999/121.\n→ P×242 = (999/121)×242 = 999×2 = 1998.\nAnswer: 1998."
+  },
+  "10": {
+    "answer": "B",
+    "solution": "(1+r)⁴ = 29952/1872 = 16 → 1+r = 2 → r = 100%.\n→ P = 1872/(1+r)² = 1872/4 = 468.\nAnswer: B (₹468)."
+  },
+  "11": {
+    "answer": "B",
+    "solution": "(1+r)^27=27 → 1+r=3^(1/9). After 27+N years: (3^(1/9))^(27+N)=211.\n→ (27+N)/9 = log₃(211) = ln(211)/ln(3) ≈ 4.872 → N ≈ 16.85.\n→ 9 < N < 18.\nAnswer: B (9 < N < 18)."
+  }
+}
