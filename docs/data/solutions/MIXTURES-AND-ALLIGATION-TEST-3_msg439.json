@@ -1,0 +1,42 @@
+{
+  "1": {
+    "answer": "45",
+    "solution": "6ka+9kb+12k(a+b)=48×27k → 18a+21b=1296 → 6a+7b=432.\n→ Spirit in 100A+200B = a+2b = (432-7b+12b)/6 = (432+5b)/6.\n→ b must be a positive multiple of 6 (for a to be integer): b∈{6,...,60}.\n→ Max (b=60): (432+300)/6=122. Min (b=6): (432+30)/6=77. Diff=122-77=45.\nAnswer: 45."
+  },
+  "2": {
+    "answer": "A",
+    "solution": "CP of mixture = 69/1.4375 = 48/kg. Polished=x, Brown=x+12.\n→ (5x+7(x+12))/12=48 → 12x=492 → x=41. Brown=53.\n→ % less = (53-41)/53×100=12/53×100≈22.6%≈23%.\nAnswer: A (23%)."
+  },
+  "3": {
+    "answer": "1050",
+    "solution": "Milk fractions: bottle1=79/150, bottle2=91/150. For 58% milk (P:Q):\n→ 79P+91Q=87(P+Q) → 4Q=8P → P:Q=1:2.\n→ Mix 3P:2Q = 3:4 (bottles). Milk=(3×79+4×91)/(150×7)=601/1050. Water=449/1050.\n→ GCD(601,449)=1. A+B=601+449=1050.\nAnswer: 1050."
+  },
+  "4": {
+    "answer": "B",
+    "solution": "Each day n: drinks 36n ml from 900ml bottle, replaces with water. Total liquid=36×(1+...+25)=36×325=11700ml.\n→ All 900ml original whisky is eventually consumed. Water drunk=11700-900=10800ml.\nAnswer: B (10800)."
+  },
+  "5": {
+    "answer": "160",
+    "solution": "Total V ml. Water=0.4V, P=0.35V, Q=0.25V. Porous medium absorbs water fully + some P.\n→ Residual P:Q=1:2 → (0.35V-p)=0.25V/2=0.125V → p=0.225V.\n→ Total absorbed=0.4V+0.225V=0.625V=250 → V=400.\n→ Water absorbed=0.4×400=160 ml.\nAnswer: 160 ml."
+  },
+  "6": {
+    "answer": "375",
+    "solution": "After 3 removals of 75L: milk=P(1-75/P)³=P-183.\n→ (P-75)³/P²=P-183 → 42P²-16875P+421875=0.\n→ P=(16875±14625)/84 → P=375 (positive, multiple of 25 ✓).\nVerify: 375×(300/375)³=375×(4/5)³=192=375-183 ✓.\nAnswer: 375."
+  },
+  "7": {
+    "answer": "C",
+    "solution": "Replace 18L mixture with water: 0.36(T-18)/T=0.27 → 0.09T=6.48 → T=72.\n→ For 18%: 0.36×72-0.36x=0.18×72 → 0.36x=12.96 → x=36.\nAnswer: C (36)."
+  },
+  "8": {
+    "answer": "150",
+    "solution": "Mix 1 (60L,40%w): water=24, milk=36. Mix 2 (90L,60%w): water=54, milk=36.\n→ Combined 150L: water=78, milk=72. Add W liters water for 76% water:\n→ (78+W)/(150+W)=0.76 → 78+W=114+0.76W → 0.24W=36 → W=150.\nAnswer: 150."
+  },
+  "9": {
+    "answer": "D",
+    "solution": "C1: V milk. C2: V water. Step1: Transfer 2V/3 milk to C2. C1: V/3 milk. C2: 2V/3 milk, V water.\nStep2: Transfer 2/3 of C2 (=10V/9) back to C1. Milk in C1=7V/9, Water=2V/3. C2: 2V/9 milk, V/3 water.\nStep3: Transfer 2/3 of C1 (=26V/27) to C2. C2: milk=20V/27, water=21V/27. Water:Milk=21:20.\nAnswer: D (21:20)."
+  },
+  "10": {
+    "answer": "B",
+    "solution": "A: Cu=5/8, B: Cu=2/7. Mix P:Q for 50% Cu: P/8=3Q/14 → P:Q=12:7.\n→ Alloy D: Q:P=7:12. Cu=7×5/8+12×2/7=437/56. Zn=7×3/8+12×5/7=627/56.\n→ Cu:Zn=437:627.\nAnswer: B (437:627)."
+  }
+}

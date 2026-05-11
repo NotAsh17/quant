@@ -1,0 +1,42 @@
+{
+  "1": {
+    "answer": "72",
+    "solution": "a+d=2×36=72, b+c=2×34=68. Also a+b=2×30=60, c+d=2×40=80.\n→ a=29,b=31,c=37,d=43 (all prime) ✓. Avg=(29+31+37+43)/4=35 ✓.\n→ Sum of a and d = 72.\nAnswer: 72."
+  },
+  "2": {
+    "answer": "B",
+    "solution": "11yr ago: 4 members, total=116. Now 6 members (avg still 29), total=174.\n→ Original 4 now total=116+44=160. 2 children sum=174−160=14.\n→ When younger born, family size=6, so older child's age=6: c₁−c₂=6.\n→ c₁+c₂=14 → c₁=10, c₂=4.\nAnswer: B (4)."
+  },
+  "3": {
+    "answer": "300",
+    "solution": "Sum of 125 students=15250. Sum of 122 remaining=122×117.5=14345. Top 3 sum=905.\n→ Maximize s₃ (3rd highest) with s₁>s₂>s₃ and s₂≥301.\n→ Min s₁+s₂ = 302+301=603. Max s₃=905−603=302. But s₃<s₂=301, so s₃≤300.\n→ Set s₂=301, s₁=304: s₃=905−605=300 ✓ (300<301).\nAnswer: 300."
+  },
+  "4": {
+    "answer": "B",
+    "solution": "10yr ago: 25 teachers, total=1150. 5yr ago: total=1150+125=1275; principal (62) retires → 1213, 24 teachers.\n→ 4yr ago: total=1213+24=1237; new principal (56) joins → 1293, 25 teachers.\n→ Present: 1293+100=1393. Avg=1393/25=55.72.\nAnswer: B (55.72)."
+  },
+  "5": {
+    "answer": "72",
+    "solution": "Resultant number = (p−q)+r. Average of {p, q, resultant} = (p+q+p−q+r)/3 = (2p+r)/3.\n→ (2p+r)/3 = (p+q+r)/3 + 24 → 2p+r = p+q+r+72 → p−q = 72.\nAnswer: 72."
+  },
+  "6": {
+    "answer": "54",
+    "solution": "Total of all 11 = 11×54=594. Sum of 6 lightest=6×48=288. Sum of 6 heaviest=6×60=360.\n→ 6th player W = 288+360−594 = 54 kg (counted in both groups).\nAnswer: 54 kg."
+  },
+  "7": {
+    "answer": "D",
+    "solution": "Sum of 9 excl. Chintan = 9×6=54. Let Chintan=c. Avg all 10=(54+c)/10.\n→ Avg of 9 excl. Arvind = (44+c)/9. Given: (54+c)/10=(44+c)/9+0.5.\n→ 9(54+c)=10(44+c)+45 → 486+9c=485+10c → c=1.\nAnswer: D (1)."
+  },
+  "8": {
+    "answer": "94",
+    "solution": "32 dwarves avg A. Two leave: remaining 30 avg A+4. Total removed=32A−30(A+4)=2A−120.\n→ Avg removed=(2A−120)/2=A−60. Given A−60=A/3 → (2/3)A=60 → A=90.\n→ Remaining avg = A+4 = 94.\nAnswer: 94."
+  },
+  "9": {
+    "answer": "A",
+    "solution": "Skip first 10 (avg 20): 10A−N=190. Skip last 10 (avg 30): 10A+N=310.\n→ Add: 20A=500 → A=25. N=60. N+A=85.\nAnswer: A (85)."
+  },
+  "10": {
+    "answer": "D",
+    "solution": "6 positive integers, sum=90, median=18 (c+d=36). Only mode <18.\n→ Set a=b=1 (mode=1), c=17, d=19 (median ✓), e=20 (min distinct from d).\n→ f=90−(1+1+17+19+20)=32. Check: mode=1 ✓, no other repeats ✓.\nAnswer: D (32)."
+  }
+}

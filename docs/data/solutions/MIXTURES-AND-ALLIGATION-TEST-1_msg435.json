@@ -1,0 +1,42 @@
+{
+  "1": {
+    "answer": "D",
+    "solution": "Verify each: (3×36+6×52+1×60)/10=480/10=48 ✓; (5×36+9×52+2×60)/16=768/16=48 ✓; (7×36+12×52+3×60)/22=1056/22=48 ✓.\n→ All three ratios give the desired average price.\nAnswer: D (All of the above)."
+  },
+  "2": {
+    "answer": "C",
+    "solution": "R sells at 690 with 43.75% profit → CP_R=690/1.4375=480.\n→ (4×450+3×CP_Q)/7=480 → 1800+3×CP_Q=3360 → CP_Q=520.\n→ Alligation for Q (420 and 540): (540−520):(520−420)=20:100=1:5.\nAnswer: C (1:5)."
+  },
+  "3": {
+    "answer": "28",
+    "solution": "Step1: Move 200ml (20% salt) from P to Q. P: 800ml, 20% salt. Q: 1200ml, (440+40)/1200=40%.\nStep2: Move 200ml (40%) from Q to R. Q: 1000ml, 40%. R: 1200ml, (640+80)/1200=60%.\nStep3: Move 200ml (60%) from R to P. P: 1000ml, (160+120)/1000=280/1000=28%.\nAnswer: 28%."
+  },
+  "4": {
+    "answer": "A",
+    "solution": "Start: 72L milk. Step1: remove 9L milk, add water. Milk=63L, fraction=63/72=7/8.\nStep2: remove 8L mix, add water. Milk removed=8×7/8=7L. Milk=56L, fraction=56/72=7/9.\nStep3: remove 18L mix, add 18L milk. Milk removed=18×7/9=14L. Milk=56−14+18=60L.\nAnswer: A (60)."
+  },
+  "5": {
+    "answer": "12",
+    "solution": "Non-water content is conserved. Fresh dates: 16% non-water → 48×0.16=7.68 kg non-water.\n→ Dry dates: 64% non-water. Weight_dry = 7.68/0.64 = 12 kg.\nAnswer: 12 kg."
+  },
+  "6": {
+    "answer": "32400",
+    "solution": "Alligation between 18.75% and 31.25% with mean 20%.\n→ (31.25−20):(20−18.75) = 11.25:1.25 = 9:1.\n→ Part at 18.75% = 36000×9/10 = 32400.\nAnswer: ₹32400."
+  },
+  "7": {
+    "answer": "D",
+    "solution": "5p₁=8p₂ → p₁:p₂=8:5. Sell at p₁ (costlier) with 25% profit: CP_mix=p₁/1.25=0.8p₁.\n→ Alligation: n₁:n₂=(0.8p₁−p₂):(p₁−0.8p₁)=(0.8×8−5):(8−0.8×8)=(1.4):(1.6)=7:8.\n→ 7:8 does not match any given option.\nAnswer: D (None of these)."
+  },
+  "8": {
+    "answer": "8",
+    "solution": "Initial 5kg mix T1:T2:T3=1:2:4. CP=(632+2×512+4×496)/7=3640/7=520/kg. Cost=2600.\n→ Add 2x kg T1 and 3x kg T3. Cost added=2x×632+3x×496=2752x.\n→ SP=680.40/kg at 25% profit → CP=544.32/kg. Total=(5+5x)×544.32.\n→ 2600+2752x=2721.6+2721.6x → 30.4x=121.6 → x=4. T1 added=2×4=8 kg.\nAnswer: 8 kg."
+  },
+  "9": {
+    "answer": "B",
+    "solution": "Rohan: 50(m+w)=1.2×60m → 50w=22m → w/m=22/50=11/25.\nSohan: 72(m+w)=1.25×60m → 72w=3m → w/m=3/72=1/24.\n→ Ratio=(11/25):(1/24)=11×24:25×1=264:25.\nAnswer: B (264:25)."
+  },
+  "10": {
+    "answer": "D",
+    "solution": "Equal volumes V. Milk fractions: 3/5, 5/8, 2/9, 7/12, 8/15. LCM=360.\n→ Total milk=V(216+225+80+210+192)/360=923V/360.\n→ Total water=5V−923V/360=877V/360.\n→ Water:Milk=877:923.\nAnswer: D (877:923)."
+  }
+}

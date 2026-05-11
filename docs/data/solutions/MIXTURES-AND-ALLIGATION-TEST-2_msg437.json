@@ -1,0 +1,42 @@
+{
+  "1": {
+    "answer": "B",
+    "solution": "Initial milk=7C/12. Remove 10L: milk removed=70/12. New milk=(7C-70)/12, water=(5C+70)/12.\n→ (7C-70):(5C+70)=4:3 → 21C-210=20C+280 → C=490.\nAnswer: B (490)."
+  },
+  "2": {
+    "answer": "C",
+    "solution": "Total mixture=33L. Revenue=33×64=2112. Miku's revenue=8×33=264. Miku's share=264/2112=1/8.\n→ Miku milk/(total milk)=1/8. Piku milk=6, Riku milk=8. Miku milk m: m/(m+14)=1/8 → m=2.\n→ Miku: 8L total, 2L milk, 6L water → ratio 1:3.\nAnswer: C (1:3)."
+  },
+  "3": {
+    "answer": "360",
+    "solution": "After op1: milk=0.4(K-45). After op2: milk=0.4(K-45)(K-40)/K.\n→ Water=K−milk=248: K²−0.4(K-45)(K-40)=248K → 0.6K²−214K−720=0 → 3K²−1070K−3600=0.\n→ K=(1070+√1188100)/6=(1070+1090)/6=360.\nAnswer: 360."
+  },
+  "4": {
+    "answer": "C",
+    "solution": "Water fraction in A=5/10=1/2; in B=8/16=1/2. Any mix of A and B has water=1/2 of total.\n→ Check: A(31:49:80): 80/160=1/2 ✓; B(23:37:60): 60/120=1/2 ✓; C(41:71:120): 120/232≠1/2 ✗; D(47:73:120): 120/240=1/2 ✓.\nAnswer: C (41:71:120 is impossible)."
+  },
+  "5": {
+    "answer": "9",
+    "solution": "2x+3y=360 → y=(360-2x)/3. Integer: x≡0 mod 3. x>0, y>0: x<180. y<100: x>30. x>y: 5x>360 → x>72. x≤99.\n→ x∈{75,78,81,84,87,90,93,96,99} → 9 values.\nAnswer: 9."
+  },
+  "6": {
+    "answer": "39",
+    "solution": "Let alloy P weigh w kg with s kg silver. Case1: (s+24)/(w+24)=0.84 → s−0.84w=−3.84.\nCase2: (s+16.2)/(w+18)=0.80 → s−0.80w=−1.8.\n→ Subtract: −0.04w=−2.04 → w=51. s=0.80×51−1.8=39.\nAnswer: 39 kg."
+  },
+  "7": {
+    "answer": "D",
+    "solution": "After swapping piece x: equal percentage requires (432-42x)(a-b)=0. Since a≠b (different alloys), 432-42x=0 → x=72/7≈10.29 kg.\n→ Not an integer; none of 8, 10, or 12 satisfies the condition.\nAnswer: D (None of these)."
+  },
+  "8": {
+    "answer": "6",
+    "solution": "After n operations: milk=64×(7/8)^n. Water>50% when (7/8)^n<0.5.\n→ n=5: (7/8)^5≈0.513>0.5 ✗. n=6: (7/8)^6≈0.449<0.5 ✓.\nAnswer: 6."
+  },
+  "9": {
+    "answer": "A",
+    "solution": "After 100L water, milk=30%. After 120L more, concentration drops 5pp to 25%.\n→ M/(M/0.3+120)=0.25 → M−(5/6)M=30 → M=180. Total=720.\n→ For 18%: 180=0.18(720+W) → 720+W=1000 → W=280.\nAnswer: A (280)."
+  },
+  "10": {
+    "answer": "D",
+    "solution": "P: jaggery fraction=3/8. Q: jaggery fraction=7/16. R=P:Q=3:2.\n→ Jaggery in R=(3×3/8+2×7/16)/5=(9/8+7/8)/5=2/5.\n→ Mix R with equal milk: jaggery=(1×2/5)/(1+1)=1/5=20%.\nAnswer: D (20%)."
+  }
+}
