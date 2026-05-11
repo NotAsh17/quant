@@ -39,7 +39,7 @@ DATA = ROOT / "data" / "questions.json"
 SOL_DIR = ROOT / "data" / "solutions"
 IMAGE_ROOT = ROOT  # paths in stem_images are like "images/<hash>/<file>"
 
-MODEL = os.environ.get("CLAUDE_MODEL", "claude-sonnet-4-5")
+MODEL = os.environ.get("CLAUDE_MODEL", "claude-sonnet-4-6")
 # Bump via:  export CLAUDE_MODEL=claude-sonnet-4-7   (latest as of 2026)
 
 PROMPT = """You are an expert CAT (Common Admission Test) Quantitative Aptitude solver.

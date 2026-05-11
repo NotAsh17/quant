@@ -170,3 +170,77 @@ cp ../question_bank_site.json /path/to/quant/docs/data/questions.json
 - **Geometry OCR has the same gap** but most Geometry questions in this set ARE MCQ (we hit 27 TITAs which is unusually high for OCR — those came from frames where no options were visible, not actual TITAs). Treat the auto-tag with some skepticism.
 - **Image-only questions**: For 247 questions, the stem is purely a CloudFront-hosted PNG (math expression or figure). Solving these requires `--vision` mode, which is more expensive than text-only.
 - **31% of all questions have at least one image** (in stem or options).
+
+---
+
+## Multi-agent / multi-account handoff protocol
+
+This project supports a hand-off across different Claude chats and different
+Claude/Anthropic accounts. Anyone with repo write access can pick up exactly
+where the previous agent left off because git is the synchronization layer.
+
+### Protocol at the start of every session
+
+```bash
+# 1. Pull latest state
+git pull
+
+# 2. See exactly what's done, partial, and what to do next
+cd docs
+py -3.11 tools/status.py
+```
+
+`status.py` prints, per topic:
+- questions answered / total
+- tests fully solved / total
+- a `✓` / `…` / `⊘` marker
+- the recommended next command
+
+It also lists partially-solved tests by id so you can resume them with no
+duplicate work — `generate_solutions.py` reads existing solution files and
+skips already-answered questions automatically.
+
+### Protocol at the end of every session
+
+```bash
+# Commit what you finished — even if you didn't finish a whole topic
+cd <repo root>
+git add docs/data/solutions
+git commit -m "solutions: <what you did>, e.g. 'Percentages & Profit-Loss 4/9 tests'"
+git push
+```
+
+### Why this works
+
+- **Solutions are committed per-file, per-test.** Each `data/solutions/<test_id>.json` is overwritten incrementally as the script answers each question. Lose the chat mid-run? Whatever was answered is on disk.
+- **`generate_solutions.py` is idempotent.** Re-running the same `--topic` or `--missing` skips:
+  - whole tests that are fully solved, and
+  - individual questions inside partially-solved tests
+- **No coordination needed.** As long as one agent runs at a time and pushes when they stop, the next agent sees correct state on `git pull`.
+
+### Example multi-agent sequence
+
+```
+Day 1 — Agent A (Account 1, ~$5 of credits left)
+  $ git pull && py docs/tools/status.py
+    → recommends "Percentages & Profit-Loss"
+  $ python docs/tools/generate_solutions.py --topic "Percentages & Profit-Loss" --vision
+    → solves 6 of 9 tests, runs out of credits mid-test 7
+  $ git add docs/data/solutions && git commit -m "P&L 6/9 done" && git push
+
+Day 2 — Agent B (Account 2 with Pro)
+  $ git pull && py docs/tools/status.py
+    → "Percentages & Profit-Loss: 6 tests full ✓, 1 partial (5/10 questions), 2 untouched"
+    → recommends continuing the same topic
+  $ python docs/tools/generate_solutions.py --topic "Percentages & Profit-Loss" --vision
+    → script reads existing solutions, skips the 65 already-done questions,
+      answers the remaining 35 (the partial test resumes from question 6)
+  $ git add docs/data/solutions && git commit -m "P&L complete, started Ratios" && git push
+```
+
+### Notes for the agent picking up
+
+- **Run `tools/status.py` first** — don't just blindly re-run `--all`, which would re-validate every test (wasteful even though it skips done ones).
+- **If `status.py` says everything's done**, jump to the "What's next" priorities in the section above (app.js rewrite, dark-mode CSS, results-screen UI).
+- **Don't change the schema** without updating `tools/status.py` too — that's the canonical state reader.
+- **Cost discipline**: a topic with vision usually runs $1.50-$4. Set an internal cap (`--limit N` if you add it) or just stop manually when you see ~30 tests done.
