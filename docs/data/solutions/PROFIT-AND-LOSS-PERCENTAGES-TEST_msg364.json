@@ -1,0 +1,42 @@
+{
+  "1": {
+    "answer": "B",
+    "solution": "Rakhi's CP=540+CP_A. SP_R=(6/7)×1.75×(CP_A+540)=1.5(CP_A+540). Rakhi profit=0.5(CP_A+540). 0.5(CP_A+540)−540=180 → 0.5·CP_A=450 → CP_A=900. Answer: B."
+  },
+  "2": {
+    "answer": "C",
+    "solution": "16 articles for price of 12; 40% discount → effective SP per article=0.6L×(12/16)=0.45L. For 20% profit: 0.45L=1.2c → L/c=8/3. % above CP=(8/3−1)×100=166.67%≈166%. Answer: C."
+  },
+  "3": {
+    "answer": "B",
+    "solution": "Votes cast=0.85×0.80×P=0.68P. A wins by 4% of votes cast=0.04×0.68P. 0.0272P=3060 → P=112500. Answer: B."
+  },
+  "4": {
+    "answer": "D",
+    "solution": "E:S=10:7 → E=10k, S=7k, I=17k. New I=25.5k, new E=12.5k, new savings=13k. Increase=6k=15000 → k=2500. New income=25.5×2500=63750. Answer: D."
+  },
+  "5": {
+    "answer": "B",
+    "solution": "b=1.4a−56, c=1.25a−50. (b−c)/c=(0.15a−6)/(1.25a−50)=0.15(a−40)/1.25(a−40)=0.12=12% (constant for all valid a). b is 12% more than c. Answer: B."
+  },
+  "6": {
+    "answer": "B",
+    "solution": "Sippy healthcare>Jazzy → 0.13S>0.10J → S>10J/13≈0.769J. For education: need 0.40S>0.30J → S>0.75J. Since 0.769>0.75, this always holds. Sippy always spends more on education. Answer: B."
+  },
+  "7": {
+    "answer": "B",
+    "solution": "SP_t=s; profit_t=0.375s → CP_t=0.625s; MP_t=s/0.8=1.25s. CP_shirt=1.6s; SP_shirt=1.25×1.6s=2s. SP_shirt−MP_t=2s−1.25s=0.75s=240 → s=320. profit_t=120; CP_shirt=512. 512−120=392. Answer: B."
+  },
+  "8": {
+    "answer": "C",
+    "solution": "Old: CP=c, MP=1.5c, SP=1.35c, profit=0.35c per unit, n units → total=0.35cn. New: CP=0.9c, SP=0.85×1.5c=1.275c, profit=0.375c, sales=1.2n → total=0.45cn. Change=(0.45−0.35)/0.35×100=28.57%. Answer: C."
+  },
+  "9": {
+    "answer": "D",
+    "solution": "CP/shirt=420/1.4=300. Anulom: paid 2200−40=2160 for 6 → SP=360; profit%=60/300=20%. Vilom: paid 3400−25=3375 for 9 → SP=375; profit%=75/300=25%. Difference=5%. Answer: D."
+  },
+  "10": {
+    "answer": "A",
+    "solution": "New CP: M=0.3×1.3=0.39, N=0.5×1.22=0.61, other=0.20 → new CP=1.20×original CP. New SP=1.10×original SP=1.10×1.20CP=1.32CP. Profit%=(1.32−1.20)/1.20×100=10%. Answer: A."
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "1": {
+    "answer": "B",
+    "solution": "Per 10m sold, merchant uses 10.25m of fabric. Revenue=10×1.2=12, cost=10.25. Net profit=1.75/10.25×100≈17.07%. Closest option: B (16.66%)."
+  },
+  "2": {
+    "answer": "C",
+    "solution": "False balance: gives 800g, charges for 1000g → effective cost=0.8 CP per 'kg'. SP=MP×0.9=1.6CP×0.9=1.44CP. Net profit=(1.44−0.8)/0.8×100=0.64/0.8×100=80%. Answer: C."
+  },
+  "3": {
+    "answer": "D",
+    "solution": "Let CP_T+CP_C=76000. Extra profit in scenario 2: (0.19−0.15)CP_T+(0.14−0.18)CP_C=960 → 0.04CP_T−0.04CP_C=960 → CP_T−CP_C=24000. Solving: CP_T=50000, CP_C=26000. Answer: D."
+  },
+  "4": {
+    "answer": "C",
+    "solution": "SP1=MP(1−X/100)=1500×1.5=2250. SP2=MP(1−2X/100)=1500×(4/3)=2000. Ratio: (1−2X/100)/(1−X/100)=8/9 → solve: X=10%. MP=2250/0.9=2500. Answer: C."
+  },
+  "5": {
+    "answer": "D",
+    "solution": "Weighted CP=(7×170+5×230)/12=2340/12=195 per kg. SP=220. Profit%=(220−195)/195×100=25/195×100≈12.82%. Answer: D."
+  },
+  "6": {
+    "answer": "17",
+    "solution": "Per 10m sold, merchant uses 10.25m. Revenue=10×1.2=12, cost=10.25. Net profit=1.75/10.25×100≈17.07% → nearest integer=17."
+  },
+  "7": {
+    "answer": "80",
+    "solution": "False balance: gives 800g, charges for 1000g → effective cost=0.8 CP. SP=1.6CP×0.9=1.44CP. Net profit=(1.44−0.8)/0.8×100=80."
+  },
+  "8": {
+    "answer": "D",
+    "solution": "CP_T+CP_C=76000. Scenario 2 earns 960 more: 0.04CP_T−0.04CP_C=960 → CP_T−CP_C=24000. Solving: CP_T=50000, CP_C=26000. Answer: D."
+  },
+  "9": {
+    "answer": "C",
+    "solution": "SP1=MP(1−X/100)=2250, SP2=MP(1−2X/100)=2000. Ratio (1−2d)/(1−d)=8/9 → d=0.1 → X=10%. MP=2250/0.9=2500. Answer: C."
+  },
+  "10": {
+    "answer": "D",
+    "solution": "Weighted CP=(7×170+5×230)/12=195/kg. SP=220. Profit%=25/195×100≈12.82%. Answer: D."
+  },
+  "11": {
+    "answer": "B",
+    "solution": "Per 10m sold, merchant uses 10.25m. Revenue=10×1.2=12, cost=10.25. Net profit=1.75/10.25×100≈17.07%. Closest option: B (16.66%)."
+  },
+  "12": {
+    "answer": "C",
+    "solution": "False balance: gives 800g, charges for 1000g → effective cost=0.8 CP. SP=1.6CP×0.9=1.44CP. Net profit=(1.44−0.8)/0.8×100=80%. Answer: C."
+  },
+  "13": {
+    "answer": "D",
+    "solution": "CP_T+CP_C=76000. 0.04CP_T−0.04CP_C=960 → CP_T−CP_C=24000. Solving: CP_T=50000, CP_C=26000. Answer: D."
+  },
+  "14": {
+    "answer": "C",
+    "solution": "SP1=MP(1−d)=2250, SP2=MP(1−2d)=2000. Ratio gives d=0.1 → X=10%. MP=2250/0.9=2500. Answer: C."
+  },
+  "15": {
+    "answer": "D",
+    "solution": "Weighted CP=(7×170+5×230)/12=195/kg. SP=220. Profit%=25/195×100≈12.82%. Answer: D."
+  },
+  "16": {
+    "answer": "339",
+    "solution": "Profit=8(1.1SP−CP), Loss=9(CP−0.9SP). Setting equal: 8.8SP−8CP=9CP−8.1SP → 16.9SP=17CP → SP/CP=170/169. gcd(170,169)=1 → A=170, B=169 → A+B=339."
+  },
+  "17": {
+    "answer": "24960",
+    "solution": "Two successive discounts: SP=MP×0.80×0.75=0.60MP. At 12.5% profit: required SP=14400×1.125=16200. Current SP=16200−1224=14976. MP=14976/0.60=24960."
+  },
+  "18": {
+    "answer": "D",
+    "solution": "L=8k, B=4k, H=3k → 4-walls area=2(L+B)H=2×12k×3k=72k². New dims: L'=2k, B'=2k, H'=6k → 2(4k)(6k)=48k². Decrease=(24/72)×100=33.33%. Answer: D."
+  },
+  "19": {
+    "answer": "C",
+    "solution": "Home loan=0.4S. Remaining=0.6S; expenses=0.4×0.6S=0.24S. Savings=0.36S; MF=7/12×0.36S=0.21S. Difference=0.4S−0.21S=0.19S=76000 → S=400000. Expenses=0.24×400000=96000. Answer: C."
+  },
+  "20": {
+    "answer": "D",
+    "solution": "Pass marks=0.45X. Sanaya falls short by 35% of pass marks: 234=0.45X×(1−0.35)=0.2925X → X=800. 800÷40=20 (integer) → X is a multiple of 40. Answer: D."
+  }
+}

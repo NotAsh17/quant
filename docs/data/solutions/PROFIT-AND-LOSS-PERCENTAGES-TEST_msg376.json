@@ -1,0 +1,42 @@
+{
+  "1": {
+    "answer": "C",
+    "solution": "SP_A=9000×0.8=7200. Total SP for 20% profit=10000×1.2=12000. SP_B=12000-7200=4800. Discount on B=(5000-4800)/5000×100=4%. Answer: C."
+  },
+  "2": {
+    "answer": "B",
+    "solution": "Total revenue for 8.33% (=1/12) profit on 480 oranges: 480c×13/12=520c. New SP per orange after 30% markup from CP: 1.3c. Unspoiled oranges n: n×1.3c=520c → n=400. Answer: B."
+  },
+  "3": {
+    "answer": "D",
+    "solution": "Highlow: 2800×(1-1/14)=2600. Flagslip (3360>3000, so extra discount applies): 3360×(1-1/8)×(1-1/15)=3360×(7/8)×(14/15)=2744. % more=(2744-2600)/2600×100=5.53%. Answer: D."
+  },
+  "4": {
+    "answer": "B",
+    "solution": "G×p=875, B×(p-10)=375, G+B=60. Substituting: 10G²-1850G+52500=0 → G²-185G+5250=0 → G=35, B=25. p=25, blue=15. Sum=40. Answer: B."
+  },
+  "5": {
+    "answer": "64",
+    "solution": "H+S=85, ratio Hp:Sq=49:16. Exchange: Hq=3136, Sp=5184. H/S=√(49×3136)/√(16×5184)=392/288=49/36 → H=49, S=36. q=3136/49=64; p=5184/36=144. Cheaper price=64."
+  },
+  "6": {
+    "answer": "C",
+    "solution": "Profit day 1=2c/25 (8% of CP). Doubles: days 2-5 = 4,8,16,32 × c/25. Total profit=62c/25. Total CP=5c. Overall%=(62c/25)/(5c)×100=49.6%. Answer: C."
+  },
+  "7": {
+    "answer": "C",
+    "solution": "Nonu: 0.6M-0.75S=6 (1). Puppy: 0.75M-0.85S=18 (2). Multiply (1) by 5/4: 0.75M-0.9375S=7.5. Subtract: 0.0875S=10.5 → S=120. From (1): M=160. Kallu=0.85×160+0.9×120=136+108=244. Answer: C."
+  },
+  "8": {
+    "answer": "B",
+    "solution": "Stats=1.4E, total=2.4E. Participants=0.6N; non=N; total=1.6N=2.4E → N=1.5E; participants=0.9E. Stats/participants=1.4E/0.9E×100=155.55%. Answer: B."
+  },
+  "9": {
+    "answer": "D",
+    "solution": "Investments 10k:7k:8k=25k. After year 1: 12k+9k+10k=31k (28.56%≈2/7 growth for bank 2: 7k×9/7=9k). Growth X=(31-25)/25=24%. Two years: 1.24²-1=0.5376=53.76%. Answer: D."
+  },
+  "10": {
+    "answer": "A",
+    "solution": "After 3 wins: (x+14000)/8. Set equal to x/2: x+14000=4x → x=14000/3. 6x=28000. Answer: A."
+  }
+}

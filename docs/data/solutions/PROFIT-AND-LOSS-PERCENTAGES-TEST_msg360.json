@@ -1,0 +1,42 @@
+{
+  "1": {
+    "answer": "C",
+    "solution": "CP×units: P=1×4=4, Q=2×3=6, R=4×2=8 → total CP=18 → Profit: P=4×15%=0.60, Q=6×25%=1.50, R=8×20%=1.60 → total profit=3.70 → overall profit%=3.70/18×100=20.56%. Answer: C."
+  },
+  "2": {
+    "answer": "4500",
+    "solution": "No net P/L → SP_A+SP_B=72000. 1.25·CP_A+0.85·CP_B=72000 and CP_A+CP_B=72000 → 0.40·CP_A=10800 → CP_A=27000, CP_B=45000 → SP_A=33750, SP_B=38250 → difference=38250−33750=4500."
+  },
+  "3": {
+    "answer": "10",
+    "solution": "Per capita = Production/Population → new per capita/old = (1.4P/Pop_new)/(P/Pop_old) = 1.27 → Pop_new=1.4/1.27×Pop_old → % increase=(0.13/1.27)×100≈10.24% → nearest integer=10."
+  },
+  "4": {
+    "answer": "C",
+    "solution": "Dry matter is conserved through processing. Juice: 150×0.80=120 t dry matter. Raw fruit is 30% dry matter → raw = 120/0.30 = 400 t. Answer: C."
+  },
+  "5": {
+    "answer": "440",
+    "solution": "CP per mango=7/4, SP per mango=13/5 → profit per mango=52/20−35/20=17/20 → number of mangoes=374÷(17/20)=374×20/17=440."
+  },
+  "6": {
+    "answer": "3250",
+    "solution": "Profit=2×Loss → (3240−CP)=2×(CP−2280) → 3240−CP=2CP−4560 → 3CP=7800 → CP=2600. SP at 25% profit=1.25×2600=3250."
+  },
+  "7": {
+    "answer": "1300",
+    "solution": "15% absent → votes cast=4000×0.85=3400. 10% invalid → valid votes=3400×0.90=3060. Ajay wins by 460 → A+V=3060, A−V=460 → V=3060−1760=1300."
+  },
+  "8": {
+    "answer": "10800",
+    "solution": "Malaika's profit (on SP)=0.25S. Arbaaz's profit (on CP): CP=S/1.25=0.8S → profit=0.25×0.8S=0.20S. Difference=0.05S=540 → S=10800."
+  },
+  "9": {
+    "answer": "B",
+    "solution": "SP_2=CP_1 and CP_1=1.25·CP_2 → CP_1+CP_2=10800 → 2.25·CP_2=10800 → CP_2=4800, CP_1=6000. SP_1=1.5×6000=9000, SP_2=1.25×4800=6000. Total profit=15000−10800=4200. Answer: B."
+  },
+  "10": {
+    "answer": "B",
+    "solution": "Small rate=4/hr → 1 small takes 0.25 hr. Big is 33.33% larger → 1 big takes 0.25×(4/3)=1/3 hr → big rate=3/hr. 2 walls: 80 big take 80/3 hr; 120 small take 30 hr. % diff=(80/3−30)/30×100=−11.11% → big requires 11.11% less time. Answer: B."
+  }
+}

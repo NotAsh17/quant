@@ -1,0 +1,42 @@
+{
+  "1": {
+    "answer": "B",
+    "solution": "Total CP=100: mfg=60, labour=40. SP=100+30%×60=118. New: mfg=102, labour=50, new CP=152. New SP=118×1.5=177. Profit%=(177−152)/152×100=25/152×100≈16.44%. Answer: B."
+  },
+  "2": {
+    "answer": "144",
+    "solution": "Let A units=5k, B units=8k per half. No gain/loss H1: 5k×0.2a=8k×0.25b → a=2b. H2 profit: 5k×0.2a+8k×0.25b=k·a+2k·b=2kb+2kb=4kb=16 → kb=4. Total CP_A=2×5k×a=20kb=80. Total CP_B=2×8k×b=16kb=64. Sum=144 lakhs."
+  },
+  "3": {
+    "answer": "B",
+    "solution": "Let initial against=A, for=F=1600−A. New against=3.5A, for=F−2.5A. Rejection margin=7A−1600. Passing margin=F−A=1600−2A. 7A−1600=1.5(1600−2A) → 10A=4000 → A=400. Answer: B."
+  },
+  "4": {
+    "answer": "A",
+    "solution": "10M+24C=18(M+C) → 6C=8M → C:M=4:3 → C=4/7×28000=16000 trees. After 24% increase: 16000×1.24=19840. Answer: A."
+  },
+  "5": {
+    "answer": "B",
+    "solution": "Per 100 oranges at CP=100: sell 30 at 0.7CP=21; 35 rotten; sell 35 at 2.5CP=87.5. Total revenue=108.5. Profit%=8.5%. Answer: B."
+  },
+  "6": {
+    "answer": "A",
+    "solution": "x+y=100, 10000x+15000y≤1200000. Maximize 2200x+3300y=220000+1100y. From budget: y≤40. Max y=40, x=60. Profit=2200×60+3300×40=132000+132000=264000=Rs.2.64 lakhs. Answer: A."
+  },
+  "7": {
+    "answer": "20",
+    "solution": "CP_A=900/1.20=750; profit_A=150. Profit_B=1.20×150=180. x% of SP=x%×900=180 → x=20."
+  },
+  "8": {
+    "answer": "D",
+    "solution": "x=1.25y. New: SP=x−200, CP=0.75y, profit 25%: x−200=1.25×0.75y=0.9375y. 1.25y−200=0.9375y → 0.3125y=200 → y=640. x=800. Answer: D."
+  },
+  "9": {
+    "answer": "A",
+    "solution": "SP_shirt=3200×0.875=2800; SP_pants=6000(1−x/100). Extra 1/7 discount: (2800+SP_pants)×6/7=6000 → 2800+SP_pants=7000 → SP_pants=4200 → x=30%. Effective pants price=4200×6/7=3600. Net discount on pants=6000−3600=2400. Answer: A."
+  },
+  "10": {
+    "answer": "C",
+    "solution": "3/4×(1250+CP_shirt)=750+CP_shirt → 3750+3CP=3000+4CP → CP=750. Discount=1/6: CP=MP×5/6 → MP=750×6/5=900. Answer: C."
+  }
+}

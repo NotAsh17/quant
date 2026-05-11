@@ -1,0 +1,42 @@
+{
+  "1": {
+    "answer": "B",
+    "solution": "Buying fraud: gets 1200g for price of 1000g (×1.2). Selling fraud: charges for 1000g but gives 800g (×1.25). Markup 40% (×1.4). Discount 10% (×0.9). Net=1.2×1.25×1.4×0.9=1.89 → 89% profit. Answer: B."
+  },
+  "2": {
+    "answer": "B",
+    "solution": "CP each=P. SP1=1.12P; SP2=1.12P+16975; SP3=1.12P+31775. Total SP=3.75P (25% net profit on 3P). 3.36P+48750=3.75P → P=125000. SP3=140000+31775=171775. Answer: B."
+  },
+  "3": {
+    "answer": "D",
+    "solution": "CP/item=100, MP=140, total cost=8000. Revenue 30 items (10% disc)=3780; 20 items (20% disc)=2240; total=6020. Remaining 30 items must cover 1980. Break-even discount: 4200×(1−d/100)=1980 → d=52.86%≈53%. Answer: D."
+  },
+  "4": {
+    "answer": "D",
+    "solution": "Sumit SP: 2k(1+y/100)(1−y/400)=2k(1+3y/400−y²/40000). Profit_S=2k×n×(3y/400−y²/40000). Profit_M=3k×n×y/300=kny/100. Setting equal: 2(3y/400−y²/40000)=y/100 → 3/200−y/20000=1/100 → y=100. Answer: D."
+  },
+  "5": {
+    "answer": "B",
+    "solution": "SP_W−SP_R=2625: 15000(1−(d−5)/100)−12500(1−d/100)=2625 → 3250−25d=2625 → d=25. Answer: B."
+  },
+  "6": {
+    "answer": "C",
+    "solution": "New volume=(0.75)²×0.90×V=0.50625V → new CP=0.50625CP. New SP=0.90×1.25CP=1.125CP. New profit%=(1.125−0.50625)/0.50625×100=122.22%. Increase=122.22−25=97.22 pp. Answer: C."
+  },
+  "7": {
+    "answer": "50",
+    "solution": "Total profit (CP=1)=[n²+(100−n)²]/100=2n²−200n+10000)/100. Minimize: d/dn(2n²−200n)=4n−200=0 → n=50."
+  },
+  "8": {
+    "answer": "C",
+    "solution": "End-of-day laptops=720−x+0.7x=720−0.3x≥630 → 0.3x≤90 → x≤300. Max rented=300. %=300/720×100=41.67%. Answer: C."
+  },
+  "9": {
+    "answer": "B",
+    "solution": "Total=100, managers=30. Managers chicken=0.9×30=27. Total chicken=60. Non-manager chicken=60−27=33. %=33/70×100=47.14%. Answer: B."
+  },
+  "10": {
+    "answer": "B",
+    "solution": "Ben=100. Anya initial=85, new=85×1.1=93.5. Cara initial=120, new=120×0.9=108. Cara/Anya=108/93.5×100≈115.5%. Answer: B."
+  }
+}

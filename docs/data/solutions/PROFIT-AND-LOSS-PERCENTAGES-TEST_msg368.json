@@ -1,0 +1,42 @@
+{
+  "1": {
+    "answer": "A",
+    "solution": "MP_Abra=5k, MP_Babra=9k. SP_Babra=9k×0.75×0.80=5.4k. SP_Abra=5.4k×(2/3)=3.6k. 5k×0.9×(1−a/100)=3.6k → (1−a/100)=0.8 → a=20%. Answer: A."
+  },
+  "2": {
+    "answer": "D",
+    "solution": "New SP=old SP+12150. Old SP=0.75CP (25% loss); new SP=1.25CP (25% gain). 0.75CP+12150=1.25CP → CP=24300. No constraint on MP → ratio CP:MP cannot be determined. Answer: D."
+  },
+  "3": {
+    "answer": "C",
+    "solution": "SP1=0.80CP1, SP2=0.85CP2. SP1=SP2 → CP1=(17/16)CP2. (17/16)CP2+CP2=3465 → 33CP2/16=3465 → CP2=1680, CP1=1785. SP=0.80×1785=1428. Answer: C."
+  },
+  "4": {
+    "answer": "D",
+    "solution": "Profit=18⁢²/₆₁% of SP → profit/SP=11/61 → CP/SP=50/61 → SP=1.22CP. New: CP'=0.92CP, SP'=1.22CP−1008=1.18×0.92CP=1.0856CP → 0.1344CP=1008 → CP=7500. Not in options. Answer: D (None of these)."
+  },
+  "5": {
+    "answer": "D",
+    "solution": "CP=4800. SP_S=7680×0.75×(1−x/100)=5760(1−x/100). SP_V=6240×(1−x/100). |SP_S−SP_V|=480(1−x/100)=384 → 1−x/100=0.8 → x=20%. Answer: D."
+  },
+  "6": {
+    "answer": "B",
+    "solution": "Revenue=12000×50=600000. If 20% fail, 9600 sell: 9600×50=480000=1.25CP → CP=384000. If 50% fail, 6000 sell: revenue=300000. Loss=384000−300000=84000. Answer: B."
+  },
+  "7": {
+    "answer": "D",
+    "solution": "Let CP=x. New scenario: CP'=0.84x, SP'=1.12x+392, profit 40% → 1.40×0.84x=1.176x=1.12x+392 → 0.056x=392 → x=7000. SP=1.12×7000=7840. Answer: D."
+  },
+  "8": {
+    "answer": "D",
+    "solution": "120 → ×0.9 → 108 → ×0.9 → 97.2 → +10 → 107.2 → ×0.8 → 85.76 → ×0.8 → 68.608≈68.61 kg. Answer: D."
+  },
+  "9": {
+    "answer": "A",
+    "solution": "Senior=70%, junior=30%. Senior funds=80%F at avg 2400: 70×2400=0.80F → F=210000. Junior funds=42000 among 30 members → avg=42000/30=1400. Answer: A."
+  },
+  "10": {
+    "answer": "C",
+    "solution": "2019: multiplier=(17+4)/17=21/17. 2020: multiplier=(7+3)/7=10/7. Price=10×(21/17)×(10/7)=300/17. Value=85×300/17=1500. Dividend=85×(10%×10)=85. Total=1585. Gain%=(1585−850)/850×100=86.47%. Answer: C."
+  }
+}
