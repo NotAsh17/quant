@@ -1,0 +1,42 @@
+{
+  "1": {
+    "answer": "B",
+    "solution": "Cake ratio 6:12:7 (total 25x); samosa ratio 9:14:32 (total 55y). Equal totals: 25x=55y → x=11y/5.\n→ Jumbo cakes = 7×11y/5 = 77y/5; super samosas = 14y.\n→ Ratio = 77/5 : 14 = 77:70 = 11:10.\nAnswer: B (11:10)."
+  },
+  "2": {
+    "answer": "B",
+    "solution": "14 horse leaps per 5 dog leaps. 6 dog leaps = 7 horse leaps → horse leap = 6/7 dog-length.\n→ Speed horse = 14×(6/7) = 12 dog-lengths/unit. Speed dog = 5 dog-lengths/unit.\n→ Ratio = 12:5.\nAnswer: B (12:5)."
+  },
+  "3": {
+    "answer": "B",
+    "solution": "Jasmine:Sunflower = 5⁷⁄₉:2 = 52/9:2 = 26:9. Total flowers = 35k. Total with thorns = 4/7×35k = 20k.\nSunflower thorns = 0.6×9k = 5.4k. Jasmine without thorns = 26k − (20k−5.4k) = 11.4k.\n→ Ratio = 11.4k:5.4k = 114:54 = 19:9.\nAnswer: B (19:9)."
+  },
+  "4": {
+    "answer": "A",
+    "solution": "V ∝ t×d². V1/V2 = (t1/t2)×(d1/d2)² → 10/3 = (t1/t2)×(6/5)².\n→ t1/t2 = (10/3)×(25/36) = 250/108 = 125/54. a+b = 125+54 = 179.\nAnswer: A (179)."
+  },
+  "5": {
+    "answer": "D",
+    "solution": "h = k√a. At age 25: 3 = k×5 → k = 3/5.\n→ At age 36: h = (3/5)×6 = 18/5 = 3.6 feet.\nAnswer: D (3.6)."
+  },
+  "6": {
+    "answer": "C",
+    "solution": "Fixed + variable: F+6V=800 and F+5V=700 → V=100, F=200.\n→ Charges for 10 hours = 200+10×100 = 1200.\nAnswer: C (₹1200)."
+  },
+  "7": {
+    "answer": "D",
+    "solution": "P=Q/4, Q=3R → P=3R/4. P+Q = 3R/4+3R = 15R/4.\n→ R:(P+Q) = R:15R/4 = 4:15.\nAnswer: D (4:15)."
+  },
+  "8": {
+    "answer": "B",
+    "solution": "Total cost = 6m×4k + 7m×5k = 59km (must be a multiple of 59).\n→ 56 is not a multiple of 59 ✗; 118 = 2×59 ✓; 472 = 8×59 ✓.\n→ 118 is a valid achievable value.\nAnswer: B (118)."
+  },
+  "9": {
+    "answer": "B",
+    "solution": "Present: man=5x, son=x. After 5yr: (5x+5)/(x+5)=4 → x=15. Man=75, son=15.\n→ After 10 more years from now: man=85, son=25. Ratio = 85:25 = 17:5.\nAnswer: B (17:5)."
+  },
+  "10": {
+    "answer": "A",
+    "solution": "Boys:Girls = 5k:7k. Bearded boys = 2/5 × 5k = 2k.\n→ Bearded boys:Girls = 2k:7k = 2:7 (simplest form). k×m = 2×7 = 14.\nAnswer: A (14)."
+  }
+}

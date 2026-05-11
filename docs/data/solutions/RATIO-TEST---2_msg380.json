@@ -1,0 +1,42 @@
+{
+  "1": {
+    "answer": "D",
+    "solution": "New fraction = 1.4n / (d − 0.1n). '2/3 times greater' means new = 5/3 × original.\n→ 1.4n/(d−0.1n) = 5n/(3d) → 1.4×3d = 5(d−0.1n) → 4.2d = 5d − 0.5n → n = 1.6d.\n→ n/d = 160%.\nAnswer: D (160%)."
+  },
+  "2": {
+    "answer": "B",
+    "solution": "A exhausted in 4h → rate_A = L/4 per hour. After 3h: A has L/4.\nB length after 3h = 2×(L/4) = L/2 → rate_B = (L − L/2)/3 = L/6 per hour.\nAfter 4.5h: B = L − 4.5×(L/6) = L − 3L/4 = L/4.\nAnswer: B (L/4)."
+  },
+  "3": {
+    "answer": "C",
+    "solution": "11p₁ = 14p₂ = 1.6p₃ = k → p₁=k/11, p₂=k/14, p₃=5k/8.\n→ k(1/11+1/14+5/8) = 3880 → k×485/616 = 3880 → k = 4928.\n→ p₁ = 448, p₃ = 3080. Sum = 3528. None of the given options.\nAnswer: C (None of these; 3528)."
+  },
+  "4": {
+    "answer": "B",
+    "solution": "Investments a, 2a, 4a, 8a, 16a; total = 31a. 162 must equal some 2ⁿ×a.\n→ a = 162/2 = 81 gives all integers; a = 162/4 = 40.5 (invalid). Minimum a = 81.\n→ Minimum total = 31×81 = 2511.\nAnswer: B (2511)."
+  },
+  "5": {
+    "answer": "D",
+    "solution": "Mix1 coffee:chicory 7:3 at 15% profit: (7C+3P)/10 = 3000/1.15 = 60000/23.\nMix2 chicory:coffee 1:3 at 10% profit: (3C+P)/4 = 3000/1.1 = 30000/11.\n→ Solving the system: C = 840000/253, P = 240000/253. C:P = 7:2.\n→ None of the given options.\nAnswer: D (None of these; coffee:chicory = 7:2)."
+  },
+  "6": {
+    "answer": "B",
+    "solution": "Initial 9L: milk=8, water=1. Cost=8×CP_milk. SP=9×CP_milk. Profit%=1/8=12.5%.\nAfter replacing 1/3 with water: milk=16/3. Cost=(16/3)×CP_milk. SP=9×CP_milk. Profit%=11/16=68.75%.\n→ Ratio = 12.5 : 68.75 = 2 : 11.\nAnswer: B (2:11)."
+  },
+  "7": {
+    "answer": "C",
+    "solution": "GP ratio x:y:z=1:r:r². Price equation: 32+17r+36r²=30(1+r+r²) → 6r²−13r+2=0 → r=2.\n→ Ratio Cu:Fe:Zn = 1:2:4. Mixed as x:z:y = 1:4:2:\n→ Price = (32×1+17×4+36×2)/7 = 172/7 = 24.57.\nAnswer: C (24.57)."
+  },
+  "8": {
+    "answer": "D",
+    "solution": "Initial: M managers, 4M workers; total salary = M×4w + 4M×w = 8Mw.\nWorkers doubled to 8M; total salary unchanged. Ratio s_m:s_w = 4:1 maintained.\n→ M×4s_w + 8M×s_w = 8Mw → 12s_w = 8w → s_w = 2w/3, s_m = 8w/3.\n→ Manager salary decrease = (4w − 8w/3)/4w = (4/3w)/(4w) = 33.33%.\nAnswer: D (None of these; 33.33%)."
+  },
+  "9": {
+    "answer": "D",
+    "solution": "Cell 4 (thinks 1st): takes 4/15 T. Cell 5 (thinks 1st): takes 5/15 T. Remaining = 6/15 T = 2T/5.\nCell 6 (thinks 2nd after cell 4): expects remaining = 11/15 T; takes 6/11 × 11/15 T = 6/15 T = 2T/5.\n→ Actual remaining = 2T/5 − 2T/5 = 0. None of the given options.\nAnswer: D (None of these; 0 remaining)."
+  },
+  "10": {
+    "answer": "C",
+    "solution": "X consecutive integers summing to 55: X×(2a+X−1) = 110. X must divide 110 and have opposite parity to k=110/X.\n→ Valid X ≥ 2: {2, 5, 10, 11, 22, 55, 110}. Max X = 110, Min X = 2.\n→ Ratio = 110:2 = 55:1.\nAnswer: C (55:1)."
+  }
+}

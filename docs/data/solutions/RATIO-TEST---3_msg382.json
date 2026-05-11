@@ -1,0 +1,42 @@
+{
+  "1": {
+    "answer": "B",
+    "solution": "GP with common ratio 8/5: A:B:C:D = 5³:5²×8:5×8²:8³ = 125:200:320:512, total = 1157.\n→ Unit = 8099/1157 = 7. D = 512×7 = 3584.\nAnswer: B (₹3584)."
+  },
+  "2": {
+    "answer": "D",
+    "solution": "Working backwards from final equal n each: d=3n/4, c=3n/4, b=7n/6, a=4n/3.\n→ a − c = 4n/3 − 3n/4 = 7n/12 = 280 → n = 480.\n→ B + D initially = 7×80 + 3×120 = 560 + 360 = 920. None of the options.\nAnswer: D (None of these; 920)."
+  },
+  "3": {
+    "answer": "A",
+    "solution": "Incomes 7k,9k,12k,15k; expenditures 11m,14m,17m,24m. D saves 100% more than A:\n→ 15k−24m = 2(7k−11m) → k = 2m.\n→ B saves 9(2m)−14m = 4m. C saves 12(2m)−17m = 7m.\n→ % more = (7m−4m)/4m×100 = 75%.\nAnswer: A (75%)."
+  },
+  "4": {
+    "answer": "B",
+    "solution": "Eldest:Second = 6:5; Second:Third = 7:4. Second = LCM(5,7) = 35 parts. Total ratio = 42:35:20 = 97.\n→ Minimum total ≥ 1000: ⌈1000/97⌉ = 11. Minimum total = 1067.\n→ Second son = 35×11 = 385.\nAnswer: B (385)."
+  },
+  "5": {
+    "answer": "B",
+    "solution": "Cost = 2×3 + 3×7 + 5×9 = 72. SP = 72×1.375 = 99. Profit = 27.\nNew costs: A=6×(4/3)=8, B=21×(6/5)=25.2, C=45×(11/9)=55. New total CP = 88.2.\n→ New SP for same profit = 88.2+27 = 115.2. % increase = (115.2−99)/99×100 ≈ 16%.\nAnswer: B (≈16%)."
+  },
+  "6": {
+    "answer": "D",
+    "solution": "Brother k gets kx+k. 11th:1st = 11(x+1):x = 12:1 → 11x+11=12x → x=11.\n→ 7th brother = 7×11+7 = 84.\nAnswer: D (₹84)."
+  },
+  "7": {
+    "answer": "B",
+    "solution": "When B reaches A's age: (2A−B):(C+A−B)=35:24 → 13A+11B=35C.\nWhen A was C's age: (B−A+C):(2C−A)=7:4 → 3A+4B=10C. Substituting: 13A+11B=35(3A+4B)/10.\n→ 130A+110B=105A+140B → 25A=30B → A:B=6:5.\nAnswer: B (6:5)."
+  },
+  "8": {
+    "answer": "A",
+    "solution": "Coins: 3k, 5k, 8k. Amount = 3k+2.5k+2k = 7.5k = 97.5 → k=13. Coins: 39, 65, 104.\nNew coins: 39×4/3=52, 65×6/5=78, 104×11/8=143. New amount = 52+39+35.75 = 126.75.\n→ % increase = (126.75−97.5)/97.5×100 = 30%.\nAnswer: A (30%)."
+  },
+  "9": {
+    "answer": "C",
+    "solution": "2A=3B=5C=9D=k → A=k/2, B=k/3, C=k/5, D=k/9.\n→ K = k(1/2+1/3+1/5+1/9) = k×103/90. For all to be integers: k = 90.\n→ Minimum K = 103.\nAnswer: C (103)."
+  },
+  "10": {
+    "answer": "C",
+    "solution": "Bag A 50p coins = 3k; Bag B 50p coins = 10m. Money A/B = 4.75k/21.5m = 95/172 → k/m = 2.5.\n→ With m=2, k=5: Bag A has 15 fifty-paisa coins; Bag B has 20.\n→ % less = (20−15)/20×100 = 25%.\nAnswer: C (25%)."
+  }
+}

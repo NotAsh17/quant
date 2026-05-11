@@ -1,0 +1,42 @@
+{
+  "1": {
+    "answer": "D",
+    "solution": "AP {5k,6k,7k,8k}: v1+v4=v2+v3 → 5k+8m=6k+7m → m=k. After 2yr: (6k+2)/(7k+2)=7/8 → 48k+16=49k+14 → k=2.\n→ A=12,B=10,C=14,D=16. D(5yr ago)=11, B(5yr ago)=5. Ratio=11:5.\nAnswer: D (11:5)."
+  },
+  "2": {
+    "answer": "A",
+    "solution": "Old A=8k, B=5k, C=7k. New ratio 7:6:9 scaled to same A: B_new=48k/7, C_new=72k/7.\n→ Increase in B = 48k/7−5k = 13k/7. Increase in C = 72k/7−7k = 23k/7.\n→ Ratio B increase : C increase = 13:23.\nAnswer: A (13:23)."
+  },
+  "3": {
+    "answer": "120",
+    "solution": "(3x+30):(4x+30) = 6:7 → 7(3x+30)=6(4x+30) → 21x+210=24x+180 → x=10.\n→ Initial total = 12×10 = 120.\nAnswer: 120."
+  },
+  "4": {
+    "answer": "C",
+    "solution": "After 6 days: (8N−6a):(5N+6a/7)=62:71 → a=7N/13.\nAfter d more days: (62N/13−7Nd/13):(71N/13+Nd/13) = 6:79.\n→ 79(62−7d)=6(71+d) → 4898−553d=426+6d → d=8.\nAnswer: C (8)."
+  },
+  "5": {
+    "answer": "37",
+    "solution": "a=2t, b=3t, c=4s, d=7s. c−a=2: 4s−2t=2 → t=2s−1. d−b=5: 7s−3(2s−1)=5 → s=2, t=3.\n→ a=6, b=9, c=8, d=14. Sum=37.\nAnswer: 37."
+  },
+  "6": {
+    "answer": "330",
+    "solution": "(10x+y)/(10y+x)=23/32 → 297x=198y → y=3x/2. Valid: x=2→y=3, x=4→y=6, x=6→y=9.\n→ All 6 numbers: 23+32+46+64+69+96 = 330.\nAnswer: 330."
+  },
+  "7": {
+    "answer": "A",
+    "solution": "|A|+|B|+|C| = 95. |A∩B|+|A∩C|+|B∩C| = 95+15−42 = 68. |A∩B∩C| = 15.\n→ Exactly 2 = 68−3×15 = 23. More than 1 = 23+15 = 38. Against none = 58.\n→ Ratio = 38:58 = 19:29.\nAnswer: A (19:29)."
+  },
+  "8": {
+    "answer": "600",
+    "solution": "Total = 18600; ratio 28:16:18 → B earns 4800. Per-person ratio 7:4:2.\nnA×7r=8400, nB×4r=4800, nC×2r=5400. Sum: 5100/r=34 → r=150.\n→ Individual B earning = 4×150 = 600.\nAnswer: ₹600."
+  },
+  "9": {
+    "answer": "B",
+    "solution": "Shan=3s; Simran=3s−1. S−3=d+s → d=2s−4. 5yr hence: (d+5):(s+5)=11:6 → 6d−11s=25.\n→ 6(2s−4)−11s=25 → s=49. d=2×49−4=94.\nVerify: Simran=146, Shan=147=3×49✓; after 5yr: 99:54=11:6✓.\nAnswer: B (94)."
+  },
+  "10": {
+    "answer": "C",
+    "solution": "D gets 20% as salary + share from remaining. Distribution C:D=4:7 (includes salary).\nD total=7y/11. D salary=y/5=11y/55. D profit share=7y/11−y/5=24y/55.\n→ Difference=|11y/55−24y/55|=13y/55=390000 → y=16.5 lakhs.\nAnswer: C (16.5)."
+  }
+}

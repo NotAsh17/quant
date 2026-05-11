@@ -1,0 +1,42 @@
+{
+  "1": {
+    "answer": "A",
+    "solution": "Build ratio chain: A=1, B=4/5, C=(4/3)×(4/5)=16/15, D=(11/15)×(16/15)=176/225.\n→ Multiply by 225: A:B:C:D = 225:180:240:176, total = 821.\n→ Unit = 6568/821 = 8. A = 225×8 = 1800₹ = 180000p; D = 176×8 = 140800p.\n→ Difference = 180000 − 140800 = 39200 paisa.\nAnswer: A (39200)."
+  },
+  "2": {
+    "answer": "C",
+    "solution": "P:Q = 1/5 : 1/8 = 8:5 and Q:R = 1/5 : 1/8 = 8:5.\n→ P:Q:R = 64:40:25. P − R = 39k = 507 → k = 13.\n→ Total = (64+40+25)×13 = 129×13 = 1677.\nAnswer: C (1677)."
+  },
+  "3": {
+    "answer": "B",
+    "solution": "Let persons ahead of Mohan = 3x, behind Sohan = 4x.\n→ Total = 3x + 1 + 5 + 1 + 7 + 1 + 4x = 7x + 15 ≤ 88 → x ≤ 10.\n→ Maximum persons behind Sohan = 4×10 = 40.\nAnswer: B (40)."
+  },
+  "4": {
+    "answer": "D",
+    "solution": "Male:Female = 7:5. Sports journalists: male = 62.5%×7 = 4.375; female = 37.5%×5 = 1.875.\n→ Total in sports = 6.25 out of 12. Percentage = 6.25/12×100 ≈ 52.08% ≈ 52%.\nAnswer: D (52%)."
+  },
+  "5": {
+    "answer": "D",
+    "solution": "A:B = 2:3, B:C = 4:5 → A:B:C = 8:12:15. D:C = 4:3 → D = 20. E:D = 6:5 → E = 24.\n→ (C+D) − (A+B) = 35k − 20k = 15k = 36000 → k = 2400.\n→ E = 24×2400 = 57600.\nAnswer: D (₹57600)."
+  },
+  "6": {
+    "answer": "D",
+    "solution": "Intended ratio 3:4:8:9 (sum 24); reciprocal ratio 24:18:9:8 (sum 59). K must be divisible by LCM(24,59)=1416.\n→ A intended = 1416×3/24 = 177. A reciprocal = 1416×24/59 = 576.\n→ Gain = 576 − 177 = 399. None of the options match.\nAnswer: D (None of these; gain = 399)."
+  },
+  "7": {
+    "answer": "D",
+    "solution": "Let rope = 17 units; largest = 9. Smallest = 9×(3/7) = 27/7.\n→ Middle = 17 − 9 − 27/7 = 29/7.\n→ Middle : Smallest = 29/7 : 27/7 = 29:27.\nAnswer: D (29:27)."
+  },
+  "8": {
+    "answer": "A",
+    "solution": "2A/3=3B/5=4C/9=k → A=3k/2, B=5k/3, C=9k/4. 4B/5=2D/9=5E/8=m → D=9m/2, E=8m/5.\nLink: B=5k/3=5m/4 → k/m=3/4. Min integers: t=20, k=60, m=80.\n→ A=90, B=100, C=135, D=360, E=128. A+D−B−C−E = 450−363 = 87.\nAnswer: A (87)."
+  },
+  "9": {
+    "answer": "D",
+    "solution": "14 years ago: F=7k, S=2k. 26 years hence: (7k+40):(2k+40)=12:7.\n→ 49k+280=24k+480 → k=8. Present: F=70, S=30.\n→ F − 2S = 70 − 60 = 10. None of the given options.\nAnswer: D (None of these; answer is 10)."
+  },
+  "10": {
+    "answer": "C",
+    "solution": "For abc = cba: 100a+c = 100c+a → a = c. So number is of form aba.\n→ a ∈ {1,...,9} (9 choices), b ∈ {0,...,9} (10 choices). Total = 90.\nAnswer: C (90)."
+  }
+}

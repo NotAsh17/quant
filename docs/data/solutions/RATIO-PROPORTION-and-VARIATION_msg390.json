@@ -1,0 +1,42 @@
+{
+  "1": {
+    "answer": "380",
+    "solution": "H ∝ (T−37)^(1/3). At T=64: excess=27, H=k×3=27 → k=9.\n→ At H=63: 63=9(T−37)^(1/3) → (T−37)^(1/3)=7 → T−37=343 → T=380.\nAnswer: 380°C."
+  },
+  "2": {
+    "answer": "B",
+    "solution": "d ∝ 1/w². Pieces: 2x,3x,4x,6x. Sum of distances = (k/x²)(1/4+1/9+1/16+1/36) = 65k/(144x²) = 130.\n→ k/x² = 288. Unbroken stone weight = 15x: d = 288/225 = 1.28 m.\nAnswer: B (1.28 m)."
+  },
+  "3": {
+    "answer": "78608",
+    "solution": "V ∝ w³. Original weight 17k; pieces 2k,3k,5k,7k. Original value = 4913ck³.\nPieces total = ck³(8+27+125+343) = 503ck³. Loss = 4410ck³ = 70560 → ck³ = 16.\n→ Original = 4913×16 = 78608.\nAnswer: ₹78608."
+  },
+  "4": {
+    "answer": "B",
+    "solution": "3A=4B=5C=60m → A=20m, B=15m, C=12m. 6C=72m=8D=9E → D=9m, E=8m.\nI: AB/C=20m×15m/12m=25m (integer ✓). II: DC/B=108m/15=7.2m (✗). III: EB/D=120m/9 (✗). IV: AD/B=12m (✓).\n→ 2 statements always true.\nAnswer: B (2)."
+  },
+  "5": {
+    "answer": "5",
+    "solution": "y=k(x⁵−11). At x=3: y=3×(1+26/3)=29. k×232=29 → k=1/8.\n→ y=389.25: x⁵−11=389.25×8=3114 → x⁵=3125=5⁵ → x=5.\nAnswer: 5."
+  },
+  "6": {
+    "answer": "680",
+    "solution": "F+448V=3480; F+688V=4980. 240V=1500 → V=6.25.\n→ F=3480−448×6.25=3480−2800=680.\nAnswer: ₹680."
+  },
+  "7": {
+    "answer": "A",
+    "solution": "Stmt I: A/(B+C+D)=K → A=KS/(1+K). Solutions: A=B=C=D → K=1/3; or S=0 → K=−1. Sum=−2/3 ✓.\nStmt II: A/(S−2A)=K → solutions K=1/2 (S≠0) or K=−1/2 (S=0). Sum=0 ≠ 1/2 ✗.\nAnswer: A (Only I)."
+  },
+  "8": {
+    "answer": "5000",
+    "solution": "A=56000/4=14000 (A=1/3 of others → 4A=56000/1 wait: A=(1/3)(56000−A) → A=14000).\nB=(2/5)(56000−B) → B=16000. C=(3/5)(56000−C) → C=21000.\n→ D=56000−14000−16000−21000=5000.\nAnswer: ₹5000."
+  },
+  "9": {
+    "answer": "A",
+    "solution": "Men-black=4a, women-red=9a; men-red=5b, women-black=4b.\n→ (4a+4b):(5b+9a)=20:33 → 132a+132b=100b+180a → b=3a/2.\nWith a=2, b=3: men=4(2)+5(3)=23; women=9(2)+4(3)=30. Ratio=23:30.\nAnswer: A (23:30)."
+  },
+  "10": {
+    "answer": "A",
+    "solution": "Incomes R:M:S=5k:6k:8k. Mukesh saves 3/8×6k=9k/4. Savings ratio 3:4:5 → unit=9k/16.\nR saves 27k/16, S saves 45k/16. Expenditures: R=5k−27k/16=53k/16; M=6k−9k/4=60k/16; S=8k−45k/16=83k/16.\n→ Ratio = 53:60:83.\nAnswer: A (53:60:83)."
+  }
+}

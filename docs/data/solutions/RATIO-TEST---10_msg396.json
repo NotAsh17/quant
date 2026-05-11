@@ -1,0 +1,42 @@
+{
+  "1": {
+    "answer": "A",
+    "solution": "Statement I: 900/(n−10) − 900/n = 15 → n²−10n−600=0 → n=30 (unique). Sufficient.\nStatement II: n≥25 and 900/n≤45 → n≥20, n≥25. Multiple values possible. Not sufficient.\nAnswer: A (I alone)."
+  },
+  "2": {
+    "answer": "C",
+    "solution": "Total distance = 38×2+48×3 = 220 km. Deepanshi drives equal thirds = 220/3 km at 35, 45, 55 km/h.\nMileage: 35→20, 45→28, 55→20 km/L. Diesel = (220/3)(1/20+1/28+1/20) = (220/3)(19/140) = 4180/420 ≈ 9.952 ≈ 9.9 L.\nAnswer: C (9.9 litres)."
+  },
+  "3": {
+    "answer": "A",
+    "solution": "To minimize diesel over 220 km, maximize mileage → drive at 45 km/h (28 km/L).\n→ Diesel = 220/28 = 55/7 ≈ 7.857 ≈ 7.85 L.\nAnswer: A (7.85 litres)."
+  },
+  "4": {
+    "answer": "D",
+    "solution": "(a+5)/(b+5)<a/b ↔ b<a. Stmt I: a=56<b=81 → no. Stmt II: avg<b → a<b → no (answers it). Stmt III: a>b → yes.\nEach statement alone answers the question. Any one is sufficient.\nAnswer: D (Any one of them)."
+  },
+  "5": {
+    "answer": "3",
+    "solution": "Foreign(t)=6×(5/2)^t; Native(t)=18×(3/2)^t. Foreign>Native: (5/3)^t>3.\nt=2: (5/3)²=2.78<3 ✗. t=3: (5/3)³=4.63>3 ✓.\nAnswer: 3 months."
+  },
+  "6": {
+    "answer": "B",
+    "solution": "F+2V=4; F+4V=6.5. → 2V=2.5 → V=1.25, F=1.5.\n→ Charges for 5 hours = 1.5+5×1.25 = 7.75 lakhs.\nAnswer: B (₹7.75 Lakh)."
+  },
+  "7": {
+    "answer": "C",
+    "solution": "h = k√age. At age 9: 15=3k → k=5.\n→ At age 49: h=5×√49=5×7=35 feet.\nAnswer: C (35 feet)."
+  },
+  "8": {
+    "answer": "D",
+    "solution": "V ∝ t×r². V1/V2=(t1/t2)×(d1/d2)²=11/5. d1:d2=7:3.\n→ 11/5=(t1/t2)×49/9 → t1/t2=99/245.\nAnswer: D (99:245)."
+  },
+  "9": {
+    "answer": "B",
+    "solution": "V ∝ d²×t. V1/V2=(d1/d2)²×(t1/t2)=9. d1:d2=5:4.\n→ 9=(25/16)×(t1/t2) → t1/t2=9×16/25=144/25.\nAnswer: B (144:25)."
+  },
+  "10": {
+    "answer": "A",
+    "solution": "Elk:Deer=5:6, antler:no-antler=7:3. Deer without antler=210. With 3/4 of deer having antlers: k=140.\n→ Elk=700, deer with antler=630, elk with antler=448. No-antler total=462; elk without=252; deer without=210 ✓.\n→ Difference=448−210=238.\nAnswer: A (238)."
+  }
+}

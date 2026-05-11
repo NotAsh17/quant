@@ -1,0 +1,42 @@
+{
+  "1": {
+    "answer": "42",
+    "solution": "A's effective = Σ_{n=1}^{12}[3000+1500(n−1)] = 36000+1500×66 = 135000.\nB adds 3000 at months 3,5,7,9,11 → effective = 2(3+6+9+12+15+18)×1000 = 126000.\nC adds 4500 at months 4,7,10 → effective = 3(3+7.5+12+16.5)×1000 = 117000.\n→ Ratio = 135:126:117 = 15:14:13. p+q+r = 15+14+13 = 42.\nAnswer: 42."
+  },
+  "2": {
+    "answer": "D",
+    "solution": "A: 12000×3+15000×3+18000×3+21000×3 = 198000.\nB: 18000×3+21000×3+24000×3+15000×3 = 234000 (withdraws 9000 end of month 9).\nC: 24000×3+21000×3+18000×3+21000×3 = 252000 (withdraws 3000 ends of months 3,6; adds 3000 start month 10).\n→ Ratio = 198:234:252 = 11:13:14. B's share = 13/38×15200 = 5200.\nAnswer: D (₹5200)."
+  },
+  "3": {
+    "answer": "7",
+    "solution": "Investment ratio = 11100:18500:33300 = 3:5:9. Total = 17 parts.\nRohan manages m months; Mohan manages (12−m) months. Commission = 10% of 40800 = 4080.\nRohan's commission = m/12×4080 = 340m. Rohan's profit share = 9/17×36720 = 19440.\n→ 340m + 19440 = 21820 → 340m = 2380 → m = 7.\nAnswer: 7."
+  },
+  "4": {
+    "answer": "C",
+    "solution": "P takes 1/6 of profit T as salary; remaining 5T/6 split in investment ratio P:Q.\nQ's actual = (Q/(P+Q))×5T/6. Q's hypothetical = (Q/(P+Q))×T.\n→ Difference = (Q/(P+Q))×T/6 = 6789 → (Q/(P+Q))×T = 40734.\n→ Q's actual = 40734×5/6 = 33945.\nAnswer: C (₹33945)."
+  },
+  "5": {
+    "answer": "7",
+    "solution": "Raj's effective = 12000×12 = 144000. Kumar's = 18000k. Hirani's = 24000k.\nCondition: Kumar < Raj < Hirani.\n→ 18000k < 144000 → k < 8; and 144000 < 24000k → k > 6.\n→ Only integer k = 7.\nAnswer: 7."
+  },
+  "6": {
+    "answer": "74000",
+    "solution": "Investment ratio = 64:84 = 16:21. Actual plan: T/2 split equally + T/2 split 16:21.\nSohan actual = T/4 + 21/37×T/2. Sohan hypothetical = 21/37×T.\n→ Difference = 21/37×T/2 − T/4 = T(42−37)/148 = 5T/148 = 2500.\n→ T = 2500×148/5 = 74000.\nAnswer: ₹74000."
+  },
+  "7": {
+    "answer": "A",
+    "solution": "Investment ratio = 72000:84000:96000 = 6:7:8. A takes 25% of T as salary; remaining 75% split 6:7:8.\nA's total = T/4 + 6/21×3T/4 = T/4 + 3T/14 = 13T/28 = 11700 → T = 25200.\n→ B's share = 7/21×0.75×25200 = 6300.\nAnswer: A (₹6300)."
+  },
+  "8": {
+    "answer": "C",
+    "solution": "A: 35000×12 = 420000. B: 24000×7 = 168000 (joined after 5 months). C: 49000×4 = 196000 (joined after 8 months).\n→ Ratio = 420:168:196 = 15:6:7. C's share = 7/28×84000 = 21000.\nAnswer: C (₹21000)."
+  },
+  "9": {
+    "answer": "A",
+    "solution": "Investment ratio = 2:3:5. Effective = 2×12 : 3×6 : 5×9 = 24:18:45.\n→ Rakesh's share = 18/(24+18+45)×20300 = 18/87×20300 = 4200.\nAnswer: A (₹4200)."
+  },
+  "10": {
+    "answer": "B",
+    "solution": "Investment ratio = 1/2:1/5:1/8 = 20:8:5. Time ratio = 1/3:1/2:1/5 = 10:15:6.\nEffective profit ratio = 20×10 : 8×15 : 5×6 = 200:120:30 = 20:12:3.\n→ C's share = 3/35×T = 900 → T = 10500.\nAnswer: B (₹10500)."
+  }
+}

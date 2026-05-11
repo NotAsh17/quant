@@ -1,0 +1,42 @@
+{
+  "1": {
+    "answer": "D",
+    "solution": "Let first = a. Second = 3a−26. Third: 3(3a−26)+4 = 2×third → third = (9a−74)/2.\n→ a+(3a−26)+(9a−74)/2 = 90 → 17a = 306 → a = 18. Parts: 18, 28, 44.\n→ (46−44)/44×100 = 4.54% ≈ 4.5%.\nAnswer: D (4.5%)."
+  },
+  "2": {
+    "answer": "896",
+    "solution": "KE = k×m×v². At m=3, v=12: 216 = k×3×144 → k = 1/2.\n→ At m=7, v=16: KE = (1/2)×7×256 = 896 joules.\nAnswer: 896."
+  },
+  "3": {
+    "answer": "45",
+    "solution": "Mean proportional: √(xy) = 27 → xy = 729.\nThird proportional: y²/x = 729 → y² = 729x. With xy=729: y/x = y/x and y²=729x → (xy)y/x=729(y/x)=729 → y/x=1... \nActually: x×729 = y²×x/y... Let x=9, y=81: xy=729✓, y²/x=6561/9=729✓.\n→ AM = (9+81)/2 = 45.\nAnswer: 45."
+  },
+  "4": {
+    "answer": "D",
+    "solution": "Total employees = prime < 500. Ratio a:b → a+b must be prime.\n→ 231+172=403=13×31✗; 265+228=493=17×29✗; 220+187=407=11×37✗; 241+226=467=prime✓.\nAnswer: D (241:226)."
+  },
+  "5": {
+    "answer": "D",
+    "solution": "Sonu=kx, Monu=ky (ratio x:y). Fathers: mx, my (same ratio). Difference ratio = k/m = 2/3.\n→ Sum fathers / Sum children = m(x+y) / k(x+y) = m:k = 3:2. Not among options.\nAnswer: D (None of those; ratio is 3:2)."
+  },
+  "6": {
+    "answer": "175",
+    "solution": "Speed reduction ∝ √n: S − r√n = speed. S−7r=56 (n=49); S−5r=90 (n=25).\n→ 2r = 34 → r = 17. S = 90+85 = 175 km/h.\nAnswer: 175."
+  },
+  "7": {
+    "answer": "C",
+    "solution": "V ∝ d²×t. V1/V2 = (d1/d2)²×(t1/t2). 5 = (5/3)²×(t1/t2) = (25/9)×(t1/t2).\n→ t1/t2 = 5×9/25 = 9/5.\nAnswer: C (9:5)."
+  },
+  "8": {
+    "answer": "45",
+    "solution": "R(145−2F)=4400; R(145−F)=8000. Dividing: (145−2F)/(145−F)=11/20.\n→ 2900−40F=1595−11F → 29F=1305 → F=45 kg.\nAnswer: 45."
+  },
+  "9": {
+    "answer": "144",
+    "solution": "B/(A+D)=3/10 → let A+D=10k, B=3k. C/(T−C)=5/13 → C=5T/18. A+B+D=13T/18=13k → k=T/18.\n→ B=T/6, D=T/6+40, A=5T/9−D=7T/18−40. A=40%×C=T/9.\n→ T/9=7T/18−40 → 40=5T/18 → T=144.\nAnswer: 144."
+  },
+  "10": {
+    "answer": "D",
+    "solution": "Each fraction = S/X−2 where S=A+B+C+D and X is its denominator. All equal → A=B=C=D → K=2, or S=0 → K=−2.\nAnswer: D (either B and C)."
+  }
+}
