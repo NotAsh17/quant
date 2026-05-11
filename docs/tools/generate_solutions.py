@@ -40,6 +40,7 @@ SOL_DIR = ROOT / "data" / "solutions"
 IMAGE_ROOT = ROOT  # paths in stem_images are like "images/<hash>/<file>"
 
 MODEL = os.environ.get("CLAUDE_MODEL", "claude-sonnet-4-5")
+# Bump via:  export CLAUDE_MODEL=claude-sonnet-4-7   (latest as of 2026)
 
 PROMPT = """You are an expert CAT (Common Admission Test) Quantitative Aptitude solver.
 
@@ -66,15 +67,34 @@ def load_data():
     return json.loads(DATA.read_text(encoding="utf-8"))
 
 
-def find_test(data, test_id=None, topic=None):
-    """Yield (topic_name, test) pairs."""
-    for tname, tests in data["topics"].items():
-        if topic and tname != topic:
+def iter_tests(data):
+    """Yield (section, topic, test) for every test, supporting both schemas:
+    new {sections: {Section: {Subtopic: [tests]}}}  and legacy {topics: {...}}.
+    """
+    if "sections" in data:
+        for section_name, subtopics in data["sections"].items():
+            for topic_name, tests in subtopics.items():
+                for t in tests:
+                    yield section_name, topic_name, t
+    else:
+        for tname, tests in data.get("topics", {}).items():
+            for t in tests:
+                yield None, tname, t
+
+
+def find_test(data, test_id=None, topic=None, section=None, subtopic=None):
+    """Filter tests by any combination of test_id / topic / section / subtopic.
+    Yields (topic_name, test) pairs."""
+    for section_name, topic_name, t in iter_tests(data):
+        if test_id and t["test_id"] != test_id:
             continue
-        for t in tests:
-            if test_id and t["test_id"] != test_id:
-                continue
-            yield tname, t
+        if topic and topic_name != topic:
+            continue
+        if section and section_name != section:
+            continue
+        if subtopic and topic_name != subtopic and t.get("subtopic_id") != subtopic:
+            continue
+        yield topic_name, t
 
 
 def encode_image(rel_path):
@@ -183,7 +203,9 @@ def solve_test(client, test, vision=False, force=False):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--topic")
+    ap.add_argument("--section",  help="One of: Arithmetic | Algebra | Numbers | Geometry")
+    ap.add_argument("--topic",    help="Subtopic display name, e.g. 'Percentages & Profit-Loss'")
+    ap.add_argument("--subtopic", help="Alias for --topic, or pass folder id like 'Percentages-Profit-Loss'")
     ap.add_argument("--test")
     ap.add_argument("--all", action="store_true")
     ap.add_argument("--missing", action="store_true",
@@ -194,7 +216,7 @@ def main():
                     help="Overwrite already-solved questions")
     args = ap.parse_args()
 
-    if not (args.topic or args.test or args.all or args.missing):
+    if not (args.topic or args.test or args.all or args.missing or args.section or args.subtopic):
         ap.print_help()
         return
 
@@ -205,7 +227,14 @@ def main():
     client = Anthropic()
     data = load_data()
     tests_to_run = []
-    for _, t in find_test(data, test_id=args.test, topic=args.topic if not (args.all or args.missing) else None):
+    only_filters_active = not (args.all or args.missing)
+    for _, t in find_test(
+        data,
+        test_id=args.test,
+        topic=args.topic if only_filters_active else None,
+        section=args.section if only_filters_active else None,
+        subtopic=args.subtopic if only_filters_active else None,
+    ):
         if args.missing:
             sol_path = SOL_DIR / f"{t['test_id']}.json"
             if sol_path.exists():
