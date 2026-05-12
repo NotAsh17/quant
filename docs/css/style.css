@@ -168,6 +168,83 @@ button { font: inherit; cursor: pointer; }
   transition: all 120ms;
 }
 .icon-btn:hover { color: var(--text); border-color: var(--border-strong); }
+
+/* Profile chip in topbar */
+.topbar-profile {
+  display: flex; align-items: center; gap: 8px;
+  padding: 4px 12px 4px 4px;
+  height: 34px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--text);
+  font-size: 13px; font-weight: 500;
+  transition: border-color 120ms, background 120ms;
+}
+.topbar-profile:hover { border-color: var(--border-strong); background: var(--surface-2); text-decoration: none; }
+.topbar-profile-avatar {
+  width: 26px; height: 26px;
+  border-radius: 50%;
+  background: var(--accent); color: var(--bg);
+  display: grid; place-items: center;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px; font-weight: 600;
+  text-transform: uppercase;
+}
+.topbar-profile-name { max-width: 120px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+[data-theme="dark"] .topbar-profile-avatar { color: #0d0c0b; }
+
+/* Profile page */
+.profile-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 22px;
+  margin-bottom: 16px;
+}
+.profile-card.active { border-color: var(--accent); }
+.profile-card-row {
+  display: flex; align-items: center; gap: 14px; flex-wrap: wrap;
+}
+.profile-card-avatar {
+  width: 44px; height: 44px;
+  border-radius: 50%;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  color: var(--text);
+  display: grid; place-items: center;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 16px; font-weight: 600;
+  text-transform: uppercase;
+}
+.profile-card.active .profile-card-avatar {
+  background: var(--accent); color: var(--bg); border-color: var(--accent);
+}
+[data-theme="dark"] .profile-card.active .profile-card-avatar { color: #0d0c0b; }
+.profile-card-info { flex: 1; min-width: 200px; }
+.profile-card-name {
+  font-weight: 600; font-size: 16px; color: var(--text);
+  display: flex; align-items: center; gap: 8px;
+}
+.profile-card-meta {
+  font-size: 12px; color: var(--text-muted);
+  font-family: 'IBM Plex Mono', monospace; margin-top: 2px;
+}
+.profile-card-actions { display: flex; gap: 6px; flex-wrap: wrap; }
+.profile-add {
+  display: flex; gap: 8px; align-items: center;
+  margin: 20px 0 8px;
+}
+.profile-add input {
+  flex: 1; min-width: 180px;
+  padding: 9px 14px;
+  background: var(--surface); color: var(--text);
+  border: 1px solid var(--border); border-radius: var(--radius);
+  font: inherit;
+}
+.profile-add input:focus { outline: none; border-color: var(--accent); }
+.danger { color: var(--neg); }
+.danger:hover { background: var(--neg-soft); border-color: var(--neg); }
 .icon-btn svg { width: 16px; height: 16px; stroke-width: 1.75; }
 
 /* ============ LAYOUT ============ */
@@ -314,6 +391,8 @@ main { max-width: 1080px; margin: 0 auto; padding: 40px 32px 80px; }
   align-items: center; gap: 18px; padding: 14px 22px;
   border-bottom: 1px solid var(--border);
   text-align: left; background: transparent; border-left: 0; border-right: 0; width: 100%;
+  color: var(--text);            /* buttons reset color in every browser — must set explicitly */
+  font: inherit;
   cursor: pointer; transition: background 120ms;
 }
 .test-row:hover { background: var(--surface-2); }
@@ -323,7 +402,7 @@ main { max-width: 1080px; margin: 0 auto; padding: 40px 32px 80px; }
   font-family: 'IBM Plex Mono', monospace; font-size: 12px;
   color: var(--text-faint);
 }
-.test-title { font-weight: 500; font-size: 14px; }
+.test-title { font-weight: 500; font-size: 14px; color: var(--text); }
 .test-sub { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
 .test-stat { font-size: 12px; color: var(--text-muted); font-family: 'IBM Plex Mono', monospace; min-width: 70px; text-align: right; }
 .test-cta {

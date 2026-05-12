@@ -108,7 +108,20 @@ function toast(msg) {
   setTimeout(() => el.remove(), 1800);
 }
 function shortTitle(t) {
-  return (t || '').replace(/AIM 99\+ IN CAT 202\d \| ACE /i, '').replace(/AIM\d+\+/i, '').trim();
+  if (!t) return '';
+  let s = t;
+  // Clean HTML-test variant: "AIM 99+ IN CAT 2025 | ACE FOO BAR" -> "FOO BAR"
+  s = s.replace(/AIM\s*99\+?\s*IN\s*CAT\s*202\d\s*\|\s*ACE\s*/i, '');
+  // OCR-derived variant: "in cat 2024 i ace geometry 1" — the | got read as I,
+  // wordsegment split with stray spaces. Strip the leading garbage.
+  s = s.replace(/^\s*i?n?\s*cat\s*202\d\s*[i|]?\s*ace\s+/i, '');
+  // Any stray "AIM99+" left over.
+  s = s.replace(/AIM\s*\d+\s*\+?\s*/i, '');
+  // Collapse multi-spaces, trim.
+  s = s.replace(/\s{2,}/g, ' ').trim();
+  if (!s) return t;
+  // Capitalize the first letter (OCR titles end up all lowercase)
+  return s.charAt(0).toUpperCase() + s.slice(1);
 }
 function getTestById(testId) {
   for (const tests of Object.values(DATA.topics)) {
@@ -143,6 +156,7 @@ function parseHash() {
   if (parts[0] === 'results')   return { view: 'results', testId: parts[1] };
   if (parts[0] === 'bookmarks') return { view: 'bookmarks' };
   if (parts[0] === 'analytics') return { view: 'analytics' };
+  if (parts[0] === 'profile')   return { view: 'profile' };
   return { view: 'dashboard' };
 }
 function applyRoute() {
@@ -222,6 +236,7 @@ function render() {
     case 'results':   html = renderResults(); break;
     case 'bookmarks': html = renderBookmarks(); break;
     case 'analytics': html = renderAnalytics(); break;
+    case 'profile':   html = renderProfile(); break;
     default:          html = renderDashboard();
   }
   if (state.modalQ != null) html += renderQuestionModal(state.modalQ);
@@ -234,6 +249,7 @@ function render() {
       b.dataset.view === state.view ||
       (b.dataset.view === 'dashboard' && dashViews.includes(state.view)));
   });
+  updateProfileChip();
   attachHandlers();
 }
 
@@ -729,6 +745,58 @@ function renderAnalytics() {
   `;
 }
 
+/* -------- PROFILE -------- */
+function renderProfile() {
+  const active = Storage.getActiveProfile();
+  const profiles = Storage.getProfiles();
+  const cards = profiles.map(p => {
+    const s = Storage.profileStats(p.name);
+    const acc = s.attempted ? Math.round(s.correct / s.attempted * 100) : 0;
+    const initial = p.name.slice(0, 1).toUpperCase();
+    const isActive = p.name === active;
+    return `
+      <div class="profile-card ${isActive ? 'active' : ''}">
+        <div class="profile-card-row">
+          <div class="profile-card-avatar">${escapeHtml(initial)}</div>
+          <div class="profile-card-info">
+            <div class="profile-card-name">
+              ${escapeHtml(p.name)}
+              ${isActive ? '<span class="tag pos" style="font-size:10px">Active</span>' : ''}
+            </div>
+            <div class="profile-card-meta">
+              ${s.tests_completed} tests completed · ${s.correct}/${s.attempted} correct (${acc}%)
+            </div>
+          </div>
+          <div class="profile-card-actions">
+            ${isActive
+              ? `<button class="btn btn-sm" data-action="profile-rename" data-name="${escapeHtml(p.name)}">Rename</button>
+                 <button class="btn btn-sm danger" data-action="profile-reset" data-name="${escapeHtml(p.name)}">Reset progress</button>`
+              : `<button class="btn btn-sm btn-primary" data-action="profile-switch" data-name="${escapeHtml(p.name)}">Switch to</button>
+                 <button class="btn btn-sm danger" data-action="profile-delete" data-name="${escapeHtml(p.name)}">Delete</button>`}
+          </div>
+        </div>
+      </div>
+    `;
+  }).join('');
+
+  return `
+    <button class="back-link" data-action="goto-dashboard">${ICONS.back} Back</button>
+    <div class="eyebrow">Account</div>
+    <h1 class="h1">Profiles</h1>
+    <p class="lede">Each profile keeps its own progress, attempts, bookmarks, and history. Switch between them to try the site with different states or to share the browser with someone else.</p>
+
+    ${cards}
+
+    <div class="profile-add">
+      <input type="text" id="newProfileName" placeholder="New profile name (e.g. 'Friend', 'Test run')" maxlength="40" />
+      <button class="btn btn-primary" data-action="profile-add">Add profile</button>
+    </div>
+    <p style="font-size:12px;color:var(--text-muted);margin-top:8px">
+      All data is stored locally in this browser. Profiles are not synced across devices.
+    </p>
+  `;
+}
+
 /* -------- MODAL -------- */
 function renderQuestionModal(qNum) {
   // testId may differ if opened from bookmarks
@@ -955,6 +1023,70 @@ function handleAction(e) {
   if (a === 'copy-q') { copyQuestion(state.testId, state.currentQ); return; }
   if (a === 'copy-modal') { copyQuestion(state.modalTestId || state.testId, parseInt(el.dataset.q)); return; }
   if (a === 'flag-wrong') { e.preventDefault(); toast('Flagged · thank you'); return; }
+
+  /* ----- profiles ----- */
+  if (a === 'profile-switch') {
+    const name = el.dataset.name;
+    Storage.switchProfile(name);
+    toast(`Switched to ${name}`);
+    updateProfileChip();
+    SOL_CACHE_CLEAR();
+    navigate('#/');
+    return;
+  }
+  if (a === 'profile-add') {
+    const inp = document.getElementById('newProfileName');
+    const name = inp ? inp.value : '';
+    const r = Storage.addProfile(name);
+    if (!r.ok) { toast(r.error); return; }
+    toast(`Profile "${name}" added`);
+    if (inp) inp.value = '';
+    render();
+    return;
+  }
+  if (a === 'profile-delete') {
+    const name = el.dataset.name;
+    if (!confirm(`Delete profile "${name}"? All its progress, bookmarks, and history will be erased. This cannot be undone.`)) return;
+    const r = Storage.deleteProfile(name);
+    if (!r.ok) { toast(r.error); return; }
+    toast(`Profile "${name}" deleted`);
+    render();
+    return;
+  }
+  if (a === 'profile-rename') {
+    const oldName = el.dataset.name;
+    const newName = prompt('Rename profile to:', oldName);
+    if (newName == null) return;
+    const r = Storage.renameProfile(oldName, newName);
+    if (!r.ok) { toast(r.error); return; }
+    toast(`Renamed to "${newName}"`);
+    updateProfileChip();
+    render();
+    return;
+  }
+  if (a === 'profile-reset') {
+    const name = el.dataset.name;
+    if (!confirm(`Reset all progress for "${name}"? Attempts, bookmarks, and history will be cleared. The profile itself stays.`)) return;
+    Storage.clearProfileData(name);
+    toast('Progress reset');
+    SOL_CACHE_CLEAR();
+    render();
+    return;
+  }
+}
+
+/* Reset the in-memory solutions cache (used after profile switch). */
+function SOL_CACHE_CLEAR() {
+  for (const k in SOL_CACHE) delete SOL_CACHE[k];
+}
+
+/* Refresh the topbar profile chip whenever the active profile may have changed. */
+function updateProfileChip() {
+  const name = Storage.getActiveProfile();
+  const avatar = document.getElementById('profileAvatar');
+  const label = document.getElementById('profileName');
+  if (avatar) avatar.textContent = name.slice(0, 1).toUpperCase();
+  if (label) label.textContent = name;
 }
 function currentTest() { return getTestById(state.testId); }
 
@@ -1079,6 +1211,7 @@ document.documentElement.setAttribute('data-theme', savedTheme);
    BOOT
    ============================================================ */
 async function boot() {
+  updateProfileChip();   // show the active profile name in the topbar immediately, even before data loads
   try {
     const r = await fetch('data/questions.json');
     DATA = await r.json();
