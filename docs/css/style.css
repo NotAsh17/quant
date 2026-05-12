@@ -52,12 +52,25 @@
 [data-theme="dark"] .opt,
 [data-theme="dark"] .modal-opt { color: var(--text); }
 [data-theme="dark"] .test-sub,
-[data-theme="dark"] .recent-meta { color: var(--text-muted); }
+[data-theme="dark"] .recent-meta,
+[data-theme="dark"] .runner-title-sub,
+[data-theme="dark"] .tita-hint,
+[data-theme="dark"] .topic-count,
+[data-theme="dark"] .section-block-head .meta,
+[data-theme="dark"] .section-head .meta,
+[data-theme="dark"] .score-sub { color: var(--text-muted); }
 [data-theme="dark"] .test-stat,
-[data-theme="dark"] .test-num { color: var(--text); }
+[data-theme="dark"] .test-num,
+[data-theme="dark"] .topic-name,
+[data-theme="dark"] .recent-name,
+[data-theme="dark"] .modal-stem,
+[data-theme="dark"] .modal-solution-text,
+[data-theme="dark"] .q-stem,
+[data-theme="dark"] .stat-value { color: var(--text); }
 [data-theme="dark"] .lede,
 [data-theme="dark"] .stat-sub,
-[data-theme="dark"] .topic-count,
+[data-theme="dark"] .stat-label,
+[data-theme="dark"] .eyebrow,
 [data-theme="dark"] .palette-legend { color: var(--text-muted); }
 [data-theme="dark"] .tag { color: var(--text); background: var(--surface-2); }
 
@@ -188,6 +201,36 @@ main { max-width: 1080px; margin: 0 auto; padding: 40px 32px 80px; }
 }
 .section-head h3 { font-size: 18px; font-weight: 600; margin: 0; letter-spacing: -0.01em; }
 .section-head .meta { font-size: 13px; color: var(--text-muted); }
+
+/* Section-grouped layout for the dashboard (Arithmetic / Algebra / Numbers / Geometry) */
+.section-block { margin-bottom: 36px; }
+.section-block:last-child { margin-bottom: 0; }
+.section-block-head {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 16px; flex-wrap: wrap;
+  margin-bottom: 14px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+}
+.section-block-title { display: flex; align-items: center; gap: 10px; }
+.section-block-title h3 {
+  font-family: 'IBM Plex Serif', Georgia, serif;
+  font-size: 22px; font-weight: 600; margin: 0; letter-spacing: -0.015em;
+  color: var(--text);
+}
+.section-block-icon {
+  width: 28px; height: 28px;
+  border-radius: 6px;
+  background: var(--accent-soft);
+  color: var(--accent-text);
+  display: grid; place-items: center;
+  border: 1px solid color-mix(in oklab, var(--accent-soft) 80%, var(--border));
+}
+.section-block-icon svg { width: 14px; height: 14px; stroke-width: 1.75; }
+.section-block-head .meta {
+  font-size: 12px; color: var(--text-muted);
+  font-family: 'IBM Plex Mono', monospace;
+}
 
 .topic-grid {
   display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px;

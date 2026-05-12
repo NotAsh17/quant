@@ -10,14 +10,39 @@
 let DATA = null;          // loaded from data/questions.json
 const SOL_CACHE = {};     // testId -> {qNum: {answer, solution}}
 
+// Map subtopic display name -> URL slug. Covers all 15 subtopics from the
+// hierarchical schema. Older flat-bank names kept for backwards compat.
 const TOPIC_IDS = {
-  'Algebra': 'algebra',
-  'Averages & Alligations': 'averages',
-  'Time, Speed & Distance': 'tsd',
-  'Numbers': 'numbers',
-  'Ratio & Proportion': 'ratio',
-  'Percentages & Profit-Loss': 'pp',
-  'SI & CI': 'sici',
+  // Arithmetic
+  'Percentages & Profit-Loss':         'percentages',
+  'Ratios & Partnerships':             'ratios',
+  'SI & CI':                           'sici',
+  'Time, Speed & Distance':            'tsd',
+  'Time & Work':                       'tw',
+  'Averages & Alligations':            'averages',
+  // Algebra
+  'Basics of Algebra & Inequalities':  'basics',
+  'Modulus':                           'modulus',
+  'Logarithms':                        'logs',
+  'Sequences & Series':                'sequences',
+  'Quadratic & Higher Degree':         'quadratic',
+  'Functions & Graphs':                'functions',
+  'Linear & Special Equations':        'linear',
+  'Indices & Surds':                   'indices',
+  // Numbers, Geometry
+  'Numbers':                           'numbers',
+  'Geometry':                          'geometry',
+  // Legacy (older flat schema)
+  'Algebra':                           'algebra',
+  'Ratio & Proportion':                'ratio',
+};
+
+// Map section display name -> a single icon slug. Used by the dashboard.
+const SECTION_ICON = {
+  'Arithmetic': 'averages',
+  'Algebra':    'algebra',
+  'Numbers':    'numbers',
+  'Geometry':   'tsd',
 };
 
 const ICONS = {
@@ -222,26 +247,45 @@ function renderDashboard() {
   const acc = attempted ? Math.round(correct / attempted * 100) : 0;
   const totalMin = stats.timeMin;
 
-  const topicCards = Object.entries(DATA.topics).map(([name, tests]) => {
+  // Section-grouped subtopic cards. Falls back gracefully if .sections is missing.
+  const progressMap = Storage.allProgress();
+  const sectionsSource = DATA.sections || { 'Topics': DATA.topics };
+
+  function renderSubtopicCard(name, tests) {
     const id = topicIdOf(name);
     const totalQ = tests.reduce((a, t) => a + t.questions.length, 0);
-    const progress = Storage.allProgress();
-    const completedTests = tests.filter(t => progress[t.test_id] === 'completed').length;
+    const completedTests = tests.filter(t => progressMap[t.test_id] === 'completed').length;
     const pctTests = tests.length ? Math.round(completedTests / tests.length * 100) : 0;
     return `
       <button class="topic-card" data-action="open-topic" data-topic="${id}">
-        <div class="topic-card-top">
-          <div class="topic-icon">${ICONS[id] || ICONS.numbers}</div>
-          <div>
-            <div class="topic-name">${escapeHtml(name)}</div>
-            <div class="topic-count">${tests.length} tests · ${totalQ} questions</div>
-          </div>
+        <div>
+          <div class="topic-name">${escapeHtml(name)}</div>
+          <div class="topic-count">${tests.length} tests · ${totalQ} questions</div>
         </div>
         <div class="progress-row">
           <div class="progress-bar"><div class="progress-fill" style="width:${pctTests}%"></div></div>
           <div class="progress-num">${completedTests}/${tests.length}</div>
         </div>
       </button>
+    `;
+  }
+
+  const sectionsHtml = Object.entries(sectionsSource).map(([sectionName, subtopics]) => {
+    const cards = Object.entries(subtopics).map(([n, t]) => renderSubtopicCard(n, t)).join('');
+    const sectionTotalTests = Object.values(subtopics).reduce((a, t) => a + t.length, 0);
+    const sectionTotalQs = Object.values(subtopics).reduce((a, t) => a + t.reduce((b, x) => b + x.questions.length, 0), 0);
+    const iconKey = SECTION_ICON[sectionName] || 'numbers';
+    return `
+      <div class="section-block">
+        <div class="section-block-head">
+          <div class="section-block-title">
+            <span class="section-block-icon">${ICONS[iconKey] || ICONS.numbers}</span>
+            <h3>${escapeHtml(sectionName)}</h3>
+          </div>
+          <span class="meta">${Object.keys(subtopics).length} subtopics · ${sectionTotalTests} tests · ${sectionTotalQs} questions</span>
+        </div>
+        <div class="topic-grid">${cards}</div>
+      </div>
     `;
   }).join('');
 
@@ -295,10 +339,10 @@ function renderDashboard() {
     </div>
 
     <div class="section-head">
-      <h3>Topics</h3>
-      <span class="meta">Pick a topic to see its tests</span>
+      <h3>Sections</h3>
+      <span class="meta">Pick a subtopic to see its tests</span>
     </div>
-    <div class="topic-grid">${topicCards}</div>
+    ${sectionsHtml}
 
     <div class="section-head" style="margin-top:40px">
       <h3>Recent activity</h3>
@@ -1041,6 +1085,16 @@ async function boot() {
   } catch (e) {
     $app.innerHTML = `<p style="padding:40px;color:var(--neg)">Failed to load question data: ${e.message}</p>`;
     return;
+  }
+  // Compatibility shim: the new hierarchical schema uses {sections: {Section: {Subtopic: [tests]}}}.
+  // Existing helpers iterate DATA.topics — derive a flat .topics so they keep working.
+  if (DATA.sections && !DATA.topics) {
+    DATA.topics = {};
+    for (const subtopics of Object.values(DATA.sections)) {
+      for (const [topic, tests] of Object.entries(subtopics)) {
+        DATA.topics[topic] = tests;
+      }
+    }
   }
   applyRoute();
   window.addEventListener('hashchange', applyRoute);
