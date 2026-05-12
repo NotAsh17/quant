@@ -1,0 +1,42 @@
+{
+  "1": {
+    "answer": "1",
+    "solution": "f(1·1)=f(1)·f(1) → f(1)²=f(1) → f(1)=0 or 1. If f(1)=0 then f(n)=f(n·1)=f(n)·0=0 for all n. If f(1)=1, valid (e.g., f≡1). Largest possible value = 1."
+  },
+  "2": {
+    "answer": "A",
+    "solution": "5-term AP: a−2d,...,a+2d. Sum=5a=25→a=5. Product equation: 4d⁴−125d²+121=0 → d=1 or d=11/2. d=1 gives {3,4,5,6,7} — no term is −1/2. d=11/2 gives {−6,−1/2,5,21/2,16}✓. Sum of greatest 2: 16+21/2=26.5. Answer: A."
+  },
+  "3": {
+    "answer": "44",
+    "solution": "Set x²−8x+7=−9 → x²−8x+16=0 → (x−4)²=0 → x=4. f(−9)=5(4)+24=20+24=44."
+  },
+  "4": {
+    "answer": "C",
+    "solution": "f(x+y)=f(x)+f(y) with f(n)>0 → f(n)=cn. f(26)=26c=1/4 → c=1/104. Sum=f(2)+f(4)+...+f(52)=(1/104)(2+4+...+52)=(1/104)×702=702/104=27/4. Answer: C."
+  },
+  "5": {
+    "answer": "5",
+    "solution": "f(f(x))=2(2x+6)+6=4x+18. g(f(f(x)))=7(4x+18)+2=28x+128. f(g(f(f(x))))=2(28x+128)+6=56x+262. g(56x+262)=7(56x+262)+2=392x+1836=3796 → 392x=1960 → x=5."
+  },
+  "6": {
+    "answer": "-8",
+    "solution": "Each (-1)^aᵢ=+1 if aᵢ even, −1 if odd. Sum=1453 (odd) → odd count k of odd terms. J=10−2k, minimized by max k. Max odd k≤10 is k=9 (e.g., nine 1s and one 1444). J=10−18=−8."
+  },
+  "7": {
+    "answer": "A",
+    "solution": "kth term: 1/(k(k+1))=u → (1+u)³=1+3u+3u²+u³ → ∛((1+u)³)=1+u=1+1/k−1/(k+1). S=Σ(k=1→29)(1+1/k−1/(k+1))=29+(1−1/30)=899/30. 30S=899. Answer: A."
+  },
+  "8": {
+    "answer": "3",
+    "solution": "Third smallest 3-digit perfect square=144. Sₙ=2×144=288; S₂ₙ=4×288=1152. (2a+(2n−1)d)/(2a+(n−1)d)=2 → d=2a. Coprime pair: a=1,d=2. a+d=3."
+  },
+  "9": {
+    "answer": "A",
+    "solution": "6+66+666+...+6666666666=7407407400. Digit sum: 7+4+0+7+4+0+7+4+0+0=33. Max power of 7 in 33!: ⌊33/7⌋+⌊33/49⌋=4+0=4. Answer: A."
+  },
+  "10": {
+    "answer": "A",
+    "solution": "Area E1=(√3/4)×29²=841√3/4. Each subsequent triangle has side halved → area ratio=1/4. Infinite GP sum=(841√3/4)/(1−1/4)=(841√3/4)×(4/3)=841√3/3=841/√3 cm². Answer: A."
+  }
+}
