@@ -1,0 +1,42 @@
+{
+  "1": {
+    "answer": "6",
+    "solution": "Expand: A(1/B+1/C)+B(1/C+1/A)+C(1/A+1/B)=(A/B+B/A)+(A/C+C/A)+(B/C+C/B). By AM-GM each pair ≥2: total ≥6. Equality at A=B=C. Minimum=6."
+  },
+  "2": {
+    "answer": "A",
+    "solution": "|A−3|+|B−4|=6, A,B whole numbers. Let a=A−3,b=B−4 with |a|+|b|=6. Enumerate: (a=4,b=2)→A=7,B=6,AB=42; (a=3,b=3)→A=6,B=7,AB=42 (max). Second highest: (a=5,b=1)→A=8,B=5,AB=40 and (a=2,b=4)→A=5,B=8,AB=40. Second highest=40. Answer: A."
+  },
+  "3": {
+    "answer": "8",
+    "solution": "f(x)=min(5x−7,17−3x). Intersection: 5x−7=17−3x → x=3. For x<3: min=5x−7 (increasing). For x>3: min=17−3x (decreasing). Maximum at x=3: f(3)=5(3)−7=8."
+  },
+  "4": {
+    "answer": "D",
+    "solution": "Let u=y+7: t=u/(u²−7u+49). Rearrange: tu²−(7t+1)u+49t=0. For real u: disc=(7t+1)²−196t²=−147t²+14t+1≥0 → (21t+1)(1−7t)≥0 → −1/21≤t≤1/7. Max=1/7 at y=0; min=−1/21 at y=−14. Difference=1/7+1/21=3/21+1/21=4/21. Answer: D."
+  },
+  "5": {
+    "answer": "120",
+    "solution": "f(x)=|47−x|−|x+13|. Case x≤−13: f=(47−x)+(x+13)=60. Case −13≤x≤47: f=(47−x)−(x+13)=34−2x∈[−60,60]. Case x≥47: f=−(47−x)−(x+13)=−60. Maximum=60, minimum=−60. Difference=60−(−60)=120."
+  },
+  "6": {
+    "answer": "-5",
+    "solution": "Let u=11+x>0. (14+x)(23+x)/(11+x)=(u+3)(u+12)/u=u+15+36/u. By AM-GM: u+36/u≥2√36=12. Minimum=12+15=27 at u=6. x=u−11=6−11=−5."
+  },
+  "7": {
+    "answer": "A",
+    "solution": "Let u=9+x>0. (11+x)(17+x)/(9+x)=(u+2)(u+8)/u=u+10+16/u. By AM-GM: u+16/u≥2√16=8. Minimum=8+10=18 at u=4,x=−5. Answer: A (18)."
+  },
+  "8": {
+    "answer": "640",
+    "solution": "Maximize x⁴y⁵ with 5x+4y=18. By weighted AM-GM: optimal at 5x/4=4y/5→x=8/5, y=5/2. Max=(8/5)⁴×(5/2)⁵=8⁴/5⁴×5⁵/2⁵=8⁴×5/2⁵=(2³)⁴×5/2⁵=2¹²×5/2⁵=2⁷×5=128×5=640."
+  },
+  "9": {
+    "answer": "A",
+    "solution": "Let a=x−9, b=16−x with a+b=7, a,b≥0. Maximize a³b⁴. By AM-GM: optimal at a/3=b/4→a=3,b=4. Max=3³×4⁴=27×256=6912. Answer: A (6912)."
+  },
+  "10": {
+    "answer": "A",
+    "solution": "x²y³=6750, minimize 5x+4y. By AM-GM: optimal at 5x/2=4y/3=k → x=2k/5,y=3k/4. Constraint: (2k/5)²(3k/4)³=6750 → 108k⁵/1600=6750 → k⁵=100000 → k=10. x=4,y=7.5. Min=5(4)+4(7.5)=20+30=50. Answer: A."
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "1": {
+    "answer": "8",
+    "solution": "|x−3|≥5 → x≥8 or x≤−2. |x+3|<7 → −10<x<4. Intersection: (x≥8 AND −10<x<4)=∅; (x≤−2 AND −10<x<4)=−10<x≤−2. Integers: {−9,−8,−7,−6,−5,−4,−3,−2}=8 values."
+  },
+  "2": {
+    "answer": "D",
+    "solution": "Let u=x+1/x. x²+x+1/x²+1/x=(x+1/x)²−2+(x+1/x)=u²+u−2=(u+2)(u−1)<0 requires −2<u<1. This means BOTH u>−2 (option A) AND u<1 (option C) must hold. Answer: D (Both A and C)."
+  },
+  "3": {
+    "answer": "2",
+    "solution": "Case x≥1: |x−1|=x−1, inside=x−(x−1)+x+3=x+4. |x+4|<4 → x<0; contradicts x≥1 → no solution. Case x<1: |x−1|=1−x, inside=x−(1−x)+x+3=3x+2. |3x+2|<4 → −2<x<2/3. Intersect with x<1: −2<x<2/3. Integers: {−1,0}=2 values."
+  },
+  "4": {
+    "answer": "C",
+    "solution": "|2x−3|<|x+5|. Square both sides: (2x−3)²<(x+5)² → 4x²−12x+9<x²+10x+25 → 3x²−22x−16<0 → (3x+2)(x−8)<0 → −2/3<x<8. Answer: C (−2/3,8)."
+  },
+  "5": {
+    "answer": "D",
+    "solution": "Let k=y²−5y+3. Need kx²+(k−2)x+k<0 for all x∈R. Requires k<0 AND discriminant<0. Disc=(k−2)²−4k²=−3k²−4k+4<0 → 3k²+4k−4>0 → k<−2 or k>2/3. Combined with k<0: k<−2. So y²−5y+3<−2 → y²−5y+5<0 → y∈((5−√5)/2,(5+√5)/2). Answer: D."
+  },
+  "6": {
+    "answer": "3",
+    "solution": "Roots p,q: p+q=−(a+3), pq=−(a+5). p²+q²=(p+q)²−2pq=(a+3)²+2(a+5)=a²+8a+19=(a+4)²+3. Minimum=3 at a=−4. Check: disc=(a+3)²+4(a+5)=a²+10a+29=(a+5)²+4>0 always. Answer: 3."
+  },
+  "7": {
+    "answer": "B",
+    "solution": "Let u=x+1. Case u<−1 (x<−2): 2^(−u−1)−(1−2^u)=2^u+1 → 2^(−u−1)=2 → −u−1=1 → u=−2,x=−3. Check: 2¹−|¼−1|=2−¾=5/4=¼+1 ✓. Case u≥0 (x≥−1): 2^(u+1)−(2^u−1)=2^u+1 → 2·2^u−2^u+1=2^u+1 → always true. Solution: x=−3 and x≥−1 → {−3}∪[−1,∞). Answer: B."
+  },
+  "8": {
+    "answer": "10",
+    "solution": "Let u=|x−5|≥0. Then |u+4|=u+4 (since u+4>0). 4<u+4<10 → 0<u<6 → 0<|x−5|<6. |x−5|>0: x≠5. |x−5|<6: −1<x<11. Solution: (−1,5)∪(5,11). Integers: {0,1,2,3,4}∪{6,7,8,9,10}=10 integers."
+  },
+  "9": {
+    "answer": "B",
+    "solution": "Subtract 3: (4x²−12x−7)/[(3x+2)(x+4)]>0 → (2x−7)(2x+1)/[(3x+2)(x+4)]>0. Critical points: −4,−2/3,−1/2,7/2. Sign analysis: positive on (−∞,−4)∪(−2/3,−1/2)∪(7/2,∞). Answer: B ((−∞,−4)∪(−2/3,−1/2)∪(7/2,∞))."
+  },
+  "10": {
+    "answer": "B",
+    "solution": "2ⁿ(n+1)ⁿ/nⁿ=2ⁿ×(1+1/n)ⁿ. Lower: (1+1/n)ⁿ≥2 for all n≥1 (equality at n=1) → expression≥2·2ⁿ=2^(n+1). Upper: (1+1/n)ⁿ<e<3 → expression<3·2ⁿ. So 2^(n+1)≤2ⁿ(n+1)ⁿ/nⁿ≤3·2ⁿ. Answer: B."
+  }
+}

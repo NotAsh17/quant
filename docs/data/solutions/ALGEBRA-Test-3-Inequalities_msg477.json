@@ -1,0 +1,42 @@
+{
+  "1": {
+    "answer": "4",
+    "solution": "Factor: x⁴−12x³+53x²−102x+72. Try x=2: 16−96+212−204+72=0 → (x−2) factor. Divide → x³−10x²+33x−36. x=3: 27−90+99−36=0 → (x−3) factor. Divide → x²−7x+12=(x−3)(x−4). So expression=(x−2)(x−3)²(x−4). For x>4: all factors positive → expression>0. For 3<x<4: (x−4)<0 → expression<0. So 'for all x>p, expression>0' requires p=4. Least integral p=4."
+  },
+  "2": {
+    "answer": "A",
+    "solution": "Note x³+1=(x+1)(x²−x+1). Combine LHS: [2(x²−x+1)+(5x+1)]/[(x+1)(x²−x+1)] = (2x²+3x+3)/[(x+1)(x²−x+1)]. Subtract RHS: (2x²+3x+3)/(x+1) < 3 → (2x²+3x+3−3x−3)/(x+1)<0 → 2x²/(x+1)<0. Since 2x²≥0 and =0 only at x=0: need x+1<0 → x<−1. Maximum integral value = −2. Answer: A (−2)."
+  },
+  "3": {
+    "answer": "7",
+    "solution": "Need y³+5x²+25x−a²xy≥0 for all x,y>0 → a²≤(y³+5x²+25x)/(xy) = y²/x+5x/y+25/y. By AM-GM: y²/x+5x/y+25/y≥3(y²/x×5x/y×25/y)^{1/3}=3(125)^{1/3}=15. Equality at x=5,y=5. So need a²≤15 → |a|≤√15≈3.87. Integral values a∈{−3,−2,−1,0,1,2,3} → 7 values."
+  },
+  "4": {
+    "answer": "B",
+    "solution": "Note (1+p)(1+q)(1+r)=1+(p+q+r)+(pq+qr+pr)+pqr=11+(pq+qr+pr+pqr). So maximize (1+p)(1+q)(1+r) with sum=13 (integers≥1). Max product at (4,4,5)=80 → max expression=80−11=69. Check: p=3,q=3,r=4: pq+qr+pr+pqr=9+12+12+36=69. 69∈(60,70). Answer: B."
+  },
+  "5": {
+    "answer": "C",
+    "solution": "Test ordering x<z<y: |x−y|+|y−z|−|z−x|=(y−x)+(y−z)−(z−x)=2(y−z). Maximize with x<z<y, distinct naturals<50. Take y=49,z=2,x=1 (all distinct, all<50): 2(49−2)=94. Other orderings give 0 or 2(x−y)≤94. Max=94. Answer: C."
+  },
+  "6": {
+    "answer": "5",
+    "solution": "Factor: (X²+2X−8)/(X²+X−42)=(X+4)(X−2)/[(X+7)(X−6)]<0. Critical points: −7,−4,2,6. Sign analysis: negative on (−7,−4) and (2,6). Integers in (−7,−4): {−6,−5}=2. Integers in (2,6): {3,4,5}=3. Total=5 integers."
+  },
+  "7": {
+    "answer": "B",
+    "solution": "x+y=1, x,y>0. Minimize (x+1/x)²+(y+1/y)². g(t)=(t+1/t)² is convex (g''=2+6/t⁴>0). f=g(x)+g(1−x) convex → minimum at x=y=1/2. f(1/2)=2(1/2+2)²=2(5/2)²=25/2=12.5. Answer: B (12.5)."
+  },
+  "8": {
+    "answer": "50",
+    "solution": "x+y=4, x,y>0. Minimize (x+1/x)²+(y+1/y)². By convexity and symmetry, minimum at x=y=2. f(2,2)=2(2+1/2)²=2(5/2)²=25/2. So n=25/2. 4n=4×25/2=50."
+  },
+  "9": {
+    "answer": "C",
+    "solution": "Let a=15−p, b=p+5 with a+b=20, a,b>0. Maximize a⁹×b¹¹. By weighted AM-GM, maximum at a/9=b/11 → a=9,b=11 (since 9+11=20). Max=9⁹×11¹¹=11¹¹×9⁹. Answer: C (11¹¹×9⁹)."
+  },
+  "10": {
+    "answer": "D",
+    "solution": "Let x=5−a, y=a+5, x+y=10 with 0<a≤5 → x∈[0,5). Maximize x⁴y⁵. By weighted AM-GM: optimal at x/4=y/5=k → x=4k,y=5k,9k=10 → k=10/9. So x=40/9,y=50/9 (a=5/9∈(0,5]✓). Max=(40/9)⁴×(50/9)⁵=4⁴×10⁴×5⁵×10⁵/9⁹=4⁴×5⁵×(10/9)⁹. Answer: D."
+  }
+}

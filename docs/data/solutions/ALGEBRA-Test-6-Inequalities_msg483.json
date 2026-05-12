@@ -1,0 +1,42 @@
+{
+  "1": {
+    "answer": "6",
+    "solution": "From x/y+y/x=17: x²+y²=17xy. So x²+18y²=17xy+17y²=17y(x+y). Substitute into eq1: (x+y)+17y(x+y)=0 → (x+y)(1+17y)=0. Since x+y≠0: y=−1/17. |102y|=|102×(−1/17)|=6."
+  },
+  "2": {
+    "answer": "A",
+    "solution": "Lower: (x+y+z)²=x²+y²+z²+2(xy+yz+zx)=1+2S≥0 → S≥−1/2. Upper: (x−y)²+(y−z)²+(z−x)²≥0 → 2−2S≥0 → S≤1. At x=y=z=1/√3: S=1✓. At x=1/√2,y=−1/√2,z=0: S=−1/2✓. Range=[−1/2,1]. Answer: A."
+  },
+  "3": {
+    "answer": "-1",
+    "solution": "Monic quadratic with roots 5,7: f(x)=(x−5)(x−7)=x²−12x+35. Minimum at vertex x=(5+7)/2=6: f(6)=(6−5)(6−7)=1×(−1)=−1."
+  },
+  "4": {
+    "answer": "C",
+    "solution": "Cond1: x≥0. Cond2: x²−12x+31≥0 → x≤6−√5 or x≥6+√5. Cond3: x²≤49 → x≤7 (with x≥0). Since 6+√5≈8.24>7, upper branch excluded. Intersection: x∈[0,6−√5]. Endpoints included (all conditions satisfied at equality). Answer: C."
+  },
+  "5": {
+    "answer": "19",
+    "solution": "x²+3nx+4n=0: discriminant=9n²−16n≥0 → n(9n−16)≥0 → n≤0 or n≥16/9≈1.78. Non-neg integers <20: n=0 satisfies n≤0; n=2,3,...,19 satisfy n≥2>16/9. n=1 excluded (disc<0). Count: 1+18=19."
+  },
+  "6": {
+    "answer": "100",
+    "solution": "Roots 5n,4n: sum=9n=−b→b=−9n; product=20n²=c. Discriminant=b²−4c=81n²−80n²=n². For smallest 3-digit value: n²≥100→n≥10 (positive integer). At n=10: discriminant=100. Answer: 100."
+  },
+  "7": {
+    "answer": "C",
+    "solution": "By AM-GM: ab+cd≥2√(abcd) and ac+bd≥2√(abcd). Product: (ab+cd)(ac+bd)≥4abcd. Equality requires ab=cd AND ac=bd → a=c, contradicting distinct values. So strictly >4abcd. Answer: C (>4abcd)."
+  },
+  "8": {
+    "answer": "3456",
+    "solution": "Let a=14−x, b=x−4 with a+b=10, a,b≥0. Maximize a³b². By weighted AM-GM: optimal at a/3=b/2=k → a=6,b=4 (9k=... wait: 3k+2k=5k=10→k=2). Max=(14−x)³(x−4)²=6³×4²=216×16=3456 at x=8."
+  },
+  "9": {
+    "answer": "C",
+    "solution": "(x−1)/(3x+3)−(x−2)/(3x+2)<0. Numerator: (x−1)(3x+2)−(x−2)(3x+3)=3x²−x−2−(3x²−3x−6)=2x+4=2(x+2). So 2(x+2)/[3(x+1)(3x+2)]<0 → sign of (x+2)/[(x+1)(3x+2)]<0. Sign analysis: <0 on (−∞,−2) and (−1,−2/3). Answer: C."
+  },
+  "10": {
+    "answer": "A",
+    "solution": "|x²−3x−1|<3(x²+x+1) (denominator always>0). Right ineq: x²−3x−1<3x²+3x+3 → 2(x+1)(x+2)>0 → x<−2 or x>−1. Left ineq: −3x²−3x−3<x²−3x−1 → 4x²+2>0 → always true. Solution: (−∞,−2)∪(−1,∞). Answer: A."
+  }
+}
