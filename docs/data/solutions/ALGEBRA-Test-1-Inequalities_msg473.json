@@ -1,0 +1,42 @@
+{
+  "1": {
+    "answer": "27",
+    "solution": "Let u=x+4 (u>0). Numerator: 3(6+x)(x+12)=3(u+2)(u+8)=3(u²+10u+16). Denominator: 2(4+x)=2u.\nExpression=3(u²+10u+16)/(2u)=(3/2)(u+10+16/u).\nBy AM-GM: u+16/u≥2√16=8 (equality at u=4, x=0).\nMinimum=(3/2)(8+10)=27.\nAnswer: 27."
+  },
+  "2": {
+    "answer": "A",
+    "solution": "Maximize xyz with x+y+z=41, distinct positive integers. Optimal near equal values.\nTry (12,14,15): sum=41✓, product=2520.\nTry (12,13,16): product=2496. Try (11,14,16): product=2464. All others smaller.\nMaximum=2520.\nAnswer: A (2520)."
+  },
+  "3": {
+    "answer": "24",
+    "solution": "Minimize 3x+2y+z subject to xy²z³=2¹²×3². By weighted AM-GM with weights 3:2:1:\nEquality when 3x/1=2y/2=z/3=k → x=k/3, y=k, z=3k. Sum=6k.\nAt minimum: xy²z³=(k/3)×k²×27k³=9k^6/1=2¹²×3² → k^6=2¹²×3²/9=2¹²/3² ... hmm.\nMore precisely: (k/3)(k)²(3k)³=k⁶×9=2¹²×3² → k⁶=2¹²/1=4096×1 ... k=4.\nCheck: (4/3)(16)(1728)=36864=2¹²×3²✓. Sum=3(4/3)+2(4)+12=4+8+12=24.\nAnswer: 24."
+  },
+  "4": {
+    "answer": "A",
+    "solution": "x=2y+8=0 at y=−4; z=3y−7=0 at y=7/3. y∈{−8,...,8} (integers in (−9,9)).\nxz>0: both positive (x>0,z>0): y>−4 AND y>7/3 → y∈{3,4,5,6,7,8} = 6 values.\nBoth negative (x<0,z<0): y<−4 AND y<7/3 → y∈{−8,−7,−6,−5} = 4 values.\nTotal=10.\nAnswer: A (10)."
+  },
+  "5": {
+    "answer": "11",
+    "solution": "Domain: 48−x²>0 → −4√3<x<4√3. For x≤0: LHS≤0<1 (not satisfied).\nFor x>0: x≥√(48−x²) → x²≥48−x² → x²≥24 → x≥2√6≈4.899.\nSolution: x∈[2√6, 4√3)≈[4.899, 6.928). Integers: 5, 6. Sum=11.\nAnswer: 11."
+  },
+  "6": {
+    "answer": "32",
+    "solution": "Product (x−1)(x−4)...(x−97) with 33 roots (AP: 1,4,7,...,97).\nSign in interval (root_k, root_{k+1}): positive for k odd, negative for k even.\nNegative intervals: (4,7),(10,13),(16,19),...,(94,97). Count: starting at 4 to 94, step 6 → 16 intervals.\nEach interval contains 2 positive integers. Total: 16×2=32.\nAnswer: 32."
+  },
+  "7": {
+    "answer": "C",
+    "solution": "(x−6)(x−5)/((x−4)(x−3))−2>0 → [−x²+3x+6]/[(x−4)(x−3)]>0 → (x²−3x−6)/[(x−4)(x−3)]<0.\nRoots of x²−3x−6: α=(3−√33)/2≈−1.37, β=(3+√33)/2≈4.37.\nSolution: x∈(α,3)∪(4,β). Integers in (−1.37,3): {−1,0,1,2}=4. Integers in (4,4.37): none.\nTotal=4 integers.\nAnswer: C (4)."
+  },
+  "8": {
+    "answer": "170",
+    "solution": "B=(64−3A)/2. Need B natural: 64−3A even and positive → A even, A≤20.\nAB=A(64−3A)/2. Maximize: d/dA(64A−3A²)=64−6A=0 → A≈10.67. Closest even: A=10.\nA=10: B=(64−30)/2=17. AB=170. A=12: B=14, AB=168. Maximum=170.\nAnswer: 170."
+  },
+  "9": {
+    "answer": "A",
+    "solution": "f(a)=1/(1+a)+1/(1+b)=1/(1+a)+1/(4−a) with 0<a<3.\nf'(a)=−1/(1+a)²+1/(4−a)²=0 → 4−a=1+a → a=3/2, b=3/2.\nf(3/2)=2/(1+3/2)=2/(5/2)=4/5.\nAt endpoints a→0 or a→3: f→5/4>4/5. So minimum=4/5.\nAnswer: A (4/5)."
+  },
+  "10": {
+    "answer": "D",
+    "solution": "Domain: 2x+1≥0 → x≥−1/2; x≠0 (denominator≠0). Let t=√(2x+1)≥0, t≠1.\n4x²=(t²−1)², (1−√(2x+1))²=(1−t)²=(t−1)². Inequality: (t+1)²<t²+8.\nt²+2t+1<t²+8 → 2t<7 → t<7/2. Converting: x<(49/4−1)/2=45/8.\nSolution: x∈[−1/2,0)∪(0,45/8).\nAnswer: D."
+  }
+}

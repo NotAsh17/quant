@@ -1,0 +1,42 @@
+{
+  "1": {
+    "answer": "1",
+    "solution": "For natural N≥1: 3N+8>0, so |3N+8|=3N+8.\nLeft: 4N+6≤3N+8 → N≤2 → N∈{1,2}.\nRight: 3N+8≤7N+2 → 6≤4N → N≥2.\nCombined: N=2 only. 1 natural number satisfies.\nAnswer: 1."
+  },
+  "2": {
+    "answer": "B",
+    "solution": "Let u=2^{-x}>0. 4^{-x+0.5}=4^{-x}×√4=2(2^{-x})²=2u².\n2u²−7u−4<0 → (2u+1)(u−4)<0. Since u>0: 2u+1>0 → u−4<0 → u<4.\n2^{-x}<4=2² → -x<2 → x>-2. Solution: x∈(−2,∞).\nAnswer: B (−2,∞)."
+  },
+  "3": {
+    "answer": "1",
+    "solution": "Numerator: x³−7x²+14x−8=(x−1)(x−2)(x−4). Denominator: x³−x²−x−2=(x−2)(x²+x+1).\nSimplify (x≠2): (x−1)(x−4)/(x²+x+1)<0. Since x²+x+1>0 always: (x−1)(x−4)<0 → 1<x<4, x≠2.\nIntegral values in (1,2): none. In (2,4): x=3. Only 1 integer.\nAnswer: 1."
+  },
+  "4": {
+    "answer": "A",
+    "solution": "Constraint: πr²h/3=1. Perimeter P=4r+2h. Substitute h=3/(πr²).\nP=4r+6/(πr²). dP/dr=4−12/(πr³)=0 → r³=3/π → r=(3/π)^{1/3}.\nh=3/(π×(3/π)^{2/3})=(3/π)^{1/3}=r. Condition: r=h.\nAnswer: A (r=h)."
+  },
+  "5": {
+    "answer": "B",
+    "solution": "By AM-GM: XY+YZ+XZ≥3(X²Y²Z²)^{1/3}=3(XYZ)^{2/3}=3×64^{2/3}=3×16=48.\nMinimum is 48, achieved at X=Y=Z=4. So XY+YZ+XZ≥48.\nValues ≥48 are possible; 36<48 is NOT possible.\nAnswer: B (36)."
+  },
+  "6": {
+    "answer": "968",
+    "solution": "(2x²+7x+2)/x=2x+7+2/x≥2√(2×2)+7=4+7=11 (AM-GM at x=1).\n(y²+6y+1)/y=y+6+1/y≥2√1+6=2+6=8 (AM-GM at y=1).\n(3z²+5z+3)/z=3z+5+3/z≥2√9+5=6+5=11 (AM-GM at z=1).\nMinimum=11×8×11=968.\nAnswer: 968."
+  },
+  "7": {
+    "answer": "A",
+    "solution": "Sum of factors: (p+1)+(q+2)+(r+3)+(s+4)=p+q+r+s+10=40.\nBy AM-GM: (p+1)(q+2)(r+3)(s+4)≤((40/4)^4)=10^4=10000.\nEquality when p+1=q+2=r+3=s+4=10 → p=9,q=8,r=7,s=6. All positive✓.\nMaximum=10000.\nAnswer: A (10000)."
+  },
+  "8": {
+    "answer": "106",
+    "solution": "Factor: (x+5)²(x+7)(x−1)(x²+2)/[(x²+3)(x−2)]. x²+2,x²+3>0 always; (x+5)²≥0.\nExpression≥0 iff (x+7)(x−1)/(x−2)≥0 (or x=−5).\nSign analysis: ≥0 when x∈[−7,1]∪(2,∞).\nIntegers x<100: {−7,...,1}=9 plus {3,4,...,99}=97. Total=106.\nAnswer: 106."
+  },
+  "9": {
+    "answer": "B",
+    "solution": "(x−1)(x+2)(x−3)−(x+1)(x−2)(x+3)≥0.\nExpand: LHS=x³−2x²−5x+6, RHS=x³+2x²−5x−6.\nDifference: −4x²+12≥0 → x²≤3 → −√3≤x≤√3≈(−1.73,1.73).\nIntegers: {−1,0,1} = 3.\nAnswer: B (3)."
+  },
+  "10": {
+    "answer": "B",
+    "solution": "Maximize X³Y² with X+Y=10. By Lagrange: 3X²Y²/λ=1/(X/3), 2X³Y/λ=1/(Y/2).\n3Y=2X → X=3Y/2. Y+3Y/2=10 → Y=4, X=6.\nMax=6³×4²=216×16=3456.\nAnswer: B (3456)."
+  }
+}
