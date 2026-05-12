@@ -675,19 +675,27 @@ main { max-width: 1080px; margin: 0 auto; padding: 40px 32px 80px; }
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
-  padding: 36px 40px;
+  padding: 32px 32px 28px;
   text-align: center;
-  max-width: 360px;
+  width: min(420px, calc(100vw - 32px));   /* fluid up to 420, with safe margins */
   box-shadow: var(--shadow-md);
 }
 .pause-card h2 { font-size: 22px; margin: 0 0 8px; letter-spacing: -0.015em; }
-.pause-card p { color: var(--text-muted); margin: 0 0 24px; font-size: 14px; }
+.pause-card p { color: var(--text-muted); margin: 0 0 16px; font-size: 14px; }
+.pause-card p:last-of-type { margin-bottom: 24px; }
 .pause-time {
   font-family: 'IBM Plex Mono', monospace;
   font-size: 36px; margin: 12px 0 24px;
   color: var(--accent-text); letter-spacing: -0.01em;
 }
-.pause-actions { display: flex; gap: 8px; justify-content: center; }
+/* Stack the prompt buttons vertically — long labels like "Continue solving
+   (no timer)" + "See results & solutions" don't fit side-by-side at this
+   card width without overflowing. */
+.pause-actions {
+  display: flex; flex-direction: column;
+  gap: 8px; align-items: stretch;
+}
+.pause-actions .btn { width: 100%; justify-content: center; }
 
 /* ============ MODAL ============ */
 .modal-backdrop {
