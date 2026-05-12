@@ -1,0 +1,42 @@
+{
+  "1": {
+    "answer": "5047",
+    "solution": "√(1+1/n²+1/(n+1)²)=(n²+n+1)²/[n(n+1)]² verified → simplifies to (n²+n+1)/(n(n+1))=1+1/n−1/(n+1). Sum n=2→50: 49+[1/2−1/51]=49+49/102. k=49+49/102. 102k=49×103=5047."
+  },
+  "2": {
+    "answer": "A",
+    "solution": "Let terms be a/r, a, ar. Product=a³=46656=6⁶ → a=36. Sum: 36(1/r+1+r)=686 → r+1/r=325/18 → 18r²−325r+18=0 → r=(325±323)/36 → r=18 or 1/18 → {2,36,648}. Second largest=36. Answer: A."
+  },
+  "3": {
+    "answer": "11133",
+    "solution": "First differences: 8,10,12,... (AP with d=2). Second differences constant → quadratic. aₙ=n²+bn+c. a₁=15: 1+b+c=15; a₂=23: 4+2b+c=23 → b=5,c=9. aₙ=n²+5n+9. a₁₀₃=10609+515+9=11133."
+  },
+  "4": {
+    "answer": "C",
+    "solution": "Let α=log(8/5). Pattern: T₁=α, T₂=−2α, T₃=2α, T₄=−3α, T₅=3α,... Pairs: T₂+T₃=0, T₄+T₅=0,...,T₂₀+T₂₁=0 (10 pairs). Sum of 21 terms=T₁+0=α=log(8/5). Answer: C."
+  },
+  "5": {
+    "answer": "133",
+    "solution": "Numerators: 8,13,18,...→Tₙ=5n+3. Denominators: 17,289,...→17ⁿ. S=Σ(5n+3)/17ⁿ=5Σn/17ⁿ+3Σ1/17ⁿ. Σ1/17ⁿ=1/16; Σn/17ⁿ=(1/17)/(16/17)²=17/256. S=5×17/256+3×1/16=85/256+48/256=133/256. 256S=133."
+  },
+  "6": {
+    "answer": "7703",
+    "solution": "Total=700(down)+2×700×(4/7)/(1−4/7) (up+down bounces)=700+2×700×4/3=700+5600/3=7700/3. a=7700, b=3, gcd=1 (7700=2²×5²×7×11). a+b=7703."
+  },
+  "7": {
+    "answer": "A",
+    "solution": "Sequence: p,q,q−p,−p,−q,p−q,p,q,... Period=6. Sum of one period=p+q+(q−p)+(−p)+(−q)+(p−q)=0. 7112=6×1185+2. Sum=2 extra terms=a₁+a₂=108.66+(−29)=79.66. Answer: A."
+  },
+  "8": {
+    "answer": "600",
+    "solution": "GP with first term 500, ratio r=1/6. Infinite sum=a/(1−r)=500/(1−1/6)=500×6/5=600."
+  },
+  "9": {
+    "answer": "A",
+    "solution": "GP with first term 6cm, ratio 1.05. S₁₀=6(1.05¹⁰−1)/0.05=120(1.05¹⁰−1). 1.05¹⁰≈1.6289. S₁₀≈120×0.6289≈75.5≈75. Answer: A."
+  },
+  "10": {
+    "answer": "C",
+    "solution": "S₁₀=S₁₈ → S₁₈−S₁₀=0 → sum of terms 11 to 18=0. These 8 terms are symmetric about position 14.5, so a₁₄+a₁₅=0 → (a₁₄+a₁₅)/2=0. Answer: C."
+  }
+}

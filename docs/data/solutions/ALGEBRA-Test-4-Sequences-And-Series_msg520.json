@@ -1,0 +1,42 @@
+{
+  "1": {
+    "answer": "32",
+    "solution": "Layer n has triangular numbers: n(n+1)/2 sweets. Total n layers = n(n+1)(n+2)/6. Set =5984: n(n+1)(n+2)=35904. n=32: 32×33×34=35904✓. Answer: 32."
+  },
+  "2": {
+    "answer": "D",
+    "solution": "Normal sum for n students: n(n+1)/2. One student (roll k) got double: n(n+1)/2+k=1944. n=61: 61×62/2=1891; k=1944−1891=53 (1≤53≤61✓). Roll number=53. Answer: D."
+  },
+  "3": {
+    "answer": "1",
+    "solution": "p,q,r in AP → r−q=q−p=d. m,n,o in GP → n²=mo. Exponents: q−r=−d, r−p=2d, p−q=−d. Expression = m^{−d}×n^{2d}×o^{−d} = (n²/mo)^d = (mo/mo)^d = 1^d = 1."
+  },
+  "4": {
+    "answer": "D",
+    "solution": "kth product: 2^k×3×2^{k−1}=3×2^{2k−1}. Sum=3Σ(k=1→10)2^{2k−1}=6(1+4+...+4^9)=6(4^{10}−1)/3=2(4^{10}−1). This equals 2097150, not matching 2(4^{11}−1), 3(4^{10}−1), or 2(4^{10}−5). Answer: D."
+  },
+  "5": {
+    "answer": "192",
+    "solution": "8 terms in AP: T₁=4, T₈=88. d=(88−4)/(8−1)=84/7=12. e=T₆=4+(6−1)×12=4+60=64. 3e=192."
+  },
+  "6": {
+    "answer": "5681",
+    "solution": "Number n appears n times. Through n=25: 25×26/2=325 terms. Through n=26: 351 terms. Position 331: 331−325=6 extra 26s. Sum=Σ(n=1→25)n²+26×6=25×26×51/6+156=5525+156=5681."
+  },
+  "7": {
+    "answer": "C",
+    "solution": "Sum=45×65=2925. Middle term (T₂₃)=a+22d=65. T₄₅=a+44d=88. Subtracting: 22d=23→d=23/22. a=65−23=42. T₂=a+d=42+23/22≈43. Answer: C."
+  },
+  "8": {
+    "answer": "83211192",
+    "solution": "Use telescoping: Σ(k=16→51)k(k+1)(k+2)(k+3)=[51×52×53×54×55−15×16×17×18×19]/5. Numerator: 417451320−1395360=416055960. Answer: 416055960/5=83211192."
+  },
+  "9": {
+    "answer": "D",
+    "solution": "After 60 min (4 intervals of 15): type A multiplies by 9⁴=6561; type B by 13⁴=28561. 6561x+28561y=169049. y=5,x=4: 26244+142805=169049✓. Total initial=x+y=9. Not in {8,7,6}. Answer: D."
+  },
+  "10": {
+    "answer": "D",
+    "solution": "Q(Q+1)/2−K−(K+1)=4927 → Q(Q+1)/2=4928+2K. Q=100: 5050=4928+2K → K=61 (K+1=62≤100✓). K−30=31. Q=99: K=11 → K−30=−19<0 (invalid). Minimum K−30=31, not in {60,61,62}. Answer: D."
+  }
+}
