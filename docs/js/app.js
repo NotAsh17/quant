@@ -946,26 +946,26 @@ function renderQuestionModal(qNum) {
   `;
 }
 
-/* -------- SUBMIT CONFIRMATION -------- */
+/* -------- TIMER-EXPIRY PROMPT -------- */
 function renderCompletionPrompt() {
   const p = state.completionPrompt;
   if (!p) return '';
-  const used = (currentTest().timer_min * 60) - state.timerSeconds;
-  const m = Math.floor(used / 60);
-  const s = used % 60;
+  const test = currentTest();
   return `
     <div class="pause-overlay">
       <div class="pause-card">
-        <div class="topic-icon" style="margin:0 auto 14px;width:42px;height:42px;background:var(--warn-soft);color:var(--warn);font-family:'IBM Plex Mono',monospace;font-size:22px;font-weight:600">!</div>
-        <h2>Submit now?</h2>
-        <p>You've answered <strong>${p.attempted}</strong> of ${p.total} questions.
-          ${p.skipped} unanswered will be marked as skipped.</p>
-        <div class="pause-time mono" title="Time used / total">
-          ${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')} <span style="color:var(--text-faint);font-size:18px"> of ${String(currentTest().timer_min).padStart(2,'0')}:00</span>
-        </div>
+        <div class="topic-icon" style="margin:0 auto 14px;width:42px;height:42px;background:var(--warn-soft);color:var(--warn);font-family:'IBM Plex Mono',monospace;font-size:22px;font-weight:600">⏱</div>
+        <h2>Time's up</h2>
+        <p>You answered <strong>${p.attempted}</strong> of ${p.total} questions in the ${test.timer_min}-minute window.
+          ${p.skipped} unanswered ${p.skipped === 1 ? 'remains' : 'remain'}.</p>
+        <p style="font-size:13px;color:var(--text-muted);margin-top:8px">
+          You can see your results now (scored on what you finished in time)
+          or keep solving the rest without a timer — submit when you're done.
+          Either way, time spent per question is tracked for the review.
+        </p>
         <div class="pause-actions">
-          <button class="btn" data-action="continue-solving">${ICONS.back} Continue solving</button>
-          <button class="btn btn-primary" data-action="submit-anyway">See results & solutions</button>
+          <button class="btn" data-action="continue-untimed">${ICONS.play} Continue solving (no timer)</button>
+          <button class="btn btn-primary" data-action="submit-anyway">See results &amp; solutions</button>
         </div>
       </div>
     </div>
@@ -1040,9 +1040,13 @@ function handleAction(e) {
   }
 
   if (a === 'submit-test') { submitTest(); return; }
-  if (a === 'continue-solving') {
+  if (a === 'continue-untimed') {
+    // User chose to keep working after the timer expired. Flip into untimed
+    // mode so the rest of the run isn't auto-submitted again. Per-question
+    // time tracking continues working via qTime / qStartedAt.
+    state.untimed = true;
     state.completionPrompt = null;
-    if (!state.untimed && state.timerSeconds > 0) startTimer();
+    state.qStartedAt = Date.now();   // restart the per-question stopwatch from now
     render();
     return;
   }
@@ -1185,15 +1189,22 @@ function submitTest(opts = {}) {
   const test = currentTest();
   if (!test) return;
 
-  // If user clicked submit (not auto-timeout) and some questions are unanswered,
-  // show a confirmation prompt before finalising. The user can go back and keep
-  // working, or commit to submitting with skipped questions.
+  // The prompt fires in only ONE case:
+  //   the timer hit 0 (auto-fired this submit) AND some questions are still
+  //   unanswered AND we're not already in untimed mode AND the user hasn't
+  //   already confirmed via the prompt itself.
+  // When the user *manually* clicks submit, they've decided to submit —
+  // we don't second-guess them.
   const isAuto = !!opts.auto;
   const attempted = countAttempted(test, state.answers);
   const skipped = test.questions.length - attempted;
-  if (!isAuto && !state.untimed && skipped > 0 && !opts.confirmed) {
-    state.completionPrompt = { attempted, total: test.questions.length, skipped };
-    // Hold the timer while the prompt is open
+  if (isAuto && !state.untimed && skipped > 0 && !opts.confirmed) {
+    state.completionPrompt = {
+      attempted,
+      total: test.questions.length,
+      skipped,
+      isTimeUp: true,
+    };
     stopTimer();
     render();
     return;
@@ -1217,7 +1228,13 @@ function submitTest(opts = {}) {
         skipped++; // treat as unscored for now
       }
     }
-    const totalUsed = (test.timer_min * 60) - state.timerSeconds;
+    // Real time spent. Sum the per-question stopwatches so overtime (after
+    // the timer hit 0 and the user continued in untimed mode) is included.
+    // Fall back to the timer delta only if qTime is empty for some reason.
+    const qTimeSum = Object.values(state.qTime).reduce((a, b) => a + (b || 0), 0);
+    const totalUsed = qTimeSum > 0
+      ? qTimeSum
+      : Math.max(0, (test.timer_min * 60) - state.timerSeconds);
     const completed = {
       currentQ: state.currentQ,
       answers: state.answers,
@@ -1267,7 +1284,8 @@ function startTimer() {
     if (state.paused || state.untimed) return;
     state.timerSeconds = Math.max(0, state.timerSeconds - 1);
     if (state.timerSeconds === 0) {
-      // Auto-submit — bypass the "are you sure" prompt; we're out of time
+      // Timer just hit 0. Tell submitTest this is the auto-fire path — if
+      // questions are unanswered it will show the "Time's up" prompt.
       submitTest({ auto: true });
       return;
     }
