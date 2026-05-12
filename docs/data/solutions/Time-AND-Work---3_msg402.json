@@ -1,0 +1,42 @@
+{
+  "1": {
+    "answer": "B",
+    "solution": "With 5 laborers (75% efficiency): production = 20×10×0.75×30×10 = 45000 m/month.\nWith 4 laborers (70% efficiency): production = 20×10×0.70×30×10 = 42000 m/month.\nLost revenue = 3000×$4 = $12000. Saved salary = $11000.\nNet = −$12000+$11000 = −$1000 (loss).\nAnswer: B (1000 loss)."
+  },
+  "2": {
+    "answer": "8",
+    "solution": "f fill pipes (rate 1/8 each) + d drain pipes (rate 1/6 each), f+d=12.\nf/8 − d/6 = 1/3 → 3f/24 − 4d/24 = 8/24 → 3f−4d=8.\n3f − 4(12−f) = 8 → 7f=56 → f=8.\nAnswer: 8."
+  },
+  "3": {
+    "answer": "C",
+    "solution": "Total work = 33×30 = 990 man-days. Day k has (45−k) men.\nWork after n days = Σ(k=1 to n)(45−k) = n(89−n)/2.\nAfter 43 days: 43×46/2=989. After 44 days: 44×45/2=990.\nOn day 44: 1 man remaining, finishes last 1 man-day exactly.\nAnswer: C (44)."
+  },
+  "4": {
+    "answer": "86400",
+    "solution": "a+b=1/36, b+c=1/24, a+c=1/30. Sum: 2(a+b+c)=1/36+1/24+1/30=37/360 → a+b+c=37/720.\nAll-three rate=37/720 tanks/hr = 37/720×60 min = 37/12 tanks/min → 74 L/min.\nCapacity = 74÷(37/12×1/60) = 74×720/37 = 2×720 = 86400 L.\nAnswer: 86400."
+  },
+  "5": {
+    "answer": "B",
+    "solution": "Arak rate=1/36, Manasa rate=1/30 (1/3 work in 10 days → full in 30 days).\nSheetal=50% of Manasa=1/60. Per 2-day cycle: (1/36+1/30)+(1/36+1/30+1/60)=11/180+14/180=25/180=5/36.\nAfter 7 cycles (14 days): 35/36. Remaining=1/36.\nDay 15 (A+M only): 1/36÷(11/180)=5/11≈0.4545 days. Total=14+5/11≈14.45.\nAnswer: B (14.45)."
+  },
+  "6": {
+    "answer": "9",
+    "solution": "A full rate=1/20, B full rate=1/30. Together full=1/12. Last 5 min fills 5/12.\nPartial rates: A×4/5=1/25, B×5/6=1/36. Combined partial=(1/25+1/36)=61/900.\n61t/900+5/12=1 → 61t/900=7/12 → t=7×75/61=525/61≈8.61 min.\nNearest integer = 9 minutes.\nAnswer: 9."
+  },
+  "7": {
+    "answer": "37",
+    "solution": "A: 30% in 36h → full in 120h. B: 25% more efficient → 120/1.25=96h. C: 20% less than B → 96/0.8=120h.\nTogether: 1/120+1/96+1/120=2/120+1/96=1/60+1/96=8/480+5/480=13/480.\nTime=480/13≈36.92 → nearest integer=37.\nAnswer: 37."
+  },
+  "8": {
+    "answer": "D",
+    "solution": "F1 and F2 each: 200000/30 parts/day. F3: 2×200000/30=400000/30 parts/day.\nCombined rate=(200000+200000+400000)/30=800000/30 parts/day.\nDays=1600000÷(800000/30)=1600000×30/800000=60.\nAnswer: D (60)."
+  },
+  "9": {
+    "answer": "21",
+    "solution": "A=(C/3+3B)/2 → 6A=C+9B → C=6A−9B … (i)\nB=(C/5+A/2)/2 → 20B=2C+5A … (ii)\nSubstitute (i): 20B=2(6A−9B)+5A=17A−18B → 38B=17A → A/B=38/17.\nGCD(38,17)=1 (coprime). |k−p|=38−17=21.\nAnswer: 21."
+  },
+  "10": {
+    "answer": "A",
+    "solution": "Alok=45 days, Brijesh=40 days. They collaborate t days, then Alok alone 56 days at half efficiency.\nWork: t/45+t/40+56/(2×45)=1 → t(1/45+1/40)+28/45=1 → t×17/360=17/45 → t=8.\nAnswer: A (8)."
+  }
+}

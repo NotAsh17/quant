@@ -1,0 +1,42 @@
+{
+  "1": {
+    "answer": "180",
+    "solution": "At 60km/h: 12km/L. At 90km/h: 33.33% more diesel per km → consumes 4/3 per km → 12÷(4/3)=9km/L.\nOn 20L at 90km/h: 20×9=180km.\nAnswer: 180."
+  },
+  "2": {
+    "answer": "A",
+    "solution": "Husband usually leaves home to arrive at bus stand at 5PM. They arrived home 20min early → husband saved 20min of total driving.\nSaving 20min means husband turned around 10min before his usual bus stand arrival = at 4:50PM.\nNeeru started walking at 4:00PM, met husband at 4:50PM → walked 50 minutes.\nAnswer: A (50)."
+  },
+  "3": {
+    "answer": "C",
+    "solution": "5 lion-steps = 8 tiger-steps (distance) → 1 lion-step = 8/5 tiger-step-length.\nIn t seconds: lion takes 4 steps, tiger takes 7 steps.\nLion speed = 4×(8/5) = 32/5 tiger-steps/t; Tiger speed = 7 tiger-steps/t.\nSpeed ratio Lion:Tiger = 32:35.\nTiger covers 280m in 4t → Lion covers 280×(32/35) = 256m.\nAnswer: C (256)."
+  },
+  "4": {
+    "answer": "B",
+    "solution": "Let T_m = time to reach meeting point (same for both).\nRam: goes to Panipat in T_m, returns to Karnal at 5/8 speed → takes 8T_m/5. Total = 13T_m/5 = 143min → T_m = 55min.\nShyam: goes to Panipat in T_m, returns to Delhi at 11/8 speed → takes 8T_m/11. Total = 19T_m/11 = 19×5 = 95min.\nAnswer: B (95)."
+  },
+  "5": {
+    "answer": "47",
+    "solution": "Normal: distance D=xT (x=normal speed, T=normal time).\nLeft k min late at 1.6x, arrived k early → journey time = T−2k. D/(1.6x)=T−2k → T/1.6=T−2k → T=16k/3.\nNext day: left 2k early, arrive 3k late → journey time = T+5k = 16k/3+5k = 31k/3.\nRequired speed = D/(T+5k) = xT/(31k/3) = x(16k/3)/(31k/3) = 16x/31.\na=16, b=31 (coprime). a+b=47.\nAnswer: 47."
+  },
+  "6": {
+    "answer": "C",
+    "solution": "Speed ratio Ram:Shyam=3:2. 1st meeting combined=D; Ram covers 3D/5 from P = D−88 from Q → 2D/5=88 → D=220km.\n2nd meeting combined=3D=660; Ram covers 3/5×660=396=220+176 → 220−176=44km from P ✓.\n3rd meeting combined=5D=1100; Ram covers 3/5×1100=660=3×220 → exactly 3 full laps, position=at Q.\nAnswer: C (At point Q)."
+  },
+  "7": {
+    "answer": "C",
+    "solution": "At meeting: P covered d1, Q covered d2. After: P takes 72min (d2/v_P=72), Q takes 32min (d1/v_Q=32).\nt_meeting²=(d1/v_Q)×(d2/v_P) is wrong; correct: t_meeting=√(72×32)=√2304=48min.\nQ's total time = t_meeting + 32 = 48+32 = 80min.\nAnswer: C (80)."
+  },
+  "8": {
+    "answer": "210",
+    "solution": "Speed=v. Extra time if malfunction at 90km: (D−90)/v×(5/3−1)=(D−90)×2/(3v)=90/60=3/2h → (D−90)/v=9/4.\nExtra time if malfunction at 150km: (D−150)×2/(3v)=45/60=3/4h → (D−150)/v=9/8.\nSubtract: 60/v=9/4−9/8=9/8 → v=160/3km/h. D−90=(9/4)×(160/3)=120 → D=210km.\nAnswer: 210."
+  },
+  "9": {
+    "answer": "B",
+    "solution": "v_A+v_B=480/12=40km/h. At meeting: A covered 12v_A, B covered 12v_B.\nAfter: same time → 12v_B/(v_A−4)=12v_A/(v_B+4) → v_B(v_B+4)=v_A(v_A−4).\nv_A²−v_B²=4(v_A+v_B)=160 → (v_A+v_B)(v_A−v_B)=160 → v_A−v_B=4.\nv_A=22, v_B=18.\nAnswer: B (18)."
+  },
+  "10": {
+    "answer": "A",
+    "solution": "Sonu(72)+Monu(108) meeting: time=480/180=8/3h after 5AM=160min → 7:40AM, at 72×8/3=192km from Hisar.\nJatin travels 192km at 90km/h: time=192/90×60=128min.\nJatin departs 160−128=32min after 5AM → 5:32AM.\nAnswer: A (5:32 AM)."
+  }
+}

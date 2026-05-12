@@ -1,0 +1,42 @@
+{
+  "1": {
+    "answer": "20",
+    "solution": "T+P finish 40% in 10 days: 10(k+3k)=0.4 → k=0.01. T=0.01, P=0.03.\nFirst 12 days: 12(T+P+J)=0.6 → T+P+J=0.05 → J=0.01.\nFastest is P (rate=0.03). P alone for 60%: 0.6/0.03=20 days.\nAnswer: 20."
+  },
+  "2": {
+    "answer": "C",
+    "solution": "(5M+6W)×9×12=1 → 5M+6W=1/108. (7M+5W)×7×40/3=1 → 7M+5W=3/280.\n12B×10×21=1 → B=1/2520. Solve M,W: M=1/945, W=1/1512.\n3M+5W+7B per 8h = 8(3/945+5/1512+7/2520)=8×(24+25+21)/7560=8×70/7560=2/27.\nDays=27/2=13.5.\nAnswer: C (13.5)."
+  },
+  "3": {
+    "answer": "1000",
+    "solution": "Wages ratio 4:3:2, total=54000. k=6000; men=24000, women=18000, children=12000.\nIndividual ratio M:W:C=8:5:3. mu=3000, wu=3600, cu=4000.\nm+w+c=(3000+3600+4000)/u=10600/u=53 → u=200.\nWoman's daily wage=5u=5×200=₹1000.\nAnswer: ₹1000."
+  },
+  "4": {
+    "answer": "B",
+    "solution": "After d days (N workers), remaining=N×r×(8T/5−d) [delay condition: finish at 8T/5].\nWith 1.8N workers, finish remaining in T−d: 1.8Nr(T−d)=Nr(8T/5−d).\n8T/5−d=9T/5−9d/5 → 4d/5=T/5 → d=T/4.\nFraction done=(Nr×T/4)/(Nr×8T/5)=5/32=15.625%.\nAnswer: B (15.625%)."
+  },
+  "5": {
+    "answer": "48",
+    "solution": "Total work=N×D. After 12 days (N workers): remaining=N(D−12).\n0.75N workers complete remaining in D days: N(D−12)/(0.75N)=D.\n4(D−12)/3=D → 4D−48=3D → D=48.\nAnswer: 48."
+  },
+  "6": {
+    "answer": "20",
+    "solution": "A+B+C=T days. A+B=1.4T → C rate=1/T−1/(1.4T)=2/(7T).\nB's share in T days: [1/(T+10)−2/(7T)]×T=T/(T+10)−2/7.\nB's fraction=360/945=8/21: T/(T+10)−2/7=8/21 → T/(T+10)=14/21=2/3.\n3T=2T+20 → T=20.\nAnswer: 20."
+  },
+  "7": {
+    "answer": "D",
+    "solution": "Weekly work (288 LCM): Mon=16, Tue=3, Wed=8, Thu=6, Fri=4, Sat=12 → 49/288/week.\nAfter 5 weeks (35 days): 245/288. Remaining=43/288.\nWeek6: Mon+16=261, Tue+3=264, Wed+8=272, Thu+6=278, Fri+4=282; remaining=6/288.\nSat: Varun at 100%=12/288 > 6/288 remaining → finishes on Saturday.\nAnswer: D (Saturday)."
+  },
+  "8": {
+    "answer": "104",
+    "solution": "Rohan under-does by 3r_R/8; Sohan over-does by 7r_S/16. Make-up: 7r_S/16=3r_R/8 → r_R/r_S=7/6.\nr_R+r_S=1/24; with 7k+6k=13k=1/24 → r_S=6/312=1/52 (slower).\n2× work for Sohan alone: 2×52=104 days.\nAnswer: 104."
+  },
+  "9": {
+    "answer": "B",
+    "solution": "Sonu alone=T+36/7, Monu alone=T+25/7. Together=1/T.\nSolving: 49a²−504a+396=0 (where a=T+36/7) → a=(504±420)/98.\na=462/49 → T=462/49−36/7=210/49=30/7≈4.286 hours.\n4 < 30/7 < 4.5.\nAnswer: B (4 < T < 4.5)."
+  },
+  "10": {
+    "answer": "B",
+    "solution": "p+q=1/18 (slowest two), q+r=1/14 (quickest two). Middle q alone=3T.\nq=(p+q+r)/3 → p+r=2q. p+r=(1/18+1/14)−2q=8/63−2q.\n2q=8/63−2q → 4q=8/63 → q=2/63. T=1/(3q)=63/6=10.5.\nAnswer: B (10.5)."
+  }
+}

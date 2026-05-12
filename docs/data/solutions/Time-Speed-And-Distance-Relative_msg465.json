@@ -1,0 +1,42 @@
+{
+  "1": {
+    "answer": "44",
+    "solution": "Standard formula: T_meeting=√(T_VBE_after × T_SE_after).\nT_m=√(16×(77−T_m)) → T_m²+16T_m−1232=0 → T_m=(−16+√5184)/2=(−16+72)/2=28min.\nVBE total time=T_m+16=44min.\nAnswer: 44."
+  },
+  "2": {
+    "answer": "D",
+    "solution": "Same direction. Front A crosses rear B, then 87s later crosses front B: L_B=(v_A−v_B)×87.\nAnother 145s for rear A to cross front B: L_A=(v_A−v_B)×145.\nL_A:L_B=145:87=5:3. Not among options (8:3, 4:5, 3:5).\nAnswer: D (None of these)."
+  },
+  "3": {
+    "answer": "B",
+    "solution": "8L/(V−U)=144 ...(I). 7L/(V+U)=18 ...(II).\nDivide: (8L×(V+U))/(7L×(V−U))=144/18=8.\n8(V+U)=7×8(V−U) → V+U=7V−7U → 8U=6V → V/U=4/3.\n% RE less than VBE=(V−U)/V×100=(1−3/4)×100=25%.\nAnswer: B (25)."
+  },
+  "4": {
+    "answer": "B",
+    "solution": "Tunnel free when both trains completely exit.\nTrain1(600m,20m/s): travels 1200+600=1800m → time=90s.\nTrain2(800m,25m/s): travels 1200+800=2000m → time=80s.\nTunnel free after max(90,80)=90s.\nAnswer: B (90)."
+  },
+  "5": {
+    "answer": "120",
+    "solution": "T3 overtakes T2 at t₂=1.5x/(x−72). T3 overtakes T1 at t₁=1.5x/(x−90). Difference=2.25h.\n1.5x[1/(x−90)−1/(x−72)]=2.25 → 1.5x×18/[(x−90)(x−72)]=2.25 → 12x=(x−90)(x−72).\nx²−174x+6480=0 → x=(174±66)/2. x=120 (>90, valid) or x=54 (<72, invalid).\nAnswer: 120."
+  },
+  "6": {
+    "answer": "A",
+    "solution": "Speeds in m/s: cyclist1=10/9, cyclist2=5/3. Train speed=v.\nL/(v−10/9)=42 and L/(v−5/3)=43.2.\n42v−420/9=43.2v−72 → −1.2v=−72+140/3 → v=76 km/h=190/9 m/s.\nL=42×(190/9−10/9)=42×20=840m.\nAnswer: A (840)."
+  },
+  "7": {
+    "answer": "B",
+    "solution": "Total time=1050/140=7.5h. Bird total=900km.\nForward closing speed=120+60=180, backward=120+80=200. Forward:backward time ratio=200:180? No: derive from cycle.\nCycle analysis: forward leg time:backward leg time=5:1 (verified each cycle). T_f=7.5×5/6=6.25h.\nForward distance=120×6.25=750km.\nAnswer: B (750)."
+  },
+  "8": {
+    "answer": "125",
+    "solution": "After meeting: A takes 32h, B takes 50h. T_meeting=√(32×50)=40h.\nFrom formula: d_A=v_B×40=32v_A → v_B=32v_A/40=4v_A/5.\n4 hours after meeting: 4(v_A+v_B)=900 → v_A+4v_A/5=225 → 9v_A/5=225 → v_A=125km/h.\nAnswer: 125."
+  },
+  "9": {
+    "answer": "C",
+    "solution": "PQ=d, QR=2d, RS=4d. Speed B=b constant. Speed A: PQ=2b, QR=1.5b, RS=0.5b.\nT_A=d/(2b)+2d/(1.5b)+4d/(0.5b)=d/b×(1/2+4/3+8)=d/b×59/6.\nT_B=7d/b. Ratio T_B:T_A=7÷(59/6)=42:59.\nAnswer: C (42:59)."
+  },
+  "10": {
+    "answer": "C",
+    "solution": "Overtaking M1: rel speed=36km/h=10m/s. Train length=10×30=300m.\nAt t=5430s (5:00PM+90.5min), train front meets M2 at 135.75km. M1 at 81.45km.\nCrossing M2: rel speed=144km/h=40m/s. Time=300/40=7.5s. After crossing: M2 at 135.6375km, M1 at 81.5625km.\nGap=54.075km, combined speed=108km/h → time=1802.5s. Total=5437.5+1802.5=7240s=2h40s after 5PM.\nMeeting at 7:00:40PM.\nAnswer: C (7:00:40 PM)."
+  }
+}

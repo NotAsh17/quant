@@ -1,0 +1,42 @@
+{
+  "1": {
+    "answer": "45",
+    "solution": "Let r=Ram's rate, s=Shyam's rate=5r/2, e=escalator speed. Time T same for both.\nRam (down+escalator): N=60+eT. Shyam (up−escalator): (s−e)T=N → (5r/2−e)T=N.\nWith r=60/T: 150−eT=60+eT → eT=45, N=105.\nMeet at t=T/2: Ram takes 30 steps, Shyam takes 75 steps. Difference=45.\nAnswer: 45."
+  },
+  "2": {
+    "answer": "A",
+    "solution": "Ram=7k, Shyam=2k, escalator=2(7k)−6(2k)=2k.\nRam up (net)=7k−2k=5k. Shyam down (net)=2k+2k=4k.\nMeet when 5k×t+4k×t=360 → t=360/9k=40/k.\nRam's position from bottom=5k×40/k=200 steps.\nAnswer: A (200)."
+  },
+  "3": {
+    "answer": "A",
+    "solution": "At 5 steps/s: time=40/5=8s, N=40+8e. At 8 steps/s: time=56/8=7s, N=56+7e.\n40+8e=56+7e → e=16. N=40+128=168.\nAnswer: A (168)."
+  },
+  "4": {
+    "answer": "D",
+    "solution": "Person:escalator=7v:3v. Up (7v+3v=10v): D/(10v)=D/(7v)−18 → D=420, v=1.\nDown against (7v−3v=4v): D/(4v)=D/(7v)+45 → 105=60+45 ✓.\nStanding still (3v): time=420/3=140 sec. Not in options.\nAnswer: D (None of these)."
+  },
+  "5": {
+    "answer": "56",
+    "solution": "D/(v−u)−D/v=24 and D/v−D/(v+u)=18 → (v+u)/(v−u)=4/3 → v=7u.\nFrom downstream equation: D/[v(v+u)]=18/u → D/(56u)=18 → D/u=1008.\nNew scenario: boat=2v=14u, stream=4u. Downstream=14u+4u=18u.\nTime=D/(18u)=1008/18=56 min.\nAnswer: 56."
+  },
+  "6": {
+    "answer": "A",
+    "solution": "At 2r: (2r+e)×17=N. At 3r: (3r+e)×12=N.\n34r+17e=36r+12e → 5e=2r → r=5e/2.\nN=(2×5e/2+e)×17=6e×17=102e. Standing still: N/e=102 sec.\nAnswer: A (102)."
+  },
+  "7": {
+    "answer": "B",
+    "solution": "Boat A: D/(b_A+u)=5, D/(b_A−u)=9 → b_A=7u/2. D=45u/2.\nFor boat B (b_B=3u/2): downstream=D/(b_B+u)=45u/2÷5u/2=9h, upstream=D/(b_B−u)=45u/2÷u/2=45h.\nTotal=9+45=54h ✓. Upstream time=45h.\nAnswer: B (45)."
+  },
+  "8": {
+    "answer": "260",
+    "solution": "Mohan: H→K at 60km/h (10h), K→H at 36km/h. Sohan: K→H at 48km/h (12.5h), H→K at 72km/h.\nFirst meeting at t=50/9h (position 1000/3 from H). After both turn: Mohan turns at t=10h, Sohan at t=12.5h.\nFor t∈[12.5,...]: x_M=960−36t, x_S=72(t−12.5). Equal at t=155/9h → x=340 km from H.\nDistance from Kanpur=600−340=260 km.\nAnswer: 260."
+  },
+  "9": {
+    "answer": "B",
+    "solution": "Stream=D/24. Let x=D/b, y=u/b. x=24y.\nUsual: 2x/(1−y²)=10 → x/(1−y²)=5. 1.4b: 2.8x/(1.96−y²)=7 → x/(1.96−y²)=2.5.\nSolve: y²=0.04, y=0.2, x=4.8.\nUpstream time=x/(1−y)=4.8/0.8=6 hours.\nAnswer: B (6)."
+  },
+  "10": {
+    "answer": "A",
+    "solution": "240/(39−u)−240/(39+u)=3 → 480u/(1521−u²)=3 → u²+160u−1521=0 → u=9 km/h.\nRound trip N km: N/30+N/48=13N/240≥6.5 → N≥120.\nMinimum integer N=120.\nAnswer: A (120)."
+  }
+}

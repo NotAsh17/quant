@@ -1,0 +1,42 @@
+{
+  "1": {
+    "answer": "16",
+    "solution": "Effective rate: man=9/day, woman=7.5×2/3=5/day. Total work=(10×9+6×5)×18=120×18=2160.\n→ With 10 men+9 women: 90+45=135/day. Days=2160/135=16.\nAnswer: 16."
+  },
+  "2": {
+    "answer": "B",
+    "solution": "Total work = 4n (planned). Actual: n+(n-20)+(n-40)+(n-60)+(n-80)+(n-100)+(n-120)=7n-420=4n.\n→ 3n=420 → n=140.\nAnswer: B (140)."
+  },
+  "3": {
+    "answer": "144",
+    "solution": "a+c+n=1/36. a+c=3n → total=4n=1/36 → n=1/144.\nVerify: a+n=4c → c=1/180, a=11/720. Sum=11/720+4/720+5/720=20/720=1/36 ✓.\nAnswer: 144 days."
+  },
+  "4": {
+    "answer": "A",
+    "solution": "When full, all open, net rate = −1/120 (cistern empties in 120 min).\n→ 1/15+1/10−7/V=−1/120 → 1/6−7/V=−1/120 → 7/V=7/40 → V=40 L.\nAnswer: A (40 L)."
+  },
+  "5": {
+    "answer": "2",
+    "solution": "168 taps in 4×3×7=84 plumber-hours → rate=2 taps/plumber-hour. Remaining=364-168=196.\n→ 7 plumbers×7h/day×2=98 taps/day. Days=196/98=2.\nAnswer: 2 days."
+  },
+  "6": {
+    "answer": "247",
+    "solution": "Rate A+C=1/8−1/12=1/24. Rate B+C=1/10−1/12=1/60. Per unit time each: 1/24+1/60=7/120 total.\n→ Time to fill = 2×120/7=240/7. a/b=240/7 → a+b=247.\nAnswer: 247."
+  },
+  "7": {
+    "answer": "C",
+    "solution": "In 3-day cycle: X+X+(X+Y+Z)=1/20+1/20+(1/20+1/30+1/60)=1/20+1/20+1/10=1/5.\n→ 5 cycles=15 days completes the work.\nAnswer: C (15)."
+  },
+  "8": {
+    "answer": "44",
+    "solution": "First 7min (A+B): 7×16/315=224/630 filled. Remaining=406/630.\nA+B+C rate=1/45+1/35−1/30=32/630−21/630=11/630.\n→ Time=406/11≈36.9 min. Total≈7+36.9≈44 min.\nAnswer: ≈44 min."
+  },
+  "9": {
+    "answer": "B",
+    "solution": "Total machine-hours = 14×12=168. After 4h: used 56. Remaining=112.\n→ With 16 machines: 112/16=7 more hours. Total=4+7=11 hours.\nAnswer: B (11)."
+  },
+  "10": {
+    "answer": "C",
+    "solution": "With leak, fills in 9h. Leak rate L=1/7−1/9=2/63 cisterns/hour.\n→ Time to drain = 63/2 = 31.5 hours.\nAnswer: C (31.5 hrs)."
+  }
+}

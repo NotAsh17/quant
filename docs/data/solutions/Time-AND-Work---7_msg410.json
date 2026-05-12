@@ -1,0 +1,42 @@
+{
+  "1": {
+    "answer": "28",
+    "solution": "P takes Q−8 hours. Together=700min=35/3 hours: 1/(Q−8)+1/Q=3/35.\n(2Q−8)×35=3Q(Q−8) → 3Q²−94Q+280=0.\nQ=(94±√5476)/6=(94±74)/6. Q=28 or Q=10/3 (reject).\nAnswer: 28 hours."
+  },
+  "2": {
+    "answer": "A",
+    "solution": "i inlets + d outlets = 20. i/18 − d/16 = 1/6 → 8i−9d=24.\n8i−9(20−i)=24 → 17i=204 → i=12, d=8.\n% more inlets than outlets = (12−8)/8×100 = 50%.\nAnswer: A (50%)."
+  },
+  "3": {
+    "answer": "144",
+    "solution": "Together rate = 1/24+1/36=5/72 → normal time=72/5 h. With leak: 72/5+8/5=16 h.\nLeak rate = 5/72−1/16 = 10/144−9/144 = 1/144 per hour.\nTime to empty via leak alone = 144 hours.\nAnswer: 144."
+  },
+  "4": {
+    "answer": "D",
+    "solution": "Inlet=1/80/min. Outlet@16m=1/240, @24m=1/360, @32m=1/240 (per min, as fraction of tank).\nPhase1(0→40%): rate=1/80, fill 0.4 → 32 min. Phase2(40→60%): 1/80−1/240=1/120, fill 0.2 → 24 min.\nPhase3(60→80%): 1/80−1/240−1/360=1/180, fill 0.2 → 36 min. Phase4(80→87.5%): 1/80−1/240−1/360−1/240=1/720, fill 0.075 → 54 min.\nTotal=32+24+36+54=146 min.\nAnswer: D (146)."
+  },
+  "5": {
+    "answer": "76",
+    "solution": "73 men, C(73,2)=2628 pair-days total. Each man appears in 72 pairs.\nWork done in all pair-days = 72×Σw_i. Then 4 days all together = 4×Σw_i.\nTotal = 76×Σw_i. All 73 together finish in 76×Σw_i / Σw_i = 76 days.\nAnswer: 76."
+  },
+  "6": {
+    "answer": "243",
+    "solution": "Day k: (n+5(k−1)) men, (m−4(k−1)) crates each. Total=5nm−40n+50m−600=1245.\n→ nm−8n+10m=369 → n=(369−10m)/(m−8).\nm=25: n=(369−250)/17=7. Day3: (7+10)×(25−8)=17×17=289=17² (prime²) ✓.\nDay5: (7+20)×(25−16)=27×9=243.\nAnswer: 243."
+  },
+  "7": {
+    "answer": "B",
+    "solution": "Each has rate 1/60/day (together 1/20). LCM cycles(6,8,12)=24 days.\nIn 24 days: A=4×(4/60)=16/60, B=3×(5/60)=15/60, C=2×(7/60)=14/60. Total=45/60=3/4.\nRemaining=1/4. Days 25−28: all 3 work → 4×3/60=12/60. Remaining=1/20.\nDay29: B+C work → 2/60. Remaining=1/60. Day30: C alone → 1/60. Done.\nAnswer: B (30)."
+  },
+  "8": {
+    "answer": "192",
+    "solution": "108 men × 50 days = 45% done → 1 man-day = 45/(108×50) of total → total = 12000 man-days.\nRemaining=55% → 6600 man-days. Deadline: 80−8=72 days; but only 80−50=30 days left; 30−8=22 days.\nMen needed=6600/22=300. Extra=300−108=192.\nAnswer: 192."
+  },
+  "9": {
+    "answer": "D",
+    "solution": "Group3: (2M+6W)×52=1. Groups1&2 subtract: (M−W)+2W=3/416 → M+W=3/416.\n4W=1/52−6/416=2/416 → W=1/832. M=5/832.\nVerify m1=5, m2=4, m1=m2+1 ✓.\n% less = (M−W)/M×100=(4/5)×100=80%. Not among 50/66.66/75.\nAnswer: D (None of these)."
+  },
+  "10": {
+    "answer": "D",
+    "solution": "Eqs: I:3M+5W+9C=1/45, II:5M+3W+13C=1/36, III:15M+9W+21C=1/15.\nIII÷3: 5M+3W+7C=1/45. II−III': 6C=1/36−1/45=1/180 → C=1/1080.\nFrom I: 3M+5W=1/72. From II: 5M+3W=17/1080. Solve: W=1/720, M=1/432.\n36W=36/720=1/20/day → 20 days.\nAnswer: D (20)."
+  }
+}

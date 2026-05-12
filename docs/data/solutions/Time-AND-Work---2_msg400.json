@@ -1,0 +1,42 @@
+{
+  "1": {
+    "answer": "D",
+    "solution": "Let rates: a≤b≤c. Slowest two: a+b=1/n. Quickest two: b+c=1/m. Middle person b alone = 3T (given one person takes 3× all-three time T).\n→ b=1/(3T). a=1/n−1/(3T), c=1/m−1/(3T).\n→ a+b+c = 1/n+1/m−1/(3T) = 1/T → 1/n+1/m = 4/(3T) → T=4mn/(3(m+n)).\nAnswer: D (4mn/3(m+n))."
+  },
+  "2": {
+    "answer": "D",
+    "solution": "Rates: A=1/5, B=1/15, C=−1/10. Per 3-day cycle (B,C,A): 1/15−1/10+1/5=2/30−3/30+6/30=5/30=1/6.\n→ After 5 cycles (15 days): 5/6 done. Remaining=1/6.\nDay16 (B): +1/15 → 27/30=9/10. Day17 (C): −1/10 → 4/5. Day18 (A): +1/5 → 1.\n→ Exactly 18 days. Not among options A/B/C.\nAnswer: D (None of these)."
+  },
+  "3": {
+    "answer": "5",
+    "solution": "Let Jayant=4T, Ashok=2T, Prithvi=T, Prashant=(3/4)×4T=3T.\nPrithvi+Jayant rate: 1/T+1/4T=5/4T → time=4T/5.\nAshok+Prashant rate: 1/2T+1/3T=5/6T → time=6T/5.\nRatio = (4T/5):(6T/5) = 4:6 = 2:3.\na+b = 2+3 = 5.\nAnswer: 5."
+  },
+  "4": {
+    "answer": "B",
+    "solution": "Given: (i) 2W+3M < 4C+1M → W+M < 2C. (ii) 3W < 2C.\nStatement I (M>C): Not determinable — M can be >C or <C while satisfying (i). False/indeterminate.\nStatement II (M+W < 2C): Directly from condition (i). Always true.\nStatement III (M+W > 2C): Contradicts (i). Always false.\n→ Only Statement II is correct.\nAnswer: B (1)."
+  },
+  "5": {
+    "answer": "3",
+    "solution": "Fill rate=1/6, drain rate=1/12. With f fills and d drains, n=f+d: f/6−d/12=1/2 → 2f−d=6 → 3f=n+6 → f=(n+6)/3.\nFor valid integer solutions: n≡0 (mod 3) and d=n−f=(2n−6)/3≥0 → n≥3.\nCheck: n=24→f=10,d=14 ✓; n=16→22/3 ✗; n=33→f=13,d=20 ✓; n=13→19/3 ✗; n=9→f=5,d=4 ✓; n=8→14/3 ✗.\nValid values: 24, 33, 9 → 3 values.\nAnswer: 3."
+  },
+  "6": {
+    "answer": "75",
+    "solution": "Inlet rate=1/60/min. Outlet1(5m): half-tank in 90min → rate=1/180/min. Outlet2(8m): 20% in 72min → rate=1/360/min. Outlet3(9.5m): 5% in 18min → rate=1/360/min.\nPhase1 (0→50%, only inlet): 0.5/(1/60)=30 min.\nPhase2 (50→80%, inlet−outlet1): net=1/60−1/180=1/90. 0.3/(1/90)=27 min.\nPhase3 (80→95%, inlet−outlet1−outlet2): net=1/60−1/180−1/360=3/360=1/120. 0.15/(1/120)=18 min.\nTotal=30+27+18=75 min.\nAnswer: 75."
+  },
+  "7": {
+    "answer": "A",
+    "solution": "Day 2k−1: k men, (k−1) women. Day 2k: k men, k women. 3W=2M → W=2M/3.\nWork day 2k−1 = kM+(k−1)(2M/3)=M(5k−2)/3. Work day 2k = kM+k(2M/3)=5kM/3.\nTotal 40 days (k=1 to 20): M/3×Σ[(5k−2)+5k]=M/3×Σ[10k−2]=M/3×(2100−40)=2060M/3.\n30 women rate=30×(2M/3)=20M/day. Days=(2060M/3)/(20M)=2060/60≈34.33 → nearest=34.\nAnswer: A (34)."
+  },
+  "8": {
+    "answer": "10",
+    "solution": "Let Kumar=k days, Raja=k+5 days. Together t days, then Raja alone 5 days.\nRaja's share: (t+5)/(k+5)=0.6. Kumar's share: t/k=0.4 → t=0.4k.\nSubstitute: (0.4k+5)/(k+5)=0.6 → 0.4k+5=0.6k+3 → 0.2k=2 → k=10.\nVerify: t=4, Raja=(4+5)/15=60% ✓, Kumar=4/10=40% ✓.\nAnswer: 10."
+  },
+  "9": {
+    "answer": "B",
+    "solution": "n fill (rate 1/10) and p drain (rate 1/16): n/10−p/16=1/4 → 8n−5p=20 → p=(8n−20)/5.\nFor integer p≥1: n must be multiple of 5 (n=5,10,15,20,25...).\n→ n+p values: n=5→9, n=10→22, n=15→35, n=20→48, n=25→61...\nCheck 36: 8n−5(36−n)=20 → 13n=200 → n=15.4, not integer. So 36 is impossible.\nAnswer: B (36)."
+  },
+  "10": {
+    "answer": "D",
+    "solution": "Worker1 always adds milk (odd turns). Worker2 pattern: milk,milk,water,milk,milk,water... (even turns).\nEvery 6 turns: Worker1 adds 3 milk, Worker2 adds 2 milk+1 water → 5 milk, 1 water per 6 turns.\nAfter 24 turns (4 cycles): 20 milk + 4 water = 24 cups.\nTurn 25 (Worker1, milk): 21 milk + 4 water = 25 cups (half full).\nAnswer: D (21)."
+  }
+}

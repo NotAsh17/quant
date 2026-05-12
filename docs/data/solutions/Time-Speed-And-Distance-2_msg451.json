@@ -1,0 +1,42 @@
+{
+  "1": {
+    "answer": "40",
+    "solution": "Onward=d km at 40km/h. Return=(d+10) km: half at 30, half at 50.\nReturn time=(d+10)(1/60+1/100)=4(d+10)/150. Difference=19/60h.\n4(d+10)/150−d/40=19/60 → multiply 600: 16(d+10)−15d=190 → d=30.\nReturn=40 km.\nAnswer: 40."
+  },
+  "2": {
+    "answer": "A",
+    "solution": "A speed=3v, B speed=2v, stream=u. A round trip d: T_A=6dv/(9v²−u²). B round trip d: T_B=4dv/(4v²−u²).\nT_B−T_A=20 ...(I). A round trip 2d=12dv/(9v²−u²)=T_B+16 ...(II).\nFrom (II)−(I): 6dv/(9v²−u²)=36 → T_A=36 min.\nAnswer: A (36)."
+  },
+  "3": {
+    "answer": "480",
+    "solution": "Speed ratio R:S=360:240=3:2 (Ram clockwise, covers 600−240=360 at 1st meeting).\nAt 3rd meeting: combined=3×600=1800m. Ram covers (3/5)×1800=1080m clockwise.\n1080 mod 600=480m clockwise from start.\nAnswer: 480."
+  },
+  "4": {
+    "answer": "A",
+    "solution": "1st meeting at 180m from A. Combined=300 → Ajay:Vijay=180:120=3:2.\n2nd meeting: combined=3×300=900m. Ajay covers (3/5)×900=540m.\n540m: 300 to B + 240 back → position=300−240=60m from A.\nAnswer: A (60m from A)."
+  },
+  "5": {
+    "answer": "210",
+    "solution": "Train X: 54km/h=15m/s. Cross tree in 24s → length_X=360m.\nPlatform: (360+p)/15=90 → p=990m.\nTrain Y: 60km/h=100/6 m/s. (L_Y+990)/(100/6)=72 → L_Y+990=1200 → L_Y=210m.\nAnswer: 210."
+  },
+  "6": {
+    "answer": "D",
+    "solution": "A(90km/h, 9AM) meets C(50km/h, 6AM): 90t=50(t+3) → t=3.75h → 12:45PM, 337.5km.\nB needs 337.5/60=5.625h=5h37m30s before 12:45PM → start=7:07:30AM.\nNot among options.\nAnswer: D (None of these)."
+  },
+  "7": {
+    "answer": "D",
+    "solution": "C beats B by 120m in 720m: B/C=600/720=5/6.\nB beats A by 360m in 720m: A/B=360/720=1/2.\nWhen C runs 720m, B runs 600m, A runs 600×(1/2)=300m.\nC beats A by 720−300=420m. Not in options.\nAnswer: D (None of these)."
+  },
+  "8": {
+    "answer": "6",
+    "solution": "Still water=15km/h. Upstream: 15km in 1.5h → speed=10km/h. Stream=5km/h.\nDownstream=20km/h.\nTime for 40km down + 40km up = 40/20+40/10=2+4=6 hours.\nAnswer: 6."
+  },
+  "9": {
+    "answer": "B",
+    "solution": "Chahel catches Aadit: 10t=6(t+15) → t=22.5s (from Chahel's start). Position=225m.\nBadal's position at same moment: 8×(22.5+5)=220m. [Badal started 5s before Chahel]\nDistance=225−220=5m.\nAnswer: B (5)."
+  },
+  "10": {
+    "answer": "D",
+    "solution": "Let Asha=a, Bina=b. (I): b(100/a+5)=90. (II): a(100/b−10)=80.\nFrom (II): a=80b/(100−10b). Sub into (I): 5(100−10b)/4+5b=90.\n500−50b+20b=360 → 30b=140 → b=14/3 m/s.\nAnswer: D (14/3)."
+  }
+}

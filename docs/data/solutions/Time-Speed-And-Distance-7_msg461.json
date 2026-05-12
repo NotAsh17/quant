@@ -1,0 +1,42 @@
+{
+  "1": {
+    "answer": "40",
+    "solution": "Speed ratios: A:B=300:250=6:5; A:C=300:268=75:67.\nIn 600m from scratch when A finishes: B at 600×5/6=500m, C at 600×67/75=536m.\nWhen C runs remaining 64m, B runs 64×(B_speed/C_speed)=64×(5/6)/(67/75)=64×125/134≈59.7m.\nB at 500+59.7=559.7m when C finishes. C beats B by 600−559.7=2700/67≈40m.\nAnswer: 40."
+  },
+  "2": {
+    "answer": "D",
+    "solution": "Bell interval=12min5s=725s. Steve hears interval=10min55s=655s (shorter because moving toward church).\nDoppler: 725×(1−v/330)=655 → 70=725v/330 → v=70×330/725=23100/725=31.86 m/s.\n31.86≠32 or any other option.\nAnswer: D (None of these)."
+  },
+  "3": {
+    "answer": "B",
+    "solution": "Let s=S speed, g=G speed. Case1: 775/g−800/s=30 (S beats G by 30s). Case2: s(800/g−40)=760 (G gets 40s start, G beats S by 40m).\nLet r=s/g. Substituting: 800r−(4/3)(775r−800)=760 → −700r/3+3200/3=760 → r=920/700=46/35.\ng=(775×46/35−800)×35/(30×46)=7650/1380=255/46≈5.54 m/s.\nAnswer: B (5.54 m/s)."
+  },
+  "4": {
+    "answer": "D",
+    "solution": "Overstretched=actual−planned=(32+t)−t=32=16t/5 → t=10min. Tortoise speed=v.\nRabbit thought: after sleeping t, still beats by 20min → 3200/v−t=20 → 3200/v=30 → v=320/3 m/min.\nTortoise total time=4000/v=4000×3/320=37.5 min.\nAnswer: D (37.5 min)."
+  },
+  "5": {
+    "answer": "65",
+    "solution": "8 bikes in lanes 1–8 (A=lane1,...,H=lane8). Speeds∝(lane)². C(lane3) takes 100h for 705600km → C speed=7056km/h=784×9 → unit=784km/h.\nA speed=784×1²=784km/h. H speed=784×8²=784×64=50176km/h.\nRatio A:H=784:50176=1:64. m=1, n=64 (coprime). m+n=65.\nAnswer: 65."
+  },
+  "6": {
+    "answer": "C",
+    "solution": "Time=705600/speed. E(lane5):speed=784×25=19600→time=36h (not <36). F(lane6):speed=28224→time=25h✓. G(lane7):speed=38416→time≈18.4h✓. H(lane8):speed=50176→time≈14.1h✓.\nBikes finishing in <36h: F, G, H = 3 bikes.\nAnswer: C (3)."
+  },
+  "7": {
+    "answer": "D",
+    "solution": "G is in lane 7, speed=784×49=38416km/h. F is in lane 6, speed=784×36=28224km/h.\nG's speed > F's speed → G finishes before F. F can never beat G.\nAnswer: D (F can never beat G)."
+  },
+  "8": {
+    "answer": "6",
+    "solution": "Speed ratio P:A=3:8. At t=3h: Prakash at 9k, Abhay at 24k. Abhay turns back at speed 3/8×8k=3k.\nBoth now move toward each other at 3k each. Gap=15k, combined speed=6k → meet in 15k/6k=5/2h.\nPrakash position=9k+3k×5/2=16.5k=33km → k=2. Prakash speed=3×2=6km/h.\nAnswer: 6."
+  },
+  "9": {
+    "answer": "B",
+    "solution": "Speeds in AP: v₁,v₂,v₃,v₄ over 4 hours. Average speed=(v₁+v₂+v₃+v₄)/4=(v₁+v₄)/2=(v₂+v₃)/2.\nThe average lies between v₂ and v₃ (speed in 2nd and 3rd hours) for any AP with positive common difference.\nAnswer: B (between 2 and 3 hour)."
+  },
+  "10": {
+    "answer": "D",
+    "solution": "Bhairav:Akshay=1600:1344=25:21. Bhairav:Chinmay=100:92=25:23.\nIn 3200m (2 miles): when Bhairav finishes, Chinmay at 3200×23/25=2944m, Akshay at 3200×21/25=2688m.\nWhen Chinmay finishes 3200m, Akshay runs 3200×(21/23)=2921.7m.\nChinmay beats Akshay by 3200−3200×21/23=3200×2/23=6400/23≈278.26m.\nAnswer: D (Chinmay, 278.26 m)."
+  }
+}

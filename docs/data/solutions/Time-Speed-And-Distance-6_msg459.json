@@ -1,0 +1,42 @@
+{
+  "1": {
+    "answer": "22",
+    "solution": "Hands coincide 11 times every 12 hours (skipping once at 11:00 cycle).\n→ In 24 hours: 11×2=22 times.\nAnswer: 22."
+  },
+  "2": {
+    "answer": "A",
+    "solution": "At 3:00, hour hand at 90°, minute hand at 0°. Gap = 90°.\nRelative speed of minute hand = 5.5°/min. Time to close gap = 90/5.5 = 180/11 min = 16 4/11 min.\n4/11 min = 4×60/11 sec ≈ 21.8 sec ≈ 22 sec.\nTime = 3:16:22 PM.\nAnswer: A (3:16:22 PM)."
+  },
+  "3": {
+    "answer": "D",
+    "solution": "At t min past 5: angle=|150−5.5t|.\nCase1: 150−5.5t=34 → t=232/11=21 1/11 min → 5:21:06 ✓ (option A).\nCase2: 150−5.5t=−34 → t=368/11=33 5/11 min → 5:33:27 ✓ (option B).\nBoth times are valid.\nAnswer: D (Both A and B)."
+  },
+  "4": {
+    "answer": "C",
+    "solution": "Hands coincide (0°): 22 times/day. Hands opposite (180°): 22 times/day.\nTotal straight positions = 22+22=44.\nAnswer: C (44)."
+  },
+  "5": {
+    "answer": "15",
+    "solution": "At 5:30: hour hand = 5×30+30×0.5 = 165°. Minute hand = 30×6 = 180°.\nAngle = |180−165| = 15°.\nAnswer: 15."
+  },
+  "6": {
+    "answer": "B",
+    "solution": "From 12:00 PM to 4:20 PM = 4h 20min = 260 minutes.\nHour hand rotates at 0.5°/min → 260×0.5 = 130°.\nAnswer: B (130)."
+  },
+  "7": {
+    "answer": "B",
+    "solution": "From 7 AM to 1 PM = 6 hours = 360 minutes.\nHour hand rotates at 0.5°/min → 360×0.5 = 180°.\nAnswer: B (180)."
+  },
+  "8": {
+    "answer": "72",
+    "solution": "Bedroom gains 5min/h → runs at 65/60 rate. Kitchen loses 5min/h → runs at 55/60 rate.\nAfter t real hours, difference shown = (65−55)t/60 = t/6 hours.\nSame time again when t/6 = 12 (full clock cycle) → t=72 hours.\nAnswer: 72."
+  },
+  "9": {
+    "answer": "B",
+    "solution": "At t min past 3: hour=90+0.5t, minute=6t. Opposite → |5.5t−90|=180.\n5.5t=270 → t=540/11=49 1/11 min past 3.\nAnswer: B (49 1/11 min past 3)."
+  },
+  "10": {
+    "answer": "B",
+    "solution": "At t min past 5: |5.5t−150|=90.\nCase1: 5.5t=240 → t=480/11=43 7/11 min (in range [30,60]) ✓.\nCase2: 5.5t=60 → t=120/11≈10.9 min (not in [30,60]).\nAnswer: B (43 7/11 minutes past 5)."
+  }
+}

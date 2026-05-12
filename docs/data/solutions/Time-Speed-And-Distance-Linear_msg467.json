@@ -1,0 +1,42 @@
+{
+  "1": {
+    "answer": "330",
+    "solution": "Let T_R=Rohan's full race time, T_S=Sohan's full race time.\nRace1: Sohan starts 220m ahead → runs 1980m. Beats by 33s: 1980/s−2200/r=33 → (9/10)T_S−T_R=33 ...(I).\nRace2: Sohan starts 198s early, beats Rohan by 1100m: r×(T_S−198)=1100 → T_R=2T_S−396 ...(II).\nSub (II)→(I): 9T_S/10−(2T_S−396)=33 → −11T_S/10=−363 → T_S=330s.\nAnswer: 330."
+  },
+  "2": {
+    "answer": "B",
+    "solution": "R gives Q 360m in 1800m → R:Q=1800:1440=5:4.\nQ gives P 480m in 2880m → Q:P=2880:2400=6:5.\nR:P=(5/4)×(6/5)=3/2.\nIn 2400m: when R finishes, P runs 2400×2/3=1600m. Headstart=2400−1600=800m.\nAnswer: B (800)."
+  },
+  "3": {
+    "answer": "C",
+    "solution": "A:B=1200:1020=20:17. From time headstart: v_B=180/(17×15/17)=12 m/s, v_A=240/17 m/s.\nFor C: A's time for 600m=600×17/240=42.5s. C's time=42.5+5.5=48s → v_C=600/48=12.5 m/s.\nIn 2500m: C faster. When C finishes, B runs 2500×12/12.5=2400m → C beats B by 100m.\nAnswer: C (100)."
+  },
+  "4": {
+    "answer": "C",
+    "solution": "A gives B 180m, beats B by 180m: when A runs 1200m, B runs 840m (1020m start−180m−beat) → A:B=1200:840=10:7.\nA gives C 240m, beats C by 240m: when A runs 1200m, C runs 720m → A:C=1200:720=5:3=10:6.\nB:C=(7/10)÷(6/10)=7:6.\nIn 1680m: when B finishes, C runs 1680×6/7=1440m → B beats C by 240m.\nAnswer: C (240)."
+  },
+  "5": {
+    "answer": "780",
+    "solution": "Ramu speed=13s/5, Shamu speed=s (Ramu=2⅗=13/5 times faster).\nRamu gives 360m head start. When Ramu finishes L: Shamu at 360+5L/13 from start.\nRamu beats by 120m: L−360−5L/13=120 → 8L/13=480 → L=780m.\nAnswer: 780."
+  },
+  "6": {
+    "answer": "A",
+    "solution": "A time=196s, B time=308s. L×(1−196/308)=784 → L×112/308=784 → L=2156m.\nOriginal: A=11m/s, B=7m/s. New: A=22m/s (×2), B=28m/s (×4).\nB finishes 2156m in 2156/28=77s. A runs 22×77=1694m. B beats A by 2156−1694=462m.\nAnswer: A (462)."
+  },
+  "7": {
+    "answer": "C",
+    "solution": "Race1: R:S=1000:640=25:16. Race2: Rohan runs 1200m at 1.2R; Sohan runs 1000m at 1.25S.\nTime for Rohan=1200/(1.2R)=1000/R. Sohan covers 1.25S×(1000/R)=1250×16R/(25R)=800m.\nRohan at 1000m (finish), Sohan at 800m → Rohan beats by 200m.\nAnswer: C (200)."
+  },
+  "8": {
+    "answer": "600",
+    "solution": "When P runs L: Q at L−120, R at L−240. Q:R=(L−120):(L−240).\nAlso in L race: Q beats R by 150 → Q:R=L:(L−150).\n(L−120)/(L−240)=L/(L−150) → (L−120)(L−150)=L(L−240).\nL²−270L+18000=L²−240L → 18000=30L → L=600.\nAnswer: 600."
+  },
+  "9": {
+    "answer": "B",
+    "solution": "Let T_R,T_S be finish times. Race2: T_S−T_R=40 ...(II). Race1(Shyam starts 20s early): s×(T_R+20)=1000.\n(1200/T_S)×(T_R+20)=1000 → 1200(T_R+20)=1000(T_R+40) → 200T_R=16000 → T_R=80s,T_S=120s.\nr=15m/s, s=10m/s. % less=(15−10)/15×100=33.33%.\nAnswer: B (33.33)."
+  },
+  "10": {
+    "answer": "B",
+    "solution": "A beats B by 340m in 1360m → A:B=1360:1020=4:3.\nB beats C by 360m in 1620m → B:C=1620:1260=9:7.\nA:C=(4/3)×(9/7)=12:7.\nIn k meter race: k−k×7/12=650 → 5k/12=650 → k=1560m.\nAnswer: B (1560)."
+  }
+}

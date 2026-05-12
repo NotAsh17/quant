@@ -1,0 +1,42 @@
+{
+  "1": {
+    "answer": "5",
+    "solution": "Opposite direction. Meeting positions: nth meeting at n×k/(k+1) laps from start.\n11th=29th requires (29−11)×k/(k+1)=18k/(k+1) is integer → (k+1)|18.\nDivisors of 18 ≥ 2: {2,3,6,9,18} → k ∈ {1,2,5,8,17} → 5 values.\nAnswer: 5."
+  },
+  "2": {
+    "answer": "A",
+    "solution": "A=36km/h, B=24km/h. Each overtake: both decrease by 2. After n overtakes: A=36−2n, B=24−2n.\nRelative speed stays constant at 12km/h throughout. B comes to rest when 24−2n=0 → n=12.\nThe 12th meeting is the last one (B's speed goes to 0 after it). 12 meetings before B comes to rest.\nAnswer: A (12)."
+  },
+  "3": {
+    "answer": "C",
+    "solution": "A overtakes C 5×/round: in time C does 1 round, A gains 5 laps → A does 6 rounds. v_A/v_C=6.\nC overtakes B 8×/round: in time B does 1 round, C gains 8 laps → C does 9 rounds. v_C/v_B=9.\nv_A/v_B=6×9=54. Ratio A:B=54:1.\nAnswer: C (54:1)."
+  },
+  "4": {
+    "answer": "A",
+    "solution": "Same dir: L/(s−m)=11t → s−m=L/(11t). Opposite: L/(s+m)=5t → s+m=L/(5t).\n2s=L/t×(1/5+1/11)=16L/(55t) → s=8L/(55t). 2m=L/t×(1/5−1/11)=6L/(55t) → m=3L/(55t).\n%less=(s−m)/s×100=(5/8)×100=62.5%.\nAnswer: A (62.5)."
+  },
+  "5": {
+    "answer": "10",
+    "solution": "Same direction: (G−P)×88/3=4 → G−P=3/22. Opposite: 3rd meeting at 6min → (G+P)×6=3 → G+P=1/2.\nP=(1/2−3/22)/2=(11/22−3/22)/2=(8/22)/2=2/11 rounds/min.\nIn 55 min: (2/11)×55=10 rounds.\nAnswer: 10."
+  },
+  "6": {
+    "answer": "A",
+    "solution": "Track T1: circumference=360π m, Mohan speed=400 m/min → lap time=9π/10 min.\nTrack T2: circumference=240π m, Sohan speed=250 m/min → lap time=24π/25 min.\nThey meet at P when both complete integer laps: LCM(9π/10, 24π/25)=π×LCM(9,24)/GCD(10,25)=72π/5 min.\nSohan's rounds=(72π/5)÷(24π/25)=72×25/(5×24)=15.\nAnswer: A (15)."
+  },
+  "7": {
+    "answer": "D",
+    "solution": "When A finishes 1 lap: equal spacing → 2b=a+c ...(I).\nWhen A finishes 4 laps, C at same position as B was at A's 1st lap: 4c/a≡b/a (mod 1) → 4c−b=ka.\nWith a=2b−c: solutions k=0→(7,4,1)sum=12, k=1→(7,5,3)sum=15, k=2→(7,6,5)sum=18. All valid.\nAnswer: D (All of the above)."
+  },
+  "8": {
+    "answer": "15",
+    "solution": "Track=5km. Lap times: T_A=5/18h, T_B=5/15=1/3h, T_C=5/12h.\nLCM(5/18, 1/3, 5/12)=LCM(5,5,5)/GCD(18,15,12)×(1/1)=5/3h.\nD's distance in 5/3h: 9×5/3=15km.\nAnswer: 15."
+  },
+  "9": {
+    "answer": "C",
+    "solution": "Same direction. Distinct meeting points = |12−k|/gcd(12,k)=3.\nCheck all k=1..31 (k≠12): k=3→9/3=3✓; k=21→9/3=3✓; k=30→18/6=3✓. All others give ≠3.\nExactly 3 values.\nAnswer: C (3)."
+  },
+  "10": {
+    "answer": "C",
+    "solution": "First meeting when P completes P/(P−Q) laps. In 5th round: 4<P/(P−Q)<5 → 5/4<P/Q≤4/3.\nCheck: (i)9/7≈1.286 ✓; (ii)13/10=1.30 ✓; (iii)19/15≈1.267 ✓. All in (5/4, 4/3).\nSohan also in 4th round for all three: verified Q/(P−Q) ∈ (3,4) for each.\nAnswer: C (All the options are correct)."
+  }
+}

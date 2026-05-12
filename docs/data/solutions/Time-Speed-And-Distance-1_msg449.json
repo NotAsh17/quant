@@ -1,0 +1,42 @@
+{
+  "1": {
+    "answer": "425",
+    "solution": "Total distance = 25×20 = 500 km. d₁+d₂=500, d₁/8+d₂/40=20.\n5(500−d₂)+d₂=800 → 2500−4d₂=800 → d₂=425 km.\nAnswer: 425 km."
+  },
+  "2": {
+    "answer": "D",
+    "solution": "New speed=0.7v. Extra time=(1/0.7−1)×T=(3/7)×T=50 min=5/6 h.\nT=5/6×7/3=35/18 h. Not among options 25/9, 50/9, 25/18.\nAnswer: D (None of these)."
+  },
+  "3": {
+    "answer": "480",
+    "solution": "A's speed=1.2×B's speed. Dead heat: both finish at same time.\nA runs L in same time B runs L−80: L/(1.2v)=(L−80)/v.\nL/1.2=L−80 → L=1.2L−96 → 0.2L=96 → L=480 m.\nAnswer: 480."
+  },
+  "4": {
+    "answer": "D",
+    "solution": "Speed ratio Bunty:Babloo=200:170=20:17. 2nd race: Bunty runs 220m, Babloo 200m.\nBunty finishes in 220/(20v)=11/v. Babloo covers 17v×11/v=187m → 13m short.\nBunty wins by 13m.\nAnswer: D (Bunty beats Babloo by 13m)."
+  },
+  "5": {
+    "answer": "40",
+    "solution": "Quresh speed=300/10=30 m/s. P:Q:R=6:5:4 → Ranveer=24 m/s.\nL/6=300 → L=1800m. Ranveer time=75s. Sachin time=75+30=105s → speed=120/7 m/s.\nSachin triples: speed=360/7 m/s. Time=1800×7/360=35s.\nSachin beats Ranveer by 75−35=40 seconds.\nAnswer: 40."
+  },
+  "6": {
+    "answer": "B",
+    "solution": "Time=(D/5)/40+(4D/5)/80=D/200+D/100=D/200+2D/200=3D/200.\nAverage speed=D/(3D/200)=200/3≈66.67 km/h.\nAnswer: B (66.66)."
+  },
+  "7": {
+    "answer": "A",
+    "solution": "Planes fly toward each other. Wind affects both planes in opposite directions → effects cancel.\nClosing speed=900+500=1400 km/h (wind contribution nets to 0).\nTime=7000/1400=5 hours.\nAnswer: A (5)."
+  },
+  "8": {
+    "answer": "16",
+    "solution": "Speeds: A=5x, B=5x/2, C=x. Total=12km, avg=30km/h → total time=24min=0.4h.\n4/(5x)+8/(5x)+4/x=32/(5x)=0.4 → x=16 km/h.\nSpeed over C=16 km/h.\nAnswer: 16."
+  },
+  "9": {
+    "answer": "A",
+    "solution": "Jakyell: A at min speed 60km/h → time=4min. B time=1.5×A time=6min → speed=40km/h.\n50% more than prev record(12min)=18min. C time=18−4−6=8min.\nC speed=4/(8/60)=30 km/h.\nAnswer: A (30)."
+  },
+  "10": {
+    "answer": "C",
+    "solution": "P: A at min=60km/h (4min), B at max=50km/h (4.8min). Total A+B=8.8min.\nFor C time<12−8.8=3.2min: speed>4/(3.2/60)=75km/h. Max speed for C=40km/h.<75. Impossible.\nAnswer: C (This is not possible)."
+  }
+}

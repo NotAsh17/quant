@@ -1,0 +1,42 @@
+{
+  "1": {
+    "answer": "1.8",
+    "solution": "Speeds: v,1.2v,1.44v,...(6 segments×100m). Total time=Σ100/(1.2^k × v)=100/v×(1+5/6+25/36+125/216+625/1296+3125/7776)=100v×31031/7776=798s.\nv=100×31031/(7776×798)≈0.5 m/s. In km/h: 0.5×3.6=1.8 km/h.\nAnswer: 1.8."
+  },
+  "2": {
+    "answer": "D",
+    "solution": "On 360-pole track, two runners meet between poles when their relative speed doesn't divide 360.\nOption B {2,3,6,13}: opposite pair 3+13=16, 360/16=22.5 (not integer) → meets between poles ✓.\nOption C {1,4,6,13}: same dir |13−6|=7, 360/7 not integer → meets between poles ✓.\nBoth B and C satisfy the condition.\nAnswer: D (More than one)."
+  },
+  "3": {
+    "answer": "B",
+    "solution": "For no meetings between poles: all pairwise relative speeds must divide 360.\nOption B {1,2,3,7}: all differences (1,2,6,1,5,4) divide 360 ✓. All sums (3,4,8,5,9,10) divide 360 ✓.\nFor any direction assignment, no pair meets between poles.\nAnswer: B (1,2,3,7)."
+  },
+  "4": {
+    "answer": "D",
+    "solution": "Trains cross at 2PM (3h after 11AM). Let speeds b (Bangalore) and o (Orissa).\n3o/b−3b/o=4.5 → 2k²+3k−2=0 where k=b/o → k=1/2 → b/o=1/2.\nB train arrives: 2PM+3o/b=2PM+6h=8PM. Not among options.\nAnswer: D (None of these)."
+  },
+  "5": {
+    "answer": "900",
+    "solution": "D∝t². D(10)=k×100=300 → k=3. D(20)=3×400=1200m.\nNext 10s: 1200−300=900m.\nAnswer: 900."
+  },
+  "6": {
+    "answer": "A",
+    "solution": "Nachiketh left 60min early, arrived 215/11 min early. Time saved=2×60×w/(v+w)=215/11.\nw/(v+w)=43/264. Next day: left 30min early → saved=2×30×43/264=2580/264=215/22=9 17/22 min.\nAnswer: A (9 17/22)."
+  },
+  "7": {
+    "answer": "D",
+    "solution": "Late by 20 min, crosses 10 min late. (v_car+v_C)×10=20×v_C.\n→ v_car=v_C → ratio car:Charitha=1:1. Not in options.\nAnswer: D (None of these)."
+  },
+  "8": {
+    "answer": "252",
+    "solution": "Angle POQ=270°CW → arc PQ CW=3T/4. First meeting: (v_A+v_B)t₁=3T/4.\nB covers 3Tv_B/(4(v_A+v_B)). Between 1st and 2nd meetings A covers Tv_A/(v_A+v_B).\nCondition: 3v_B/4=v_A → v_A/v_B=3/4.\nA's fraction at 1st meeting: 3T×(3/4)/(4×7/4)/T=9/28. a×b=9×28=252.\nAnswer: 252."
+  },
+  "9": {
+    "answer": "B",
+    "solution": "Bike=60, walk=6, D=26km. Bunty drops Anand at d, turns back to pick Chintu.\nChintu walked 2d/11 when picked up. Anand's time: d/60+(26−d)/6=T.\nBunty's time: (18d/11+26)/60=T → solving: d=22km, T=62/60h=62min.\nAnswer: B (62)."
+  },
+  "10": {
+    "answer": "A",
+    "solution": "Usual speed=v, D=3v. Late day: 0.9h for first 30% + 2.1v/(v−16) for rest=3.4h.\n2.1v/(v−16)=2.5 → 2.1v=2.5v−40 → v=100km/h. D=300km.\nAnswer: A (300)."
+  }
+}

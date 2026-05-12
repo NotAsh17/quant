@@ -1,0 +1,42 @@
+{
+  "1": {
+    "answer": "40",
+    "solution": "R overtakes P at 2PM: R ran 3h, P ran 5h. 3r=5p → r=5p/3.\nR doubles: new speed=2r=10p/3. Overtakes Q at 4PM (2h after 2PM).\nR's total position: 5p+2×(10p/3)=35p/3. Q's position=7q.\n7q=35p/3 → q=5p/3. P% less than Q=(q−p)/q×100=(2p/3)/(5p/3)×100=40%.\nAnswer: 40."
+  },
+  "2": {
+    "answer": "B",
+    "solution": "Opposite direction: (f+s)×2=66 → f+s=33. Same direction: (f−s)×22=66 → f−s=3.\nf=18, s=15 km/h. % slower less than faster = (18−15)/18×100=3/18×100=16.67%.\nAnswer: B (16.66%)."
+  },
+  "3": {
+    "answer": "C",
+    "solution": "A starts at P(0) at 20km/h. B starts at Q(240) in same direction (rightward) at 40km/h.\nEach 2h cycle: B goes +40 then −20 = net+20 rightward; A goes +40. B gains 20 per 2h on A but A is behind.\nGap between B and A at even hours: B−A=240+20n−40n=240−20n. Gap=0 at n=12 cycles → t=24h.\nVerify: at t=24 both at 480km. They meet exactly at t=24h.\nAnswer: C (24 hrs)."
+  },
+  "4": {
+    "answer": "C",
+    "solution": "Q overtakes P: 80(t−3)=60t → 20t=240 → t=12h after P starts. Position=720km.\nR overtakes P at same instant (t=12, position 720): 90×(12−T_R)=720 → 12−T_R=8 → T_R=4h.\nR starts 4 hours after P.\nAnswer: C (4 hrs)."
+  },
+  "5": {
+    "answer": "20",
+    "solution": "Let s,m = Sonu,Monu speeds. 48min=4/5h before Monu starts.\nWhen Monu covers 8km (at time 8/m after Monu starts): Sonu total=s(4/5+8/m)=20 ...(I).\nMeeting: 20km from Monu → 30km from Sonu: s(4/5+20/m)=30 ...(II).\n(II)−(I): 12s/m=10 → s/m=5/6. Sub: 5×6k(4/5+8/(6k×1))=... → m=6k=20km/h.\nAnswer: 20."
+  },
+  "6": {
+    "answer": "A",
+    "solution": "Cat at 3L/25 from A. Train at distance d from A.\nCat→A (speed c): 3L/(25c)=d/v → d=3Lv/(25c) ...(I).\nCat→B (speed 3c): 22L/(75c)=(d+L)/v → d+L=22Lv/(75c) ...(II).\n(II)−(I): L=13Lv/(75c) → v/c=75/13.\n%cat less than train=(1−13/75)×100=62×100/75≈82.67%≈83%.\nAnswer: A (83%)."
+  },
+  "7": {
+    "answer": "B",
+    "solution": "P from A at 8km/h. Q from B: speeds 5,7,9,... (AP d=2). After n hours: P=8n, Q=n(n+4).\nCombined: n²+12n=123. n=6: 108<123; n=7: 133>123. At n=6: remaining=15km.\nHour 7: Q speed=5+2×6=17km/h. Combined=8+17=25km/h. Extra time=15/25=0.6h=36min.\nMeet at 9AM+6h36min=3:36PM.\nAnswer: B (3:36 PM)."
+  },
+  "8": {
+    "answer": "99",
+    "solution": "Gun fires at t=0 and t=24s. Train approaches at speed v (m/s).\nTime between hearing shots: 24−24v/330=22 → 24v/330=2 → v=2×330/24=27.5 m/s.\n27.5×3600/1000=99 km/h.\nAnswer: 99."
+  },
+  "9": {
+    "answer": "D",
+    "solution": "Fractions: 3/16 at 60, 5/16 at 72, 2/16 at 90, 6/16 at 108.\nTime/D = (1/16)×(3/60+5/72+2/90+6/108)=(1/16)×(18+25+8+20)/360=71/5760.\nAverage speed=5760/71≈81.12 km/h.\nAnswer: D (81.12 km/h)."
+  },
+  "10": {
+    "answer": "C",
+    "solution": "First bus starts t=0, second bus at t=1h (both from same city). Man in first bus for 4h: at position 320km.\nSecond bus at t=4h: ran 3h → at 180km. Man walks toward second bus (backward) at 6km/h.\n320−6t=180+60t → 66t=140 → t=70/33=2 4/33 hours.\nAnswer: C (2 4/33 hours)."
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "1": {
+    "answer": "250",
+    "solution": "Speed=99km/75min=132000cm/min. Front circumference=2π×21=42π, Rear=2π×28=56π.\nFront rev/min=132000/(42π), Rear rev/min=132000/(56π).\nDifference=132000/π×(1/42−1/56)=132000/π×1/168=132000×7/(168×22)=250.\nAnswer: 250."
+  },
+  "2": {
+    "answer": "B",
+    "solution": "After two runners cross, remaining times: Sita=4min, Gita=9min.\nFormula: v_Sita/v_Gita=√(t_Gita/t_Sita)=√(9/4)=3/2.\nRatio Sita:Gita=3:2.\nAnswer: B (3:2)."
+  },
+  "3": {
+    "answer": "A",
+    "solution": "Car-1 time=D/(2s). Car-2 time=2D/s.\nDifference=2D/s−D/(2s)=3D/(2s)=45min=3/4h.\nD/s=1/2h → Car-2 time=2×(1/2)=1 hour.\nAnswer: A (1)."
+  },
+  "4": {
+    "answer": "B",
+    "solution": "Speeds 3 & 7 m/s on 500m track, start opposite ends. Combined=10m/s.\n1st meeting at t=50s: Slow at x=150m.\nAfter: F(7) reaches x=0 at t=500/7s, bounces right. F catches S: 7t−500=3t → t=125s, x=375m (2nd meeting).\nF bounces at x=500 at t=1000/7s. Both moving toward each other: meet at x=500−7×(50/7)=450m, t=150s.\nSlow runner (S) at x=450m from start.\nAnswer: B (450)."
+  },
+  "5": {
+    "answer": "5",
+    "solution": "New scenario: motorcyclist speed doubled → journey=1.5h (7:00–8:30AM). Car interval=20min.\nA car crosses motorcyclist iff it departs before motorcyclist arrives (8:30AM).\nCars departing from 7:01AM every 20min before 8:30AM: 7:01, 7:21, 7:41, 8:01, 8:21 → 5 cars.\nAnswer: 5."
+  },
+  "6": {
+    "answer": "A",
+    "solution": "Let v=walk speed, e=escalator speed, N=steps.\nNormal: N=(v+e)×30. Double: N=(2v+e)×18.\n30v+30e=36v+18e → 12e=6v → e=v/2.\nN=(v+v/2)×30=45v. Standing still: time=N/e=45v/(v/2)=90s.\nAnswer: A (90)."
+  },
+  "7": {
+    "answer": "D",
+    "solution": "f(n)=f(n−1)+f(n−2), f(1)=1, f(2)=2.\nf(3)=3,f(4)=5,f(5)=8,f(6)=13,f(7)=21,f(8)=34,f(9)=55,f(10)=89,f(11)=144,f(12)=233,f(13)=377,f(14)=610,f(15)=987.\nf(15)=987, not among listed options (144=f(11), 377=f(13), 610=f(14)).\nAnswer: D (None of these)."
+  },
+  "8": {
+    "answer": "17",
+    "solution": "SE and SW directions are perpendicular (90° apart).\nAfter 5h: distances=5v and 5(v+7). By Pythagoras: (5v)²+(5(v+7))²=65².\n25[v²+(v+7)²]=4225 → v²+(v+7)²=169 → 2v²+14v+49=169 → 2v²+14v−120=0.\nv²+7v−60=0 → v=(−7+√289)/2=5km/h. Other speed=12km/h. Sum=17.\nAnswer: 17."
+  },
+  "9": {
+    "answer": "C",
+    "solution": "At 45km mark: 7L remaining. Need 555km=37L, have 7L → need 30L in 2 stops.\nLast stop must be S (315km ahead): remaining 240km=16L≤20L capacity ✓.\nR (250km ahead): 305/15≈20.3L>20L ✗. So last stop=S.\nFirst stop: reach Q (100km) with 7−100/15=1/3L. Fill 14L → 43/3L. Travel Q→S(215km)=43/3L → arrive S with 0L.\nFill 16L at S → exactly enough for 240km. Tank never overflows. Option B (15L+20L) would need 21L at S, exceeds 20L capacity.\nAnswer: C."
+  },
+  "10": {
+    "answer": "D",
+    "solution": "Akash:Manu=1000:950 (Akash gives 50m start). Akash:Rohit=1000:931 (Akash gives 69m start).\nManu:Rohit=950:931. In 1000m race: when Manu finishes, Rohit covers (931/950)×1000=980m.\nManu beats Rohit by 20m → can give 20m start. 20 not in options.\nAnswer: D (None of these)."
+  }
+}
