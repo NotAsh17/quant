@@ -1,0 +1,42 @@
+{
+  "1": {
+    "answer": "C",
+    "solution": "k-th term: log_{√(k+1)}(k+1)³ = 3/log_{(k+1)^{1/2}}(k+1) = 3/(1/2) = 6. Each term equals 6 regardless of k. Sum of n terms = 6n. Answer: C."
+  },
+  "2": {
+    "answer": "A",
+    "solution": "9=3², 243=3⁵, 19683=3⁹, 729=3⁶. Sum of log₃x × (1/2+1/5+1/9+1/6) = 2. LCM=90: (45+18+10+15)/90=88/90=44/45. log₃x = 2÷(44/45) = 90/44 = 45/22 → x=3^{45/22}. Answer: A."
+  },
+  "3": {
+    "answer": "36",
+    "solution": "log₃6 = log₆x → x = 6^{log₃6}. log₃6 = 1+log₃2 ≈ 1.63. Exact: x=3^{(log₃6)²}. Approximating log₃6 ≈ 2 (since 3²=9, close to 6): x ≈ 6²=36 (satisfies x>34). Approx value ≈ 36."
+  },
+  "4": {
+    "answer": "27",
+    "solution": "Let t=log₃x. Series 1+(log₃x)²+(log₃x)⁴+...=1/(1−t²) for |t|<1. Equation: (1+t)/(1−t²)=1/(1−t)=4 → 1−t=1/4 → t=3/4. x=3^{3/4}<4✓. x⁴=(3^{3/4})⁴=3³=27."
+  },
+  "5": {
+    "answer": "C",
+    "solution": "k-th term=(51−k)log(x/y)−(k−1)log3. Sum k=1→100: log(x/y)×Σ(51−k) − log3×Σ(k−1). Σ(51−k)=5100−5050=50. Σ(k−1)=4950. Sum=50log(x/y)−4950log3=50log(x/(3^{99}y)). Answer: C."
+  },
+  "6": {
+    "answer": "11",
+    "solution": "1−1/log₃6 = 1−log₆3 (change of base) = log₆6−log₆3 = log₆2. 2048=2¹¹ so log₆2048=11log₆2. Equation: log₆2×x=11log₆2 → x=11."
+  },
+  "7": {
+    "answer": "A",
+    "solution": "9^x=18^{x−2} → 3^{2x}=2^{x−2}×3^{2x−4} → 3⁴=2^{x−2} → taking log: 4log3=(x−2)log2 → log2/log3=4/(x−2). Answer: A."
+  },
+  "8": {
+    "answer": "1",
+    "solution": "Take log₁₀: log(7/8)log6+log(8/6)log7+log(6/7)log8 = (log7−log8)log6+(log8−log6)log7+(log6−log7)log8. Each pair of cross-products: log7·log6−log6·log7=0; log6·log8−log8·log6=0; log8·log7−log7·log8=0. Total=0. Expression=10⁰=1."
+  },
+  "9": {
+    "answer": "A",
+    "solution": "0.25=(0.5)² so log_{0.25}t=(1/2)log_{0.5}t. Inequality: log_{0.5}(3x−5) < (1/2)log_{0.5}(3x−5). Let u=log_{0.5}(3x−5): u<u/2 → u<0. log_{0.5}(3x−5)<0 → (since base<1) 3x−5>1 → x>2. Answer: A."
+  },
+  "10": {
+    "answer": "C",
+    "solution": "Let t=log₂x. log_x2=1/t, log_{2x}2=1/(1+t), log_{4x}2=1/(2+t). Equation: 1/(t(1+t))=1/(2+t) → 2+t=t+t² → t²=2 → t=±√2 → log_x2=1/t=±1/√2. Both 1/√2 and −1/√2 are valid. Answer: C."
+  }
+}

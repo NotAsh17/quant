@@ -1,0 +1,42 @@
+{
+  "1": {
+    "answer": "37.5",
+    "solution": "log0.1=−1<0. Dividing by log0.1 flips inequality: x²−9x+29<4x−7 → x²−13x+36<0 → (x−4)(x−9)<0 → 4<x<9. Integer x∈{5,6,7,8}. Min=5, max=8. % less=(8−5)/8×100=37.5%."
+  },
+  "2": {
+    "answer": "A",
+    "solution": "Let u=y^(1/3): (u−1)²+u−21≤0 → u²−u−20≤0 → (u−5)(u+4)≤0 → −4≤u≤5. Cube: −64≤y≤125. Integers: 125−(−64)+1=190. Answer: A."
+  },
+  "3": {
+    "answer": "160",
+    "solution": "z∈[−8,−4] always negative. Max xy/z: want most-negative xy divided by z nearest 0. xy=−400 (x=−20,y=20), z=−4: P=100. Min xy/z: want most-positive xy. xy=240 (x=12,y=20 or x=−20,y=−12), z=−4: Q=−60. P−Q=100−(−60)=160."
+  },
+  "4": {
+    "answer": "A",
+    "solution": "Case 8x+4≥0 (x≥−1/2): x²−8x+4=0→x=4±2√3 (both≥−1/2✓). Case 8x+4<0 (x<−1/2): x²+8x+12=0→(x+2)(x+6)=0→x=−2,−6 (both<−1/2✓). Sum=(4+2√3)+(4−2√3)+(−2)+(−6)=8−8=0. Answer: A."
+  },
+  "5": {
+    "answer": "1",
+    "solution": "|3x+2|/(5x−8)≥4. For x<8/5: denominator<0 → expression≤0<4, no solutions. For x>8/5: |3x+2|=3x+2. 3x+2≥4(5x−8)→3x+2≥20x−32→x≤2. Solution: 8/5<x≤2. Only integer: x=2. Count=1."
+  },
+  "6": {
+    "answer": "11",
+    "solution": "|x−|3x−5||=11. Case x≥5/3: |3x−5|=3x−5. |x−3x+5|=|5−2x|=11→5−2x=±11→x=−3(invalid) or x=8✓. Case x<5/3: |3x−5|=5−3x. |x−5+3x|=|4x−5|=11→4x−5=−11→x=−3/2✓. P=8,Q=−3/2. P−2Q=8+3=11."
+  },
+  "7": {
+    "answer": "C",
+    "solution": "|x|≤|12−x²|. Square: x²≤(12−x²)² → x⁴−25x²+144≥0 → (x²−9)(x²−16)≥0. Holds when x²≤9 or x²≥16 → |x|≤3 or |x|≥4. Excluded: 3<|x|<4. No integers lie in (3,4) or (−4,−3) — all integers satisfy the inequality. Answer: C (infinitely many)."
+  },
+  "8": {
+    "answer": "9",
+    "solution": "|2x+7|≥5: x≤−6 or x≥−1. |3x−11|≤13: −2/3≤x≤8. Intersection: (x≥−1 AND −2/3≤x≤8)=−2/3≤x≤8 (also x≤−6 has no overlap with −2/3≤x). Integers in [−2/3,8]: {0,1,2,3,4,5,6,7,8}=9 integers."
+  },
+  "9": {
+    "answer": "C",
+    "solution": "(x−9)/(x+11)≥5 → (x−9−5x−55)/(x+11)≥0 → −4(x+16)/(x+11)≥0 → (x+16)/(x+11)≤0. Holds when −16≤x<−11. Integer x∈{−16,−15,−14,−13,−12}. Min=−16, max=−12. Sum=−28. Answer: C."
+  },
+  "10": {
+    "answer": "A",
+    "solution": "(x+7)(x−5)/[(2x−3)(x+2)]<0. Critical pts: −7,−2,3/2,5. Negative on (−7,−2)∪(3/2,5). Integers in (−7,−2): {−6,−5,−4,−3}=4. Integers in (3/2,5): {2,3,4}=3. Total=7. Answer: A."
+  }
+}

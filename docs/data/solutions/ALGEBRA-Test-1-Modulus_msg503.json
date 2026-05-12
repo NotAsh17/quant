@@ -1,0 +1,42 @@
+{
+  "1": {
+    "answer": "4",
+    "solution": "Each ratio |a+b|/(|a|+|b|) ∈ [0,1] for non-zero a,b. Among any 3 non-zero reals, at least 2 share sign → at least one term=1 → sum≥1. Min=1 (e.g. a=b=1,c=−1: terms=1,0,0). Max=3 (all same sign: all terms=1). Sum of least+greatest=1+3=4."
+  },
+  "2": {
+    "answer": "D",
+    "solution": "Let u=|k|≥0: u³+8u²+5u−50. Try u=2: 8+32+10−50=0 → factor (u−2)(u+5)²=0. Expression>0 iff u>2, ≤0 iff u≤2 (i.e., |k|≤2). Integers not satisfying: k∈{−2,−1,0,1,2}=5. Answer: D."
+  },
+  "3": {
+    "answer": "D",
+    "solution": "x≥1: x²−5(x−1)−1=x²−5x+4=(x−1)(x−4)=0 → x=1,4. x<0: x²−5(1−x)−1=x²+5x−6=(x+6)(x−1)=0 → x=−6. Sum=1+4+(−6)=−1. Not in options {0,1,−2}. Answer: D (none of these; sum=−1)."
+  },
+  "4": {
+    "answer": "D",
+    "solution": "Integer pairs: (|x|−4)(|y|+6)=24 with |x|−4>0 (since |y|+6≥6>0). Factor pairs (a,b=24/a) with b≥6: (1,24)→|x|=5,|y|=18→4 pairs; (2,12)→|x|=6,|y|=6→4; (3,8)→|x|=7,|y|=2→4; (4,6)→|x|=8,|y|=0→2. Total=14. Answer: D."
+  },
+  "5": {
+    "answer": "D",
+    "solution": "Eq2: x+|y|−y=50. If y≥0: x=50, Eq1: 100+y=25→y=−75 (contradiction). If y<0: x−2y=50 ...(II). Eq1 with x≥0: 2x+y=25 ...(I). (I)+(II)/2: x=20, y=−15. Check: x≥0✓, y<0✓. |x|+|y|=20+15=35. Answer: D."
+  },
+  "6": {
+    "answer": "C",
+    "solution": "Eq2: x+|x|+4y=2. If x≥0: 2x+4y=2→x+2y=1. Eq1 with y<0: 4x−3y+y=4x−2y=8→2x−y=4. From x+2y=1 and 2x−y=4: 5x=9→x=9/5, y=−2/5. Check: 4(9/5)+3(2/5)+(−2/5)=36/5+4/5=40/5=8✓. 5xy=5(9/5)(−2/5)=−18/5=−3.6. Answer: C."
+  },
+  "7": {
+    "answer": "5",
+    "solution": "Let u=P−4≥1 (integer). Expression=|P−5+9/(P−4)|=|u−1+9/u|. For u≥1: u−1+9/u>0. f(u)=u−1+9/u. f'(u)=1−9/u²=0→u=3 (integer, u>4−4=1✓). f(3)=3−1+3=5. Minimum=5 at P=7."
+  },
+  "8": {
+    "answer": "B",
+    "solution": "(|x|+5)/(|x|²+|x|−6)>0. Let u=|x|≥0. Numerator u+5>0 always. Denominator=(u+3)(u−2): u+3>0 always; u−2>0 iff u>2→|x|>2→x<−2 or x>2. Solution=R\\[−2,2]. Answer: B."
+  },
+  "9": {
+    "answer": "144",
+    "solution": "|m+3|<7→m∈{−9,...,3}. |n−4|<8→n∈{−3,...,11}. m+n+mn=(1+m)(1+n)−1. Max: (1+3)(1+11)−1=48−1=47 at m=3,n=11. Min: (1+(−9))(1+11)−1=(−8)(12)−1=−96−1=−97 at m=−9,n=11. Difference=47−(−97)=144."
+  },
+  "10": {
+    "answer": "15",
+    "solution": "f(y)=|y|+2|y+1|+3|y+2|+4|y+3|+5|y+4|. Weights 1,2,3,4,5 total 15. Weighted median: cumulative from y=−4: 5, then 5+4=9≥7.5 → minimum at y=−3. f(−3)=|−3|+2×2+3×1+4×0+5×1=3+4+3+0+5=15."
+  }
+}

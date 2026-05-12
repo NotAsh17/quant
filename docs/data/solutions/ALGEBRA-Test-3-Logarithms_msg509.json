@@ -1,0 +1,42 @@
+{
+  "1": {
+    "answer": "C",
+    "solution": "Let t=log₃x. log₂₇(3x)²=(1/3)log₃(9x²)=(2+2t)/3=2/3+2t/3. log_x(1/3)=−1/t. log_{1/9}(x)=−t/2. Equation: 2/3+2t/3−1/t−t/2=2/3 → 2t/3−1/t−t/2=0. Multiply by 6t: 4t²−6−3t²=0 → t²=6 → t=√6 (x>1). x=3^√6. Answer: C."
+  },
+  "2": {
+    "answer": "A",
+    "solution": "(√3)⁸=3⁴=81. log₈₁(log_{√2}x)²⁴=6 → (log_{√2}x)²⁴=81⁶=3²⁴ → log_{√2}x=±3. For x>1: log_{√2}x=3 → x=(√2)³=2√2. Answer: A."
+  },
+  "3": {
+    "answer": "4",
+    "solution": "Domain: 8x−x²>0 → 0<x<8. Base 2>1: 8x−x²<15 → x²−8x+15>0 → (x−3)(x−5)>0 → x<3 or x>5. Combined with domain: (0,3)∪(5,8). Integers: {1,2} and {6,7}. Total=4 integral values."
+  },
+  "4": {
+    "answer": "182",
+    "solution": "Let common value=t. 4^{log_{64}a}=t: (log₂a/6)×2=log₂t → a=t³. 128^{log_{64}b}=t: (7log₂b)/6=log₂t → b=t^{6/7}. 16^{log₂c}=t: 4log₂c=log₂t → c=t^{1/4}. ac=t^{13/4}. log_b(ac)=(13/4)÷(6/7)=91/24. 48×91/24=182."
+  },
+  "5": {
+    "answer": "C",
+    "solution": "Let t=log_x y. log_x√y=t/2. log_y x=1/t. Equation: 3(t+t/2)=27/t → 9t/2=27/t → 9t²=54 → t²=6 → t=√6. y=x^√6. Answer: C."
+  },
+  "6": {
+    "answer": "0",
+    "solution": "Let t=log₃x. log₉x=t/2, log_{729}x=t/6. Given: log₃(t/2)+log₃(t/6)=0 → log₃(t²/12)=0 → t²=12 → t=2√3. Find: log₃(t/6)+log₃(t/2)=log₃(2√3/6)+log₃(2√3/2)=log₃(3^{−1/2})+log₃(3^{1/2})=−1/2+1/2=0."
+  },
+  "7": {
+    "answer": "A",
+    "solution": "2^{log₂7}=7 (by identity a^{log_a b}=b). So 3log_x y+12=8+7=15 → 3log_x y=3 → log_x y=1 → y=x¹=x → x=y. Answer: A."
+  },
+  "8": {
+    "answer": "512",
+    "solution": "LHS=log₂(x·x²·x³·...·xⁿ)=log₂(x^{1+2+...+n})=log₂(x^{n(n+1)/2})=[n(n+1)/2]log₂x. Given=[n(n+1)/2]log₂x=9n(n+1)/2 → log₂x=9 → x=2⁹=512."
+  },
+  "9": {
+    "answer": "B",
+    "solution": "Use identity: x^{log₃8}=8^{log₃x} (since a^{log_b c}=c^{log_b a}). Let t=log₃x. Equation: 8^t=64−8^t → 2×8^t=64 → 8^t=32 → t=log₈32=5/3. x=3^{5/3}. x³=(3^{5/3})³=3⁵=243. Answer: B."
+  },
+  "10": {
+    "answer": "A",
+    "solution": "log√x+log√y+log√z=(1/2)log(xyz). RHS=(1/4)log(1/√(xyz))=(1/4)×(−1/2)log(xyz)=−(1/8)log(xyz). Equation: (1/2)log(xyz)=−(1/8)log(xyz) → (5/8)log(xyz)=0 → log(xyz)=0 → xyz=1. Answer: A."
+  }
+}
