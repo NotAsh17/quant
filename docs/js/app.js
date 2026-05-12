@@ -78,6 +78,7 @@ let state = {
   paused: false,
   untimed: false,
   modalQ: null,
+  completionPrompt: null,    // {attempted, total, skipped} while the submit-confirm overlay is open
   qTime: {},
   qStartedAt: null,
   // For bookmark practice mode
@@ -88,6 +89,12 @@ let state = {
    UTIL
    ============================================================ */
 const $app = document.getElementById('app');
+
+// In CAT, TITA questions have NO negative marking. The bank stores 1 for
+// historical reasons; this helper returns the correct effective penalty.
+function effectiveNegative(q) {
+  return q.type === 'tita' ? 0 : (q.marks_negative || 0);
+}
 
 function fmtSec(sec) {
   if (sec == null) return '—';
@@ -107,6 +114,23 @@ function toast(msg) {
   document.body.appendChild(el);
   setTimeout(() => el.remove(), 1800);
 }
+// Render a compact preview of a question's stem for use in list rows.
+// - if there's text, truncate to `maxChars`
+// - if there's no text but there's an image, render a small inline thumb
+// - if neither, show a muted [image question] fallback
+function renderStemPreview(q, maxChars = 100) {
+  const text = (q && q.stem_text) || '';
+  if (text) {
+    const truncated = text.length > maxChars ? text.substring(0, maxChars) + '…' : text;
+    return escapeHtml(truncated);
+  }
+  const imgs = (q && q.stem_images) || [];
+  if (imgs.length) {
+    return `<img src="${imgs[0]}" alt="" class="stem-thumb">`;
+  }
+  return '<em style="color:var(--text-muted)">[image question]</em>';
+}
+
 function shortTitle(t) {
   if (!t) return '';
   let s = t;
@@ -207,6 +231,7 @@ function initRunner(testId, untimed) {
     state.untimed = untimed;
   }
   state.paused = false;
+  state.completionPrompt = null;
   state.qStartedAt = Date.now();
   if (!state.untimed) startTimer();
 }
@@ -241,6 +266,7 @@ function render() {
   }
   if (state.modalQ != null) html += renderQuestionModal(state.modalQ);
   if (state.paused && state.view === 'runner') html += renderPauseOverlay();
+  if (state.completionPrompt && state.view === 'runner') html += renderCompletionPrompt();
 
   $app.innerHTML = `<div class="fade-in">${html}</div>`;
   document.querySelectorAll('.nav-tab').forEach(b => {
@@ -401,6 +427,8 @@ function renderTopic() {
     }
     const nMcq = test.questions.filter(q => q.type === 'mcq').length;
     const nTita = test.questions.length - nMcq;
+    const totalPos = test.questions.reduce((acc, q) => acc + (q.marks_correct || 3), 0);
+    const totalNeg = test.questions.reduce((acc, q) => acc + effectiveNegative(q), 0);
     return `
       <button class="test-row" data-action="open-test" data-test="${escapeHtml(test.test_id)}">
         <div class="test-num">${String(i+1).padStart(2,'0')}</div>
@@ -409,7 +437,7 @@ function renderTopic() {
           <div class="test-sub">${test.questions.length} questions · ${nMcq} MCQ + ${nTita} TITA · ${test.timer_min} min</div>
         </div>
         <div class="test-stat">${tag}</div>
-        <div class="test-stat">+${test.questions.length*3}/-${test.questions.length}</div>
+        <div class="test-stat">+${totalPos}/-${totalNeg}</div>
         <span class="test-cta">${cta}</span>
       </button>
     `;
@@ -507,7 +535,7 @@ function renderRunner() {
             <span class="q-num-big">Q${q.n}</span>
             <span class="q-type ${q.type==='tita'?'tita':''}">${q.type === 'tita' ? 'TITA' : 'MCQ'}</span>
             <span class="q-marks">
-              <span class="pos-c">+${q.marks_correct}</span> · <span class="neg-c">−${q.marks_negative}</span>
+              <span class="pos-c">+${q.marks_correct}</span> · <span class="neg-c">−${effectiveNegative(q)}</span>
             </span>
             <button class="icon-btn" data-action="copy-q" title="Copy question" style="margin-left:8px;width:28px;height:28px">${ICONS.copy}</button>
             <button class="icon-btn" data-action="bookmark-toggle" title="${isBookmarked?'Remove bookmark':'Bookmark'}" style="width:28px;height:28px;${isBookmarked?'color:var(--accent-text);border-color:var(--accent)':''}">${ICONS.bookmark}</button>
@@ -567,18 +595,23 @@ function renderResults() {
     let st = 'skipped', delta = '0';
     if (a && a.value !== '' && a.value != null) {
       if (sol && checkCorrect(q, a.value, sol.answer)) { st = 'correct'; delta = '+'+q.marks_correct; }
-      else if (sol) { st = 'wrong'; delta = '−'+q.marks_negative; }
+      else if (sol) {
+        st = 'wrong';
+        const neg = effectiveNegative(q);
+        delta = neg > 0 ? '−'+neg : '0';
+      }
       else { st = 'pending'; delta = '?'; }
     }
     const mark = st === 'correct' ? '✓' : st === 'wrong' ? '✕' : st === 'pending' ? '?' : '–';
     const t = (r.qTime && r.qTime[q.n]) || null;
     const isBookmarked = Storage.isBookmarked(state.testId, q.n);
+    const negDisplay = q.type === 'tita' ? '0' : q.marks_negative;
     return `
       <button class="test-row" data-action="open-review" data-q="${q.n}">
         <div class="review-q-mark ${st}">${mark}</div>
         <div>
-          <div class="test-title">Q${q.n}: ${escapeHtml((q.stem_text || '[image question]').substring(0, 90))}${(q.stem_text||'').length > 90 ? '…' : ''}</div>
-          <div class="test-sub">${q.type === 'tita' ? 'TITA' : 'MCQ'} · +${q.marks_correct}/-${q.marks_negative}${isBookmarked ? ' · ★ bookmarked' : ''}</div>
+          <div class="test-title">Q${q.n}: ${renderStemPreview(q, 90)}</div>
+          <div class="test-sub">${q.type === 'tita' ? 'TITA' : 'MCQ'} · +${q.marks_correct}/-${negDisplay}${isBookmarked ? ' · ★ bookmarked' : ''}</div>
         </div>
         <div class="test-stat mono" title="Time on this question">${fmtSec(t)}</div>
         <div class="test-stat">${delta}</div>
@@ -680,7 +713,7 @@ function renderBookmarks() {
           <button class="test-row" data-action="open-bookmark" data-test="${escapeHtml(it.test.test_id)}" data-q="${it.q.n}">
             <div class="test-num">${String(i+1).padStart(2,'0')}</div>
             <div>
-              <div class="test-title">${escapeHtml((it.q.stem_text || '[image question]').substring(0, 100))}${(it.q.stem_text||'').length > 100 ? '…' : ''}</div>
+              <div class="test-title">${renderStemPreview(it.q, 100)}</div>
               <div class="test-sub">${escapeHtml(shortTitle(it.test.title))} · Q${it.q.n} · ${it.q.type.toUpperCase()}</div>
             </div>
             <div class="test-stat"><span class="tag">${it.q.type.toUpperCase()}</span></div>
@@ -895,7 +928,7 @@ function renderQuestionModal(qNum) {
           <span class="q-num-big mono">Q.${qNum}</span>
           <span class="modal-tag" style="text-transform:uppercase">${q.type === 'tita' ? 'TITA' : 'MCQ'}</span>
           ${resultTag}
-          <span style="font-size:12px;color:var(--text-muted);margin-left:6px;font-family:'IBM Plex Mono',monospace">+${q.marks_correct} / −${q.marks_negative}</span>
+          <span style="font-size:12px;color:var(--text-muted);margin-left:6px;font-family:'IBM Plex Mono',monospace">+${q.marks_correct} / −${effectiveNegative(q)}</span>
           ${t ? `<span style="font-size:12px;color:var(--text-muted);font-family:'IBM Plex Mono',monospace" title="Time spent">⏱ ${fmtSec(t)}</span>` : ''}
           <div class="modal-actions">
             <button class="icon-btn" data-action="bookmark-modal" data-q="${qNum}" title="${isBookmarked?'Remove bookmark':'Bookmark'}" style="${isBookmarked?'color:var(--accent-text);border-color:var(--accent)':''}">${ICONS.bookmark}</button>
@@ -907,6 +940,32 @@ function renderQuestionModal(qNum) {
           <div class="modal-stem">${stemHTML}</div>
           ${optsHTML}
           ${solHTML}
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+/* -------- SUBMIT CONFIRMATION -------- */
+function renderCompletionPrompt() {
+  const p = state.completionPrompt;
+  if (!p) return '';
+  const used = (currentTest().timer_min * 60) - state.timerSeconds;
+  const m = Math.floor(used / 60);
+  const s = used % 60;
+  return `
+    <div class="pause-overlay">
+      <div class="pause-card">
+        <div class="topic-icon" style="margin:0 auto 14px;width:42px;height:42px;background:var(--warn-soft);color:var(--warn);font-family:'IBM Plex Mono',monospace;font-size:22px;font-weight:600">!</div>
+        <h2>Submit now?</h2>
+        <p>You've answered <strong>${p.attempted}</strong> of ${p.total} questions.
+          ${p.skipped} unanswered will be marked as skipped.</p>
+        <div class="pause-time mono" title="Time used / total">
+          ${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')} <span style="color:var(--text-faint);font-size:18px"> of ${String(currentTest().timer_min).padStart(2,'0')}:00</span>
+        </div>
+        <div class="pause-actions">
+          <button class="btn" data-action="continue-solving">${ICONS.back} Continue solving</button>
+          <button class="btn btn-primary" data-action="submit-anyway">See results & solutions</button>
         </div>
       </div>
     </div>
@@ -981,6 +1040,17 @@ function handleAction(e) {
   }
 
   if (a === 'submit-test') { submitTest(); return; }
+  if (a === 'continue-solving') {
+    state.completionPrompt = null;
+    if (!state.untimed && state.timerSeconds > 0) startTimer();
+    render();
+    return;
+  }
+  if (a === 'submit-anyway') {
+    state.completionPrompt = null;
+    submitTest({ confirmed: true });
+    return;
+  }
   if (a === 'open-review') { state.modalQ = parseInt(el.dataset.q); state.modalTestId = state.testId; render(); return; }
   if (a === 'open-bookmark') { state.modalTestId = el.dataset.test; state.modalQ = parseInt(el.dataset.q); render(); return; }
   if (a === 'close-modal') { state.modalQ = null; state.modalTestId = null; render(); return; }
@@ -1100,11 +1170,36 @@ function saveCurrentQ() {
   }
 }
 
-function submitTest() {
+// Count how many questions in `test` have a non-empty answer in `answers`.
+function countAttempted(test, answers) {
+  let n = 0;
+  for (const q of test.questions) {
+    const a = answers && answers[q.n];
+    if (a && a.value !== '' && a.value != null) n++;
+  }
+  return n;
+}
+
+function submitTest(opts = {}) {
   saveCurrentQ();
-  stopTimer();
   const test = currentTest();
   if (!test) return;
+
+  // If user clicked submit (not auto-timeout) and some questions are unanswered,
+  // show a confirmation prompt before finalising. The user can go back and keep
+  // working, or commit to submitting with skipped questions.
+  const isAuto = !!opts.auto;
+  const attempted = countAttempted(test, state.answers);
+  const skipped = test.questions.length - attempted;
+  if (!isAuto && !state.untimed && skipped > 0 && !opts.confirmed) {
+    state.completionPrompt = { attempted, total: test.questions.length, skipped };
+    // Hold the timer while the prompt is open
+    stopTimer();
+    render();
+    return;
+  }
+
+  stopTimer();
 
   // Score against any solutions we have
   loadSolutions(state.testId).then(sols => {
@@ -1116,7 +1211,7 @@ function submitTest() {
       if (!a || a.value === '' || a.value == null) { skipped++; continue; }
       if (sols && sols[q.n]) {
         if (checkCorrect(q, a.value, sols[q.n].answer)) { correct++; score += q.marks_correct; }
-        else { wrong++; score -= q.marks_negative; }
+        else { wrong++; score -= effectiveNegative(q); }   // TITA penalty = 0
       } else {
         // No solution available — count as attempted but not scored
         skipped++; // treat as unscored for now
@@ -1172,8 +1267,8 @@ function startTimer() {
     if (state.paused || state.untimed) return;
     state.timerSeconds = Math.max(0, state.timerSeconds - 1);
     if (state.timerSeconds === 0) {
-      // Auto-submit
-      submitTest();
+      // Auto-submit — bypass the "are you sure" prompt; we're out of time
+      submitTest({ auto: true });
       return;
     }
     if (state.view === 'runner') {
